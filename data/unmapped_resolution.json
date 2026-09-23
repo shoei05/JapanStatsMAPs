@@ -1,0 +1,212 @@
+[
+ {
+  "paper_id": "doi:10.1002/pcn5.70392",
+  "role": "exposure_domain",
+  "pick": "healthcare_access",
+  "confidence": 0.5,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "曝露（農村度・剥奪）を医療アクセスと取り違え"
+ },
+ {
+  "paper_id": "doi:10.1186/s12889-026-28241-z",
+  "role": "exposure_domain",
+  "pick": "none",
+  "confidence": 0.36,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.37737/ace.25002",
+  "role": "outcome_domain",
+  "pick": "environmental_exposure",
+  "confidence": 0.97,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "アウトカム（ヘモグロビン値）を曝露（標高）と取り違え"
+ },
+ {
+  "paper_id": "doi:10.1016/j.prnil.2022.06.004",
+  "role": "exposure_domain",
+  "pick": "none",
+  "confidence": 0.42,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.35772/ghm.2021.01037",
+  "role": "exposure_domain",
+  "pick": "cancer",
+  "confidence": 0.8,
+  "input_mode": "abstract_only",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "曝露（修正可能な危険因子）を結果のがんと取り違え"
+ },
+ {
+  "paper_id": "doi:10.1186/1471-2458-5-53",
+  "role": "outcome_domain",
+  "pick": "none",
+  "confidence": 0.78,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.1136/jech.55.4.263",
+  "role": "outcome_domain",
+  "pick": "qol_wellbeing",
+  "confidence": 0.5,
+  "input_mode": "abstract_only",
+  "adopted": true,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5以上で題名と整合"
+ },
+ {
+  "paper_id": "doi:10.1186/s12942-025-00417-7",
+  "role": "exposure_domain",
+  "pick": "income_poverty",
+  "confidence": 0.59,
+  "input_mode": "fulltext_methods",
+  "adopted": true,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5以上で題名と整合"
+ },
+ {
+  "paper_id": "doi:10.1136/bmjopen-2025-103227",
+  "role": "exposure_domain",
+  "pick": "healthcare_access",
+  "confidence": 0.46,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5未満のため不採用"
+ },
+ {
+  "paper_id": "doi:10.1111/ped.70213",
+  "role": "exposure_domain",
+  "pick": "income_poverty",
+  "confidence": 0.33,
+  "input_mode": "abstract_only",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5未満のため不採用"
+ },
+ {
+  "paper_id": "doi:10.1186/s40249-025-01380-y",
+  "role": "outcome_domain",
+  "pick": "none",
+  "confidence": 0.54,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.1371/journal.pone.0317180",
+  "role": "outcome_domain",
+  "pick": "food_environment",
+  "confidence": 0.38,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5未満のため不採用"
+ },
+ {
+  "paper_id": "doi:10.1103/physreve.86.046107",
+  "role": "outcome_domain",
+  "pick": "none",
+  "confidence": 0.93,
+  "input_mode": "abstract_only",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.1186/s12889-015-1676-7",
+  "role": "exposure_domain",
+  "pick": "none",
+  "confidence": 0.51,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.1016/j.puhe.2006.06.006",
+  "role": "exposure_domain",
+  "pick": "demographics_family",
+  "confidence": 0.75,
+  "input_mode": "abstract_only",
+  "adopted": true,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5以上で題名と整合"
+ },
+ {
+  "paper_id": "doi:10.1017/s1368980020004541",
+  "role": "outcome_domain",
+  "pick": "diet_nutrition_obesity",
+  "confidence": 0.36,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5未満のため不採用"
+ },
+ {
+  "paper_id": "doi:10.2188/jea.je20200120",
+  "role": "exposure_domain",
+  "pick": "none",
+  "confidence": 0.8,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.2188/jea.je20200120",
+  "role": "outcome_domain",
+  "pick": "none",
+  "confidence": 0.79,
+  "input_mode": "fulltext_methods",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "doi:10.1097/hjh.0000000000001169",
+  "role": "exposure_domain",
+  "pick": "income_poverty",
+  "confidence": 0.41,
+  "input_mode": "abstract_only",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "確信度0.5未満のため不採用"
+ },
+ {
+  "paper_id": "pmid:17137193",
+  "role": "exposure_domain",
+  "pick": "none",
+  "confidence": 0.32,
+  "input_mode": "abstract_only",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ },
+ {
+  "paper_id": "pmid:17137193",
+  "role": "outcome_domain",
+  "pick": "none",
+  "confidence": 0.31,
+  "input_mode": "abstract_only",
+  "adopted": false,
+  "checked_by": "Claude（題名・抄録と照合、2026-09-24）",
+  "note": "Jev が none"
+ }
+]

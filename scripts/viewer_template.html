@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>日本の公開データ研究マップ</title>
+<script>try{var t=localStorage.getItem("odmap-theme");if(t!=="light"&&t!=="dark")t="light";document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>{{STYLE}}
+{{WES}}
+#survey-root{padding:18px 22px}
+.relation-matrix.sy-matrix{border-collapse:separate;border-spacing:1px}
+.sy-matrix th,.sy-matrix td{border:0!important;background:transparent}
+.sy-matrix th.sy-y{font-weight:400;font-size:10px;min-width:9px;padding:2px 0;writing-mode:vertical-rl}
+.sy-matrix td.sy-c{min-width:9px;height:22px;padding:0;cursor:pointer}
+.sy-matrix td.sy-n{white-space:nowrap;font-size:12px;padding:0 8px}
+.tag.cls-A{box-shadow:inset 3px 0 0 #7294D4}.tag.cls-B{box-shadow:inset 3px 0 0 #D67236}.tag.cls-AB{box-shadow:inset 3px 0 0 #5B1A18}</style></head>
+<body>
+
+<header class="top-nav">
+  <div class="brand-block">
+    
+    <div class="brand-titles">
+      <h1 class="brand-main">日本の公開データ研究マップ</h1>
+      <span class="brand-sub">公開集計データ（A）と政府統計の個票（B）を使った研究を、テーマ・データ源・年から探せます</span>
+    </div>
+  </div>
+  <div id="stats" class="stats-ribbon"></div>
+  <nav id="tabs" class="nav-switcher">
+    <button data-tab="map" class="on">概念マップ</button>
+    <button data-tab="matrix">関連の行列</button>
+    <button data-tab="survey">データ源と年</button>
+    <button data-tab="list">論文一覧</button>
+    <button data-tab="links">論文のつながり</button>
+    <button data-tab="data">統計・データ</button>
+  </nav>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" title="表示の明るさを切り替え">ダークモード</button>
+</header>
+
+<section class="control-console">
+  <div class="filter-cell search-cell">
+    <label for="q" class="ctrl-label">論文を検索</label>
+    <input id="q" type="search" placeholder="タイトル・著者名・誌名／略称・DOI・領域">
+  </div>
+  <div class="filter-cell"><label for="paper-class" class="ctrl-label">区分</label><select id="paper-class"><option value="">A・B・併用</option><option value="A">A 公開集計</option><option value="B">B 個票</option><option value="AB">A＋B 併用</option></select></div>
+  <div class="filter-cell"><label for="paper-study" class="ctrl-label">データ源</label><select id="paper-study"><option value="">すべてのデータ源</option></select></div>
+  <div class="filter-cell"><label for="paper-wave" class="ctrl-label">データの年</label><select id="paper-wave"><option value="">すべての年</option></select></div>
+  <div class="filter-cell slider-cell">
+    <div class="ctrl-label-wrap">
+      <label for="minp" class="ctrl-label">線の最小論文数</label>
+      <span class="range-val"><span id="minplabel">1</span> 本以上</span>
+    </div>
+    <input id="minp" class="slider" type="range" min="1" max="10" value="1">
+  </div>
+  <div class="filter-cell check-cell">
+    <span class="ctrl-label">確認状態</span>
+    <label class="chk"><input id="verified" type="checkbox"><span>全文で判定した論文だけ</span></label>
+  </div>
+  <div class="filter-cell action-cell">
+    <button id="reset" class="btn-reset">条件をすべて解除</button>
+  </div>
+</section>
+
+<div class="body workspace-grid">
+  <main class="content-stage">
+    <div id="pane-map" class="pane-view">
+      <section class="academic-notice-banner">
+        <div class="notice-col main-rules">
+          <strong class="notice-title">この図の読み方</strong>
+          <ul class="rule-list">
+            <li><strong>円は、そのテーマを扱うすべての論文</strong>です。円を選ぶと、線のない論文も閲覧できます。</li>
+            <li><strong>線は、論文から登録した解析の組合せ</strong>です。曝露とアウトカムの役割を示し、因果関係を意味しません。</li>
+            <li>円の大きさと線の太さは論文数です。線の最小論文数を変えても、テーマの円は残ります。</li>
+          </ul>
+        </div>
+        <div class="notice-col guide-rules">
+          <span class="guide-tag">操作</span>
+          <p class="guide-text">円をドラッグして配置変更 ／ 背景をドラッグして移動・ホイールで拡大縮小 ／ 円や線を選ぶと右に内訳</p>
+        </div>
+      </section>
+      <div id="cvwrap" class="cv-stage-wrap">
+        <canvas id="cv" aria-label="テーマの円から全論文を閲覧できるマップ。キーボードでは関連の行列のテーマ名、または論文一覧から閲覧できます。"></canvas>
+        <div class="zoom map-ctrl-floating">
+          <button id="zin" title="拡大">＋</button>
+          <button id="zout" title="縮小">－</button>
+          <button id="zfit" title="全体を表示">全体を表示</button>
+          <button id="export-svg" title="拡大しても鮮明なSVG形式で保存">SVG保存</button>
+        </div>
+      </div>
+      <section id="unmapped-papers" class="unmapped-papers" aria-label="テーマ未分類の論文"></section>
+    </div>
+
+    <div id="pane-survey" class="pane-view" style="display:none"><div id="survey-root"></div></div>
+    <div id="pane-matrix" class="pane-view" style="display:none"><div id="matrixpane"></div></div>
+
+    <div id="pane-list" class="pane-view" style="display:none">
+      <header class="panelhead list-header">
+        <div class="list-title-group">
+          <strong>論文一覧</strong>
+          <p class="panel-desc">条件に合うすべての論文と、テーマ・データ情報</p>
+        </div>
+        <div class="list-actions"><span id="listcount" class="counter-badge"></span><button id="export-papers" class="btn-reset">一覧をCSV保存</button></div>
+      </header>
+      <div id="listpane" class="list-container"></div>
+    </div>
+
+    <div id="pane-links" class="pane-view" style="display:none">
+      <header class="links-head">
+        <div class="links-title">
+          <strong>論文のつながり</strong>
+          <p class="panel-desc">起点の論文と、参考文献やテーマが重なる論文を近くに並べます</p>
+        </div>
+        <div class="links-seed">
+          <label for="link-q" class="ctrl-label">起点の論文</label>
+          <input id="link-q" type="search" placeholder="タイトル・著者名・DOIで探す" autocomplete="off">
+          <div id="link-suggest" class="link-suggest" hidden></div>
+        </div>
+      </header>
+      <div class="links-body">
+        <div id="lcvwrap" class="cv-stage-wrap links-stage">
+          <canvas id="lcv" aria-label="起点の論文と近い論文の図。同じ内容は右の一覧からも閲覧できます。"></canvas>
+          <div class="links-legend" id="links-legend"></div>
+        </div>
+        <section id="link-list" class="link-list" aria-label="近い論文の一覧"></section>
+      </div>
+    </div>
+
+    <div id="pane-data" class="pane-view" style="display:none">
+      <div id="datapane" class="data-container"></div>
+    </div>
+  </main>
+
+  <aside class="right-inspector">
+    <section class="inspector-section group-filter-box">
+      <header class="section-header">
+        <h4>テーマのグループ</h4>
+        <span class="section-sub">選ぶと絞り込みます</span>
+      </header>
+      <div id="groups" class="group-chips-grid"></div>
+      <p class="hint">円の色はテーマのグループです。円には、そのテーマのすべての論文を数えます。線はスライダーで選んだ本数以上の解析の組合せです。</p>
+    </section>
+    <aside class="right inspector-section detail-box" id="detail"></aside>
+  </aside>
+</div>
+
+<footer id="foot" class="app-footer"></footer>
+
+<script id="odmap-data" type="application/json">{{DATA}}</script>
+<script>window.ODMAP=JSON.parse(document.getElementById('odmap-data').textContent);</script>
+<script>{{APP}}</script>
+</body></html>

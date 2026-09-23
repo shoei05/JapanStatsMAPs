@@ -1,0 +1,3616 @@
+{
+ "unmapped_slots": [
+  {
+   "paper_id": "doi:10.1002/pcn5.70392",
+   "role": "exposure_domain",
+   "pick": "healthcare_access",
+   "confidence": 0.49,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-026-28241-z",
+   "role": "exposure_domain",
+   "pick": "none",
+   "confidence": 0.38,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.37737/ace.25002",
+   "role": "outcome_domain",
+   "pick": "environmental_exposure",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.prnil.2022.06.004",
+   "role": "exposure_domain",
+   "pick": "none",
+   "confidence": 0.52,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.35772/ghm.2021.01037",
+   "role": "exposure_domain",
+   "pick": "cancer",
+   "confidence": 0.81,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/1471-2458-5-53",
+   "role": "outcome_domain",
+   "pick": "none",
+   "confidence": 0.8,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/jech.55.4.263",
+   "role": "outcome_domain",
+   "pick": "qol_wellbeing",
+   "confidence": 0.52,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12942-025-00417-7",
+   "role": "exposure_domain",
+   "pick": "income_poverty",
+   "confidence": 0.53,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2025-103227",
+   "role": "exposure_domain",
+   "pick": "healthcare_access",
+   "confidence": 0.41,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/ped.70213",
+   "role": "exposure_domain",
+   "pick": "income_poverty",
+   "confidence": 0.36,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s40249-025-01380-y",
+   "role": "outcome_domain",
+   "pick": "none",
+   "confidence": 0.54,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0317180",
+   "role": "outcome_domain",
+   "pick": "food_environment",
+   "confidence": 0.39,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1103/physreve.86.046107",
+   "role": "outcome_domain",
+   "pick": "none",
+   "confidence": 0.94,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-015-1676-7",
+   "role": "exposure_domain",
+   "pick": "none",
+   "confidence": 0.55,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.puhe.2006.06.006",
+   "role": "exposure_domain",
+   "pick": "demographics_family",
+   "confidence": 0.76,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/s1368980020004541",
+   "role": "outcome_domain",
+   "pick": "diet_nutrition_obesity",
+   "confidence": 0.38,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20200120",
+   "role": "exposure_domain",
+   "pick": "none",
+   "confidence": 0.82,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20200120",
+   "role": "outcome_domain",
+   "pick": "none",
+   "confidence": 0.74,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1097/hjh.0000000000001169",
+   "role": "exposure_domain",
+   "pick": "income_poverty",
+   "confidence": 0.38,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "pmid:17137193",
+   "role": "exposure_domain",
+   "pick": "none",
+   "confidence": 0.3,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "pmid:17137193",
+   "role": "outcome_domain",
+   "pick": "healthcare_access",
+   "confidence": 0.31,
+   "input_mode": "abstract_only"
+  }
+ ],
+ "review_checks": [
+  {
+   "paper_id": "doi:10.1103/physreve.86.046107",
+   "probs": {
+    "disaster_preparedness": 0.19
+   },
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.66.4_210",
+   "probs": {
+    "methodology_weighting": 0.2
+   },
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s40249-025-01380-y",
+   "probs": {
+    "infectious_disease": 0.47,
+    "housing_environment": 0.57
+   },
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0286169",
+   "probs": {
+    "methodology_weighting": 0.16
+   },
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/foods13070988",
+   "probs": {
+    "diet_nutrition_obesity": 0.17,
+    "methodology_weighting": 0.07
+   },
+   "input_mode": "fulltext_methods"
+  }
+ ],
+ "pair_checks": [
+  {
+   "paper_id": "doi:10.1002/hec.4959",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s00394-018-1762-6",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s00394-020-02213-4",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.nutres.2017.06.005",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.nutres.2017.10.015",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/jns.2024.5",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.76,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1017/s0007114516004451",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/s0007114520003657",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.86,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/s0007114522001970",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/s1368980020001202",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1093/pubmed/fdy095",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/ggi.14875",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.23,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-023-15322-6",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.43,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12937-019-0480-0",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.67,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12937-021-00693-6",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je2007381",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20150048",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.58,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20180156",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "adjustment_only",
+   "confidence": 0.41,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20200266",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3177/jnsv.54.384",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/nu10101551",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu11102361",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu14173659",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu15010225",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu16111764",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.87,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu17050895",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.6133/apjcn.202007_29(2).0021",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "epmc:PMC8181502",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.71,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1002/jgf2.724",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.45,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.archger.2023.104993",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2022.101114",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2022.101196",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.82,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1093/ije/dyab216",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/irv.70196",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2023-071785",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjph-2024-002357",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1177/10105395251368415",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0275935",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0299700",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.81,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0345579",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20200492",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20240158",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2023-0165",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3201/eid2703.203925",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.84,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.7717/peerj.15784",
+   "exposure": "covid19_infection",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1017/s000711452000269x",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/s1368980019000120",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-019-7047-z",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-021-10772-2",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12937-017-0284-z",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12937-026-01326-6",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0224042",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.81,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/healthcare9111525",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu10121865",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu12123624",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.79,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu14173606",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu17142278",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.4103/apjon.apjon-2116",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.6133/apjcn.072018.04",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1002/(sici)1097-0215(1997)10+<2::aid-ijc2>3.0.co;2-c",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.35772/ghmo.2021.01015",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.35772/ghmo.2021.01017",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.35772/ghmo.2021.01018",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.35772/ghmo.2021.01019",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.7759/cureus.92189",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1038/s41598-025-88513-3",
+   "exposure": "disaster_preparedness",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2015-009190",
+   "exposure": "disaster_preparedness",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2018-023435",
+   "exposure": "disaster_preparedness",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2021-054716",
+   "exposure": "disaster_preparedness",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph191912351",
+   "exposure": "disaster_preparedness",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.7189/jogh.07.010501",
+   "exposure": "disaster_preparedness",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/j.1365-2923.2009.03582.x",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.73,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2016-011165",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.41,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12913-018-3441-y",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.6,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40545-022-00499-9",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0245385",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.67,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.7759/cureus.15711",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.socscimed.2008.06.002",
+   "exposure": "income_poverty",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.socscimed.2020.112945",
+   "exposure": "income_poverty",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/bmj.324.7328.16",
+   "exposure": "income_poverty",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12939-014-0128-9",
+   "exposure": "income_poverty",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12963-016-0095-z",
+   "exposure": "income_poverty",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.17.93",
+   "exposure": "income_poverty",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1215/00703370-12178737",
+   "exposure": "work_employment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1539/joh.13-0279-oa",
+   "exposure": "work_employment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20190121",
+   "exposure": "work_employment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.73,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20200032",
+   "exposure": "work_employment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20210030",
+   "exposure": "work_employment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2486/indhealth.ms1260",
+   "exposure": "work_employment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12955-016-0521-8",
+   "exposure": "caregiving",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12955-018-0890-2",
+   "exposure": "caregiving",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s13561-017-0151-9",
+   "exposure": "caregiving",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1265/ehpm.25-00161",
+   "exposure": "caregiving",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1539/joh.2017-0295-oa",
+   "exposure": "caregiving",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/ajhb.23750",
+   "exposure": "covid19_infection",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1002/psp.2634",
+   "exposure": "covid19_infection",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.8,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2024-087657",
+   "exposure": "covid19_infection",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-025-24276-w",
+   "exposure": "covid19_infection",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0341340",
+   "exposure": "covid19_infection",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jash.2011.07.004",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1017/jns.2025.10018",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1177/02601060261485358",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s41043-026-01264-3",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu14183747",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s004840050127",
+   "exposure": "environmental_exposure",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1080/15563650.2022.2064868",
+   "exposure": "environmental_exposure",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.73,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/jech.2005.038315",
+   "exposure": "environmental_exposure",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.12.254",
+   "exposure": "environmental_exposure",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.13.314",
+   "exposure": "environmental_exposure",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1038/s41430-020-00794-1",
+   "exposure": "income_poverty",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1093/eurpub/cky263",
+   "exposure": "income_poverty",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20140108",
+   "exposure": "income_poverty",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph20146337",
+   "exposure": "income_poverty",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.6133/apjcn.102015.15",
+   "exposure": "income_poverty",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1111/j.1600-0765.2006.00915.x",
+   "exposure": "tobacco",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/1471-2458-7-313",
+   "exposure": "tobacco",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.18332/tid/143177",
+   "exposure": "tobacco",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.17.125",
+   "exposure": "tobacco",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.4082/kjfm.2016.37.2.117",
+   "exposure": "tobacco",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/cam4.6661",
+   "exposure": "covid19_infection",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1093/jrr/rraf088",
+   "exposure": "covid19_infection",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.89,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.25-114",
+   "exposure": "covid19_infection",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20230235",
+   "exposure": "covid19_infection",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/lio2.70489",
+   "exposure": "covid19_infection",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1038/s41598-026-61094-5",
+   "exposure": "covid19_infection",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/jcm14051518",
+   "exposure": "covid19_infection",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "epmc:PMC12720611",
+   "exposure": "covid19_infection",
+   "outcome": "surgery_procedures",
+   "role": "unknown",
+   "confidence": 0.62,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1111/phn.13451",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "mortality_cause_of_death",
+   "role": "adjustment_only",
+   "confidence": 0.81,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2018-022737",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12913-023-09273-2",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.39,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12942-018-0133-0",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.healthpol.2010.07.005",
+   "exposure": "income_poverty",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1038/s41598-026-57318-3",
+   "exposure": "income_poverty",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20110116",
+   "exposure": "income_poverty",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.4178/epih.e2022059",
+   "exposure": "income_poverty",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s13104-023-06539-0",
+   "exposure": "work_employment",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.35371/aoem.2024.36.e6",
+   "exposure": "work_employment",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3961/jpmph.22.178",
+   "exposure": "work_employment",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.4178/epih.e2020069",
+   "exposure": "work_employment",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jtocrr.2025.100893",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20090037",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.78,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/cancers13194784",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2019-036281",
+   "exposure": "cardiometabolic",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1161/strokeaha.111.625871",
+   "exposure": "cardiometabolic",
+   "outcome": "cardiometabolic",
+   "role": "unknown",
+   "confidence": 0.85,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12913-017-2784-0",
+   "exposure": "cardiometabolic",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.41,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jad.2021.02.065",
+   "exposure": "demographics_family",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.socscimed.2003.10.003",
+   "exposure": "demographics_family",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3389/fpubh.2024.1292371",
+   "exposure": "demographics_family",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/foods10040691",
+   "exposure": "environmental_exposure",
+   "outcome": "environmental_exposure",
+   "role": "unknown",
+   "confidence": 0.31,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/foods11081151",
+   "exposure": "environmental_exposure",
+   "outcome": "environmental_exposure",
+   "role": "unknown",
+   "confidence": 0.4,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/foods12061305",
+   "exposure": "environmental_exposure",
+   "outcome": "environmental_exposure",
+   "role": "unknown",
+   "confidence": 0.34,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.pmedr.2025.103134",
+   "exposure": "environmental_exposure",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1265/ehpm.25-00116",
+   "exposure": "environmental_exposure",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1265/ehpm.25-00286",
+   "exposure": "environmental_exposure",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s00420-024-02063-1",
+   "exposure": "environmental_exposure",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2020.100590",
+   "exposure": "environmental_exposure",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3934/publichealth.2020028",
+   "exposure": "environmental_exposure",
+   "outcome": "maternal_child",
+   "role": "unknown",
+   "confidence": 0.41,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.67.4_261",
+   "exposure": "food_environment",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/nu13114072",
+   "exposure": "food_environment",
+   "outcome": "diet_nutrition_obesity",
+   "role": "unknown",
+   "confidence": 0.31,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu14142884",
+   "exposure": "food_environment",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.38,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1080/13696998.2026.2651056",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2196/56091",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 0.74,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2471/blt.11.095380",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s12199-007-0021-x",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.23-064",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 0.67,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12942-016-0035-y",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12978-025-02246-0",
+   "exposure": "maternal_child",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40834-025-00357-4",
+   "exposure": "maternal_child",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2025-0544",
+   "exposure": "maternal_child",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.58,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.genhosppsych.2012.12.013",
+   "exposure": "mental_distress",
+   "outcome": "mental_distress",
+   "role": "adjustment_only",
+   "confidence": 0.54,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/clinpract15120226",
+   "exposure": "mental_distress",
+   "outcome": "mental_distress",
+   "role": "adjustment_only",
+   "confidence": 0.46,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/healthcare8030274",
+   "exposure": "mental_distress",
+   "outcome": "mental_distress",
+   "role": "unknown",
+   "confidence": 0.64,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2025.101852",
+   "exposure": "policy_campaign",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1192/bjo.2023.616",
+   "exposure": "policy_campaign",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.77,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph14010104",
+   "exposure": "policy_campaign",
+   "outcome": "suicide_selfharm",
+   "role": "background_only",
+   "confidence": 0.31,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/cnr2.70688",
+   "exposure": "prescribing_drug_use",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 0.84,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40360-024-00777-z",
+   "exposure": "prescribing_drug_use",
+   "outcome": "prescribing_drug_use",
+   "role": "adjustment_only",
+   "confidence": 0.05,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40780-023-00317-7",
+   "exposure": "prescribing_drug_use",
+   "outcome": "prescribing_drug_use",
+   "role": "background_only",
+   "confidence": 0.25,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.socscimed.2016.12.043",
+   "exposure": "social_capital_support",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0189112",
+   "exposure": "social_capital_support",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20190042",
+   "exposure": "social_capital_support",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s11701-021-01365-7",
+   "exposure": "surgery_procedures",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.7,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s11701-023-01562-6",
+   "exposure": "surgery_procedures",
+   "outcome": "surgery_procedures",
+   "role": "unknown",
+   "confidence": 0.94,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.7759/cureus.80100",
+   "exposure": "surgery_procedures",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1155/2014/303917",
+   "exposure": "tobacco",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20140183",
+   "exposure": "tobacco",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph16152804",
+   "exposure": "tobacco",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.83,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0131203",
+   "exposure": "work_employment",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph21070842",
+   "exposure": "work_employment",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/medicines9070040",
+   "exposure": "work_employment",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2016.10.004",
+   "exposure": "work_employment",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/healthcare11202806",
+   "exposure": "work_employment",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "pmid:12287303",
+   "exposure": "work_employment",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.14309/ctg.0000000000000530",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31557/apjcp.2019.20.3.855",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0219149",
+   "exposure": "cardiometabolic",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.20407/fmj.2021-025",
+   "exposure": "cardiometabolic",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s11150-022-09609-7",
+   "exposure": "covid19_infection",
+   "outcome": "demographics_family",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjgh-2021-007866",
+   "exposure": "covid19_infection",
+   "outcome": "demographics_family",
+   "role": "analyzed",
+   "confidence": 0.76,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s11606-024-09003-2",
+   "exposure": "covid19_infection",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 0.85,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1111/apa.17533",
+   "exposure": "covid19_infection",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40621-020-00294-7",
+   "exposure": "covid19_infection",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0278941",
+   "exposure": "covid19_infection",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.psychres.2021.114173",
+   "exposure": "covid19_infection",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12939-024-02234-z",
+   "exposure": "covid19_infection",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1080/01494929.2015.1076554",
+   "exposure": "demographics_family",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1089/whr.2023.0126",
+   "exposure": "demographics_family",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s00484-026-03320-3",
+   "exposure": "demographics_family",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jos.2024.06.008",
+   "exposure": "demographics_family",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1177/13872877251319535",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "dementia_neurological",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/nu16081221",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "dementia_neurological",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu18060933",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.36469/001c.123991",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph19084692",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "epmc:PMC11693229",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "mental_distress",
+   "role": "unknown",
+   "confidence": 0.58,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2016.08.001",
+   "exposure": "disability_functioning",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2021.100951",
+   "exposure": "disability_functioning",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-025-23199-w",
+   "exposure": "disaster_preparedness",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0272285",
+   "exposure": "disaster_preparedness",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.lanwpc.2024.101069",
+   "exposure": "economy_industry",
+   "outcome": "suicide_selfharm",
+   "role": "adjustment_only",
+   "confidence": 0.23,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/sltb.12559",
+   "exposure": "economy_industry",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1177/14034948221092285",
+   "exposure": "education",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-018-5181-7",
+   "exposure": "education",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/jech-2016-207583",
+   "exposure": "education",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.61,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0135349",
+   "exposure": "education",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.54,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.je.2016.05.007",
+   "exposure": "education",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20180195",
+   "exposure": "education",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.envres.2026.125600",
+   "exposure": "environmental_exposure",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1027/0227-5910/a000509",
+   "exposure": "environmental_exposure",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.23-086",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0180819",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.clineuro.2024.108547",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.7759/cureus.48912",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0278517",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2185/jrm.2021-054",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jad.2018.07.008",
+   "exposure": "mental_distress",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jad.2020.10.037",
+   "exposure": "mental_distress",
+   "outcome": "tobacco",
+   "role": "adjustment_only",
+   "confidence": 0.44,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s00127-021-02188-5",
+   "exposure": "mortality_cause_of_death",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2023-0058",
+   "exposure": "mortality_cause_of_death",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.85,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s10266-018-0386-x",
+   "exposure": "oral_health",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1177/2380084416667931",
+   "exposure": "oral_health",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph20075243",
+   "exposure": "oral_health",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu16132102",
+   "exposure": "oral_health",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.dialog.2026.100320",
+   "exposure": "physical_activity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-019-7570-y",
+   "exposure": "physical_activity",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/ggi.13708",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "mobility_outing",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "epmc:PMC6239612",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "mobility_outing",
+   "role": "analyzed",
+   "confidence": 0.82,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2018-023172",
+   "exposure": "policy_campaign",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.89,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/jech.55.10.748",
+   "exposure": "policy_campaign",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.86,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1192/bjp.bp.113.135392",
+   "exposure": "suicide_selfharm",
+   "outcome": "suicide_selfharm",
+   "role": "unknown",
+   "confidence": 0.75,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0074902",
+   "exposure": "suicide_selfharm",
+   "outcome": "suicide_selfharm",
+   "role": "unknown",
+   "confidence": 0.34,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1038/bcj.2013.57",
+   "exposure": "surgery_procedures",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1515/med-2018-0058",
+   "exposure": "surgery_procedures",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s41021-024-00315-7",
+   "exposure": "work_employment",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.43,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31557/apjcp.2022.23.2.475",
+   "exposure": "work_employment",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1265/jjh.50.652",
+   "exposure": "work_employment",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph18158040",
+   "exposure": "work_employment",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12199-021-01031-2",
+   "exposure": "work_employment",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph16204016",
+   "exposure": "work_employment",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s12529-019-09807-1",
+   "exposure": "work_employment",
+   "outcome": "sleep",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2486/indhealth.2018-0031",
+   "exposure": "work_employment",
+   "outcome": "sleep",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "epmc:PMC6185083",
+   "exposure": "work_employment",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "epmc:PMC6229008",
+   "exposure": "work_employment",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3389/fpubh.2019.00265",
+   "exposure": "alcohol",
+   "outcome": "ace_violence",
+   "role": "analyzed",
+   "confidence": 0.86,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.35772/ghmo.2021.01014",
+   "exposure": "alcohol",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/clockssleep4040046",
+   "exposure": "alcohol",
+   "outcome": "sleep",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "pmid:25297977",
+   "exposure": "beliefs_attitudes",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1002/pcn5.70100",
+   "exposure": "beliefs_attitudes",
+   "outcome": "diet_nutrition_obesity",
+   "role": "background_only",
+   "confidence": 0.97,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.1016/j.pmedr.2024.102701",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s10157-023-02412-3",
+   "exposure": "cancer_screening_checkup",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.89,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph181910479",
+   "exposure": "cancer",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1038/s41598-020-57503-y",
+   "exposure": "cancer",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0227792",
+   "exposure": "cancer",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jjcc.2022.03.002",
+   "exposure": "cardiometabolic",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ijid.2021.05.071",
+   "exposure": "cardiometabolic",
+   "outcome": "covid19_infection",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2025-0122",
+   "exposure": "cardiometabolic",
+   "outcome": "physical_activity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20240197",
+   "exposure": "caregiving",
+   "outcome": "alcohol",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/ggi.13131",
+   "exposure": "caregiving",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1111/ggi.13061",
+   "exposure": "caregiving",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1111/cdoe.12926",
+   "exposure": "caregiving",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "epmc:PMC6241545",
+   "exposure": "caregiving",
+   "outcome": "long_term_care_services",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20200320",
+   "exposure": "caregiving",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s12062-021-09346-2",
+   "exposure": "caregiving",
+   "outcome": "time_use_leisure",
+   "role": "analyzed",
+   "confidence": 0.66,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1177/0164027520941198",
+   "exposure": "caregiving",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/iju.70288",
+   "exposure": "child_growth_development",
+   "outcome": "physical_disease_symptoms",
+   "role": "adjustment_only",
+   "confidence": 0.37,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1093/pnasnexus/pgad209",
+   "exposure": "climate_carbon",
+   "outcome": "climate_carbon",
+   "role": "adjustment_only",
+   "confidence": 0.1,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2024-0234",
+   "exposure": "covid19_infection",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 0.74,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.oneear.2021.03.003",
+   "exposure": "covid19_infection",
+   "outcome": "climate_carbon",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s42973-021-00091-x",
+   "exposure": "covid19_infection",
+   "outcome": "covid19_infection",
+   "role": "analyzed",
+   "confidence": 0.24,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jiac.2021.06.021",
+   "exposure": "covid19_infection",
+   "outcome": "infectious_disease",
+   "role": "analyzed",
+   "confidence": 0.55,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.healthpol.2021.04.013",
+   "exposure": "covid19_infection",
+   "outcome": "long_term_care_services",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-024-18905-z",
+   "exposure": "covid19_infection",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jad.2025.120398",
+   "exposure": "covid19_infection",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.24,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.17245/jdapm.2025.25.6.433",
+   "exposure": "covid19_infection",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 0.55,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ijporl.2025.112444",
+   "exposure": "covid19_infection",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.79,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.resinv.2025.08.011",
+   "exposure": "covid19_infection",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 0.8,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1265/ehpm.24-00197",
+   "exposure": "covid19_infection",
+   "outcome": "sleep",
+   "role": "background_only",
+   "confidence": 0.34,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0350820",
+   "exposure": "covid19_infection",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1177/11786329251362381",
+   "exposure": "demographics_family",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 0.77,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "pmid:25098646",
+   "exposure": "demographics_family",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2025-0493",
+   "exposure": "demographics_family",
+   "outcome": "covid19_infection",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12903-022-02311-1",
+   "exposure": "demographics_family",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/jgf2.710",
+   "exposure": "demographics_family",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.62,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1093/sf/sou077",
+   "exposure": "demographics_family",
+   "outcome": "income_poverty",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "epmc:PMC6845296",
+   "exposure": "demographics_family",
+   "outcome": "long_term_care_services",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0354263",
+   "exposure": "demographics_family",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/jog.15806",
+   "exposure": "demographics_family",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1093/eurpub/ckz119",
+   "exposure": "demographics_family",
+   "outcome": "sleep",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1038/s41598-019-53203-4",
+   "exposure": "demographics_family",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.86,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/jomf.12126",
+   "exposure": "demographics_family",
+   "outcome": "time_use_leisure",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-026-26817-3",
+   "exposure": "demographics_family",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.85,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph18052335",
+   "exposure": "demographics_family",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu17223566",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "child_growth_development",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.31662/jmaj.2021-0038",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu17233749",
+   "exposure": "diet_nutrition_obesity",
+   "outcome": "sleep",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph21020219",
+   "exposure": "disability_functioning",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40008-022-00276-6",
+   "exposure": "disaster_preparedness",
+   "outcome": "economy_industry",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0178020",
+   "exposure": "disaster_preparedness",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20150055",
+   "exposure": "disaster_preparedness",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.5582/bst.2012.v6.4.176",
+   "exposure": "economy_industry",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1103/physreve.83.016103",
+   "exposure": "economy_industry",
+   "outcome": "economy_industry",
+   "role": "analyzed",
+   "confidence": 0.76,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jhealeco.2017.09.004",
+   "exposure": "economy_industry",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/jech.2007.070334",
+   "exposure": "economy_industry",
+   "outcome": "qol_wellbeing",
+   "role": "background_only",
+   "confidence": 0.27,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20250021",
+   "exposure": "education",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-019-7182-6",
+   "exposure": "education",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/nu14122517",
+   "exposure": "education",
+   "outcome": "diet_nutrition_obesity",
+   "role": "adjustment_only",
+   "confidence": 0.36,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12884-024-06382-6",
+   "exposure": "education",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0040664",
+   "exposure": "education",
+   "outcome": "health_literacy_information",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/children10020342",
+   "exposure": "education",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-021-12368-2",
+   "exposure": "education",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0286530",
+   "exposure": "education",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1289/ehp.94102s841",
+   "exposure": "environmental_exposure",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph19116646",
+   "exposure": "environmental_exposure",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.69,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/ajhb.70306",
+   "exposure": "environmental_exposure",
+   "outcome": "child_growth_development",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s10661-023-11372-w",
+   "exposure": "environmental_exposure",
+   "outcome": "covid19_infection",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12940-020-00630-w",
+   "exposure": "environmental_exposure",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0169220",
+   "exposure": "environmental_exposure",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/bco2.70270",
+   "exposure": "environmental_exposure",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ssmph.2021.100970",
+   "exposure": "family_relationship",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.89,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.ypmed.2022.107293",
+   "exposure": "family_relationship",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.69,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0209285",
+   "exposure": "fertility_births_population",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/j.1442-200x.2008.02694.x",
+   "exposure": "fertility_births_population",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s40748-023-00149-1",
+   "exposure": "fertility_births_population",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 0.7,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/jog.15543",
+   "exposure": "healthcare_access",
+   "outcome": "maternal_child",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1002/jgf2.140",
+   "exposure": "healthcare_access",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12962-023-00448-6",
+   "exposure": "healthcare_access",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/hel.70162",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "cancer",
+   "role": "background_only",
+   "confidence": 0.4,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s12199-015-0478-y",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "economy_industry",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1002/pcn5.70131",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "healthcare_access",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2147/rmhp.s93285",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "background_only",
+   "confidence": 0.35,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.21037/atm-20-423",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "infectious_disease",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12877-020-01588-7",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "long_term_care_services",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/cas.14586",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.84,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/bs13040315",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph192214684",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.socscimed.2015.12.038",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jcpo.2026.100796",
+   "exposure": "healthcare_cost_insurance",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.37,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "epmc:PMC10914303",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12883-026-04755-2",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "dementia_neurological",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0148288",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1265/ehpm.22-00145",
+   "exposure": "healthcare_workforce_facilities",
+   "outcome": "vaccination",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0345197",
+   "exposure": "housing_environment",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/jech.2003.018804",
+   "exposure": "housing_environment",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.63.9_549",
+   "exposure": "housing_environment",
+   "outcome": "physical_activity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0224821",
+   "exposure": "housing_environment",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph18189877",
+   "exposure": "housing_environment",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.91,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20120021",
+   "exposure": "income_poverty",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.89,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.4178/epih.e2025049",
+   "exposure": "income_poverty",
+   "outcome": "covid19_infection",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.archger.2017.11.001",
+   "exposure": "income_poverty",
+   "outcome": "disability_functioning",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s40748-022-00143-z",
+   "exposure": "income_poverty",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-022-13089-w",
+   "exposure": "income_poverty",
+   "outcome": "infectious_disease",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s12199-011-0212-3",
+   "exposure": "income_poverty",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s12199-011-0254-6",
+   "exposure": "income_poverty",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.88,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s40545-023-00532-5",
+   "exposure": "income_poverty",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.7727/wimj.2012.298",
+   "exposure": "income_poverty",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/bf02932255",
+   "exposure": "income_poverty",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s12199-009-0122-9",
+   "exposure": "infectious_disease",
+   "outcome": "infectious_disease",
+   "role": "unknown",
+   "confidence": 0.32,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "epmc:PMC8753483",
+   "exposure": "infectious_disease",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.84,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/ip.9.1.29",
+   "exposure": "injury_accident",
+   "outcome": "injury_accident",
+   "role": "analyzed",
+   "confidence": 0.82,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.7717/peerj.14904",
+   "exposure": "loneliness_isolation",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2196/76782",
+   "exposure": "long_term_care_services",
+   "outcome": "long_term_care_services",
+   "role": "adjustment_only",
+   "confidence": 0.33,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.18926/amo/65970",
+   "exposure": "maternal_child",
+   "outcome": "child_growth_development",
+   "role": "adjustment_only",
+   "confidence": 0.28,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1111/j.1741-3737.2008.00531.x",
+   "exposure": "maternal_child",
+   "outcome": "demographics_family",
+   "role": "analyzed",
+   "confidence": 0.73,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20100189",
+   "exposure": "maternal_child",
+   "outcome": "fertility_births_population",
+   "role": "analyzed",
+   "confidence": 0.78,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1017/thg.2020.8",
+   "exposure": "maternal_child",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.92,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2014-006982",
+   "exposure": "maternal_child",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1089/bfm.2024.0264",
+   "exposure": "maternal_child",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "pmid:24963363",
+   "exposure": "maternal_child",
+   "outcome": "sexual_reproductive",
+   "role": "analyzed",
+   "confidence": 0.86,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.11236/jph.24-088",
+   "exposure": "maternal_child",
+   "outcome": "sleep",
+   "role": "analyzed",
+   "confidence": 0.27,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-026-28449-z",
+   "exposure": "mental_distress",
+   "outcome": "alcohol",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1002/cncr.31086",
+   "exposure": "mental_distress",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2188/jea.je20220225",
+   "exposure": "mental_distress",
+   "outcome": "oral_health",
+   "role": "unknown",
+   "confidence": 0.08,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "pmid:32458813",
+   "exposure": "mental_distress",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0285107",
+   "exposure": "mobility_outing",
+   "outcome": "infectious_disease",
+   "role": "analyzed",
+   "confidence": 0.76,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/cdoe.13024",
+   "exposure": "oral_health",
+   "outcome": "oral_health",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1123/jpah.9.8.1117",
+   "exposure": "physical_activity",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjhci-2024-101051",
+   "exposure": "physical_activity",
+   "outcome": "disability_functioning",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1093/pubmed/fdag029",
+   "exposure": "physical_activity",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 0.98,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s10198-013-0518-8",
+   "exposure": "physical_activity",
+   "outcome": "physical_activity",
+   "role": "analyzed",
+   "confidence": 0.94,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.1016/j.canep.2020.101798",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "cancer_screening_checkup",
+   "role": "unknown",
+   "confidence": 0.45,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12891-021-04539-4",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0116648",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "physical_disease_symptoms",
+   "role": "unknown",
+   "confidence": 0.38,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1136/bmjopen-2022-063729",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "qol_wellbeing",
+   "role": "analyzed",
+   "confidence": 0.9,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph182010760",
+   "exposure": "physical_disease_symptoms",
+   "outcome": "work_employment",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3389/fnut.2023.1227303",
+   "exposure": "policy_campaign",
+   "outcome": "healthcare_cost_insurance",
+   "role": "analyzed",
+   "confidence": 0.93,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1089/whr.2021.0038",
+   "exposure": "policy_campaign",
+   "outcome": "healthcare_workforce_facilities",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12966-022-01332-x",
+   "exposure": "policy_campaign",
+   "outcome": "physical_activity",
+   "role": "unknown",
+   "confidence": 0.54,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s40780-025-00531-5",
+   "exposure": "policy_campaign",
+   "outcome": "prescribing_drug_use",
+   "role": "analyzed",
+   "confidence": 0.96,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.3390/ijerph21101366",
+   "exposure": "political_attitudes",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.68,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "epmc:PMC11815046",
+   "exposure": "prescribing_drug_use",
+   "outcome": "dementia_neurological",
+   "role": "unknown",
+   "confidence": 0.84,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1634/theoncologist.2012-0197",
+   "exposure": "prescribing_drug_use",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.71,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1093/sleep/31.5.645",
+   "exposure": "sleep",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.3390/healthcare10112298",
+   "exposure": "sleep",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1111/jdi.12820",
+   "exposure": "social_capital_support",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.9,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1007/s12199-012-0321-7",
+   "exposure": "social_capital_support",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.97,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1253/circrep.cr-25-0278",
+   "exposure": "surgery_procedures",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "fulltext_body"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0139777",
+   "exposure": "time_use_leisure",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.35772/ghmo.2021.01013",
+   "exposure": "tobacco",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1186/s12954-021-00469-5",
+   "exposure": "tobacco",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s13223-025-00952-9",
+   "exposure": "tobacco",
+   "outcome": "physical_disease_symptoms",
+   "role": "analyzed",
+   "confidence": 0.95,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.7759/cureus.57860",
+   "exposure": "vaccination",
+   "outcome": "cancer",
+   "role": "analyzed",
+   "confidence": 0.79,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jinf.2020.08.013",
+   "exposure": "vaccination",
+   "outcome": "covid19_infection",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1093/eurpub/ckr172",
+   "exposure": "vaccination",
+   "outcome": "mortality_cause_of_death",
+   "role": "analyzed",
+   "confidence": 0.87,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s10147-019-01594-9",
+   "exposure": "work_employment",
+   "outcome": "cancer_screening_checkup",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.2486/indhealth.2017-0079",
+   "exposure": "work_employment",
+   "outcome": "cardiometabolic",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.2486/indhealth.2026-0057",
+   "exposure": "work_employment",
+   "outcome": "diet_nutrition_obesity",
+   "role": "analyzed",
+   "confidence": 1.0,
+   "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0320914",
+   "exposure": "work_employment",
+   "outcome": "healthcare_access",
+   "role": "unknown",
+   "confidence": 0.27,
+   "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.puhe.2006.06.006",
+   "exposure": "demographics_family",
+   "outcome": "tobacco",
+   "role": "analyzed",
+   "confidence": 0.66,
+   "input_mode": "abstract_only"
+  }
+ ]
+}

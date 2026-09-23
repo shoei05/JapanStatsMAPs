@@ -1,0 +1,44 @@
+{
+ "doi:10.1103/physreve.86.046107": {
+  "map_domains": [
+   "disaster_preparedness"
+  ],
+  "evidence": "1985〜1998年の日本の地震カタログから地点間の活動パターンの相関をネットワーク化して解析（抄録）",
+  "reviewer": "Claude（抄録確認、2026-09-24）",
+  "reason": "v3判定でもテーマ未分類。Jevクレジット切れのため機械判定の代わりに抄録で確認"
+ },
+ "doi:10.11236/jph.66.4_210": {
+  "map_domains": [
+   "methodology_weighting"
+  ],
+  "evidence": "国民健康・栄養調査の非参加者を同定するため、国民生活基礎調査とのレコードリンケージの鍵変数を検討（抄録）",
+  "reviewer": "Claude（抄録確認、2026-09-24）",
+  "reason": "v3判定でもテーマ未分類。Jevクレジット切れのため機械判定の代わりに抄録で確認"
+ },
+ "doi:10.1186/s40249-025-01380-y": {
+  "map_domains": [
+   "infectious_disease",
+   "housing_environment"
+  ],
+  "evidence": "Global One Health Index を福岡県の市町村に適用し、人・動物・環境の健康指標で評価（抄録）",
+  "reviewer": "Claude（抄録確認、2026-09-24）",
+  "reason": "v3判定でもテーマ未分類。Jevクレジット切れのため機械判定の代わりに抄録で確認"
+ },
+ "doi:10.1371/journal.pone.0286169": {
+  "map_domains": [
+   "methodology_weighting"
+  ],
+  "evidence": "国民健康・栄養調査の推定参加割合の推移を地域・性・年齢別に推計（抄録）",
+  "reviewer": "Claude（抄録確認、2026-09-24）",
+  "reason": "v3判定でもテーマ未分類。Jevクレジット切れのため機械判定の代わりに抄録で確認"
+ },
+ "doi:10.3390/foods13070988": {
+  "map_domains": [
+   "diet_nutrition_obesity",
+   "methodology_weighting"
+  ],
+  "evidence": "日本食品標準成分表から複合食品を原材料に分解する逆歩留まり係数データベースを構築（抄録）",
+  "reviewer": "Claude（抄録確認、2026-09-24）",
+  "reason": "v3判定でもテーマ未分類。Jevクレジット切れのため機械判定の代わりに抄録で確認"
+ }
+}

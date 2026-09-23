@@ -1,0 +1,7 @@
+data/records.jsonl
+data/fulltext/
+data/epmc_cache/
+data/jev_responses_v*/
+data/_links_root/
+__pycache__/
+.DS_Store

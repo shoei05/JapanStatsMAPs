@@ -1,0 +1,2354 @@
+{
+ "candidates": {
+  "environmental_exposure": [
+   "気象・環境曝露",
+   "気温・湿度・日照・季節などの気象条件、大気汚染（PM2.5など）、放射性物質、標高、化学物質など、環境からの曝露。居住環境や地域の社会経済的特徴とは区別する"
+  ],
+  "climate_carbon": [
+   "環境負荷・脱炭素",
+   "温室効果ガス排出、カーボンフットプリント、エネルギー消費、食品ロス、資源循環など、人の活動が環境に与える負荷"
+  ],
+  "disability_functioning": [
+   "障害・生活機能",
+   "障害、活動制限、日常生活動作（ADL・IADL）、Washington Group の設問などの生活機能。要介護認定や介護保険サービスの利用とは区別する"
+  ],
+  "time_use_leisure": [
+   "生活時間・余暇",
+   "生活時間の配分、余暇活動、趣味、ボランティアなどの社会参加。身体活動の量やソーシャルキャピタルとは区別する"
+  ],
+  "economy_industry": [
+   "経済・産業",
+   "農業生産、観光、産業連関、消費支出、技術普及など、健康以外の経済・産業指標そのもの。個人の所得・貧困とは区別する"
+  ]
+ },
+ "summary": {
+  "environmental_exposure": {
+   "label": "気象・環境曝露",
+   "roles": {
+    "absent": 44,
+    "secondary": 4,
+    "main": 24,
+    "background_only": 5
+   },
+   "fit": {
+    "existing_domain": 5,
+    "new_domain": 23
+   },
+   "nearest": {
+    "none": 5,
+    "mortality_cause_of_death": 5,
+    "housing_environment": 3
+   }
+  },
+  "climate_carbon": {
+   "label": "環境負荷・脱炭素",
+   "roles": {
+    "absent": 65,
+    "main": 12
+   },
+   "fit": {
+    "new_domain": 11,
+    "existing_domain": 1
+   },
+   "nearest": {
+    "none": 12
+   }
+  },
+  "disability_functioning": {
+   "label": "障害・生活機能",
+   "roles": {
+    "main": 7,
+    "absent": 69,
+    "background_only": 1
+   },
+   "fit": {
+    "new_domain": 6,
+    "existing_domain": 1
+   },
+   "nearest": {
+    "none": 3,
+    "cancer_screening_checkup": 2,
+    "long_term_care_services": 1
+   }
+  },
+  "time_use_leisure": {
+   "label": "生活時間・余暇",
+   "roles": {
+    "absent": 72,
+    "main": 4,
+    "secondary": 1
+   },
+   "fit": {
+    "new_domain": 4,
+    "existing_domain": 1
+   },
+   "nearest": {
+    "social_capital_support": 2,
+    "sleep": 1,
+    "mobility_outing": 1
+   }
+  },
+  "economy_industry": {
+   "label": "経済・産業",
+   "roles": {
+    "absent": 50,
+    "main": 17,
+    "secondary": 9,
+    "background_only": 1
+   },
+   "fit": {
+    "new_domain": 23,
+    "existing_domain": 3
+   },
+   "nearest": {
+    "none": 13,
+    "work_employment": 2,
+    "income_poverty": 2
+   }
+  }
+ },
+ "stage1": {
+  "40283713": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.74
+   }
+  },
+  "34054339": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.9
+   }
+  },
+  "25885770": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.95
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.79
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.85
+   }
+  },
+  "38711964": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.19
+   }
+  },
+  "35291201": {
+   "environmental_exposure": {
+    "role": "secondary",
+    "confidence": 0.54
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "39730806": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.98
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "40044843": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.97
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 1.0
+   }
+  },
+  "35682230": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.96
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.7
+   }
+  },
+  "30668608": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "33455490": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.98
+   }
+  },
+  "28005709": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.83
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.34
+   }
+  },
+  "37249710": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.94
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.99
+   }
+  },
+  "21405740": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 1.0
+   }
+  },
+  "28142015": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "34886544": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.8
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 0.44
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 1.0
+   }
+  },
+  "40111265": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.65
+   }
+  },
+  "14674659": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "36287360": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "main",
+    "confidence": 0.95
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.46
+   }
+  },
+  "34154556": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 0.35
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.95
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.88
+   }
+  },
+  "23004835": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.95
+   }
+  },
+  "30103839": {
+   "environmental_exposure": {
+    "role": "background_only",
+    "confidence": 0.32
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.75
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.5
+   }
+  },
+  "974437": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "31215073": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 1.0
+   }
+  },
+  "8333487": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.41
+   }
+  },
+  "42293409": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.83
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.38
+   }
+  },
+  "40981280": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.88
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.58
+   }
+  },
+  "21797444": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.32
+   }
+  },
+  "42260155": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.79
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.98
+   }
+  },
+  "22761918": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.63
+   }
+  },
+  "23214652": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "41219958": {
+   "environmental_exposure": {
+    "role": "background_only",
+    "confidence": 0.81
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.74
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.35
+   }
+  },
+  "41360824": {
+   "environmental_exposure": {
+    "role": "background_only",
+    "confidence": 0.81
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.95
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.99
+   }
+  },
+  "37469929": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.52
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 0.95
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.85
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.81
+   }
+  },
+  "18981649": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "17137193": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "35932068": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.83
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.95
+   }
+  },
+  "15921512": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.97
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.64
+   }
+  },
+  "42323564": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.97
+   },
+   "time_use_leisure": {
+    "role": "secondary",
+    "confidence": 0.41
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.93
+   }
+  },
+  "38466846": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.82
+   }
+  },
+  "27788163": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "main",
+    "confidence": 0.97
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.59
+   }
+  },
+  "41647885": {
+   "environmental_exposure": {
+    "role": "secondary",
+    "confidence": 0.43
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.37
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "42614889": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "42655181": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "background_only",
+    "confidence": 0.37
+   }
+  },
+  "38397708": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.85
+   }
+  },
+  "38478512": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.99
+   }
+  },
+  "32646457": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.94
+   }
+  },
+  "41225638": {
+   "environmental_exposure": {
+    "role": "secondary",
+    "confidence": 0.29
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.28
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.43
+   }
+  },
+  "33183391": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.61
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.66
+   }
+  },
+  "39433545": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.55
+   }
+  },
+  "41587864": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.52
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.77
+   }
+  },
+  "29727132": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.92
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.79
+   }
+  },
+  "35999862": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 1.0
+   }
+  },
+  "39767482": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.75
+   }
+  },
+  "34815413": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.37
+   }
+  },
+  "23928946": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.38
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.75
+   }
+  },
+  "26431536": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "background_only",
+    "confidence": 0.64
+   },
+   "time_use_leisure": {
+    "role": "main",
+    "confidence": 0.98
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.72
+   }
+  },
+  "28553120": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.89
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.51
+   }
+  },
+  "32713930": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.83
+   }
+  },
+  "36981231": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.93
+   }
+  },
+  "11238582": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.29
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.97
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.94
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.96
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.14
+   }
+  },
+  "41920925": {
+   "environmental_exposure": {
+    "role": "background_only",
+    "confidence": 0.19
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.56
+   }
+  },
+  "35454738": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.98
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.93
+   }
+  },
+  "31665597": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.5
+   }
+  },
+  "35497090": {
+   "environmental_exposure": {
+    "role": "background_only",
+    "confidence": 0.81
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.42
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.4
+   }
+  },
+  "32617360": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.7
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.34
+   }
+  },
+  "17651508": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.94
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "24317342": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.36
+   }
+  },
+  "12164329": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "29049955": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.37
+   }
+  },
+  "26044713": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.92
+   }
+  },
+  "33805057": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.93
+   }
+  },
+  "38611295": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.96
+   }
+  },
+  "39926272": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "PMC8530012": {
+   "environmental_exposure": {
+    "role": "secondary",
+    "confidence": 0.41
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 0.99
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 0.44
+   },
+   "economy_industry": {
+    "role": "main",
+    "confidence": 0.51
+   }
+  },
+  "40519391": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.96
+   },
+   "climate_carbon": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 0.86
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "absent",
+    "confidence": 0.99
+   }
+  },
+  "39899508": {
+   "environmental_exposure": {
+    "role": "main",
+    "confidence": 0.54
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 0.43
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.39
+   }
+  },
+  "37422522": {
+   "environmental_exposure": {
+    "role": "absent",
+    "confidence": 0.99
+   },
+   "climate_carbon": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "disability_functioning": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "time_use_leisure": {
+    "role": "absent",
+    "confidence": 1.0
+   },
+   "economy_industry": {
+    "role": "secondary",
+    "confidence": 0.23
+   }
+  }
+ },
+ "stage2": [
+  {
+   "id": "40283713",
+   "candidate": "disability_functioning",
+   "fit": "new_domain",
+   "fit_conf": 0.34,
+   "nearest": "cancer_screening_checkup"
+  },
+  {
+   "id": "34054339",
+   "candidate": "time_use_leisure",
+   "fit": "new_domain",
+   "fit_conf": 0.55,
+   "nearest": "sleep"
+  },
+  {
+   "id": "38711964",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.35,
+   "nearest": "work_employment"
+  },
+  {
+   "id": "35291201",
+   "candidate": "environmental_exposure",
+   "fit": "existing_domain",
+   "fit_conf": 0.35,
+   "nearest": "cancer"
+  },
+  {
+   "id": "39730806",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.49,
+   "nearest": "none"
+  },
+  {
+   "id": "40044843",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.27,
+   "nearest": "none"
+  },
+  {
+   "id": "35682230",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.48,
+   "nearest": "cardiometabolic"
+  },
+  {
+   "id": "30668608",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.3,
+   "nearest": "child_growth_development"
+  },
+  {
+   "id": "33455490",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.68,
+   "nearest": "maternal_child"
+  },
+  {
+   "id": "37249710",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.4,
+   "nearest": "covid19_infection"
+  },
+  {
+   "id": "21405740",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.49,
+   "nearest": "none"
+  },
+  {
+   "id": "28142015",
+   "candidate": "disability_functioning",
+   "fit": "new_domain",
+   "fit_conf": 0.45,
+   "nearest": "none"
+  },
+  {
+   "id": "34886544",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.88,
+   "nearest": "none"
+  },
+  {
+   "id": "34886544",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.64,
+   "nearest": "none"
+  },
+  {
+   "id": "40111265",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.61,
+   "nearest": "none"
+  },
+  {
+   "id": "40111265",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.8,
+   "nearest": "none"
+  },
+  {
+   "id": "14674659",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.27,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "36287360",
+   "candidate": "climate_carbon",
+   "fit": "existing_domain",
+   "fit_conf": 0.26,
+   "nearest": "none"
+  },
+  {
+   "id": "36287360",
+   "candidate": "time_use_leisure",
+   "fit": "new_domain",
+   "fit_conf": 0.64,
+   "nearest": "mobility_outing"
+  },
+  {
+   "id": "36287360",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.79,
+   "nearest": "none"
+  },
+  {
+   "id": "34154556",
+   "candidate": "disability_functioning",
+   "fit": "new_domain",
+   "fit_conf": 0.26,
+   "nearest": "long_term_care_services"
+  },
+  {
+   "id": "23004835",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.73,
+   "nearest": "internet_sns"
+  },
+  {
+   "id": "974437",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.36,
+   "nearest": "fertility_births_population"
+  },
+  {
+   "id": "31215073",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.27,
+   "nearest": "suicide_selfharm"
+  },
+  {
+   "id": "8333487",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.54,
+   "nearest": "child_growth_development"
+  },
+  {
+   "id": "8333487",
+   "candidate": "economy_industry",
+   "fit": "existing_domain",
+   "fit_conf": 0.61,
+   "nearest": "child_growth_development"
+  },
+  {
+   "id": "42293409",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.35,
+   "nearest": "maternal_child"
+  },
+  {
+   "id": "42260155",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.39,
+   "nearest": "prescribing_drug_use"
+  },
+  {
+   "id": "41360824",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.51,
+   "nearest": "none"
+  },
+  {
+   "id": "37469929",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.68,
+   "nearest": "none"
+  },
+  {
+   "id": "37469929",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.51,
+   "nearest": "income_poverty"
+  },
+  {
+   "id": "42323564",
+   "candidate": "time_use_leisure",
+   "fit": "existing_domain",
+   "fit_conf": 0.33,
+   "nearest": "social_capital_support"
+  },
+  {
+   "id": "38466846",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.61,
+   "nearest": "none"
+  },
+  {
+   "id": "38466846",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.66,
+   "nearest": "income_poverty"
+  },
+  {
+   "id": "27788163",
+   "candidate": "disability_functioning",
+   "fit": "existing_domain",
+   "fit_conf": 0.73,
+   "nearest": "none"
+  },
+  {
+   "id": "27788163",
+   "candidate": "time_use_leisure",
+   "fit": "new_domain",
+   "fit_conf": 0.3,
+   "nearest": "social_capital_support"
+  },
+  {
+   "id": "41647885",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.65,
+   "nearest": "housing_environment"
+  },
+  {
+   "id": "42614889",
+   "candidate": "environmental_exposure",
+   "fit": "existing_domain",
+   "fit_conf": 0.46,
+   "nearest": "surgery_procedures"
+  },
+  {
+   "id": "42655181",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.33,
+   "nearest": "infectious_disease"
+  },
+  {
+   "id": "38397708",
+   "candidate": "disability_functioning",
+   "fit": "new_domain",
+   "fit_conf": 0.49,
+   "nearest": "cancer_screening_checkup"
+  },
+  {
+   "id": "32646457",
+   "candidate": "environmental_exposure",
+   "fit": "existing_domain",
+   "fit_conf": 0.38,
+   "nearest": "fertility_births_population"
+  },
+  {
+   "id": "41225638",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.79,
+   "nearest": "housing_environment"
+  },
+  {
+   "id": "41225638",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.92,
+   "nearest": "none"
+  },
+  {
+   "id": "39433545",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.53,
+   "nearest": "none"
+  },
+  {
+   "id": "39433545",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.86,
+   "nearest": "none"
+  },
+  {
+   "id": "29727132",
+   "candidate": "environmental_exposure",
+   "fit": "existing_domain",
+   "fit_conf": 0.47,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "29727132",
+   "candidate": "economy_industry",
+   "fit": "existing_domain",
+   "fit_conf": 0.4,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "35999862",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.59,
+   "nearest": "none"
+  },
+  {
+   "id": "39767482",
+   "candidate": "disability_functioning",
+   "fit": "new_domain",
+   "fit_conf": 0.38,
+   "nearest": "methodology_weighting"
+  },
+  {
+   "id": "34815413",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.57,
+   "nearest": "none"
+  },
+  {
+   "id": "34815413",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.89,
+   "nearest": "none"
+  },
+  {
+   "id": "23928946",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.36,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "26431536",
+   "candidate": "time_use_leisure",
+   "fit": "new_domain",
+   "fit_conf": 0.25,
+   "nearest": "mental_distress"
+  },
+  {
+   "id": "36981231",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.61,
+   "nearest": "disaster_preparedness"
+  },
+  {
+   "id": "11238582",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.45,
+   "nearest": "housing_environment"
+  },
+  {
+   "id": "41920925",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.63,
+   "nearest": "work_employment"
+  },
+  {
+   "id": "35454738",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.69,
+   "nearest": "disaster_preparedness"
+  },
+  {
+   "id": "31665597",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.42,
+   "nearest": "none"
+  },
+  {
+   "id": "31665597",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.84,
+   "nearest": "none"
+  },
+  {
+   "id": "35497090",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.8,
+   "nearest": "none"
+  },
+  {
+   "id": "35497090",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.82,
+   "nearest": "mobility_outing"
+  },
+  {
+   "id": "32617360",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.33,
+   "nearest": "maternal_child"
+  },
+  {
+   "id": "17651508",
+   "candidate": "environmental_exposure",
+   "fit": "existing_domain",
+   "fit_conf": 0.36,
+   "nearest": "cancer"
+  },
+  {
+   "id": "24317342",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.27,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "12164329",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.43,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "29049955",
+   "candidate": "economy_industry",
+   "fit": "existing_domain",
+   "fit_conf": 0.35,
+   "nearest": "mortality_cause_of_death"
+  },
+  {
+   "id": "26044713",
+   "candidate": "disability_functioning",
+   "fit": "new_domain",
+   "fit_conf": 0.36,
+   "nearest": "none"
+  },
+  {
+   "id": "33805057",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.7,
+   "nearest": "none"
+  },
+  {
+   "id": "39926272",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.42,
+   "nearest": "none"
+  },
+  {
+   "id": "PMC8530012",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.66,
+   "nearest": "housing_environment"
+  },
+  {
+   "id": "PMC8530012",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.53,
+   "nearest": "none"
+  },
+  {
+   "id": "PMC8530012",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.68,
+   "nearest": "none"
+  },
+  {
+   "id": "40519391",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.41,
+   "nearest": "none"
+  },
+  {
+   "id": "39899508",
+   "candidate": "environmental_exposure",
+   "fit": "new_domain",
+   "fit_conf": 0.79,
+   "nearest": "none"
+  },
+  {
+   "id": "39899508",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.81,
+   "nearest": "none"
+  },
+  {
+   "id": "39899508",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.88,
+   "nearest": "food_environment"
+  },
+  {
+   "id": "37422522",
+   "candidate": "climate_carbon",
+   "fit": "new_domain",
+   "fit_conf": 0.75,
+   "nearest": "none"
+  },
+  {
+   "id": "37422522",
+   "candidate": "economy_industry",
+   "fit": "new_domain",
+   "fit_conf": 0.89,
+   "nearest": "none"
+  }
+ ]
+}

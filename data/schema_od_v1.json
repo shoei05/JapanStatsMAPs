@@ -1,0 +1,291 @@
+{
+ "_note": "v1: 既存の45領域に、公的統計研究に多い13領域を加えた58領域。調査名の代わりにデータ源、調査波の代わりに解析データの年範囲を判定する。",
+ "domains": {
+  "tobacco": "紙巻たばこ・加熱式たばこ・電子たばこ・ニコチン製品の使用や規制",
+  "alcohol": "飲酒・アルコール関連問題",
+  "gambling_gaming": "ギャンブル・オンラインゲーム・ガチャ課金",
+  "internet_sns": "インターネット・SNS・スマートフォンの利用や依存",
+  "generative_ai": "生成AI・チャットボットの利用",
+  "mental_distress": "心理的苦痛・抑うつ・不安（K6、PHQ、GADなど）",
+  "suicide_selfharm": "自殺念慮・自殺企図・自傷",
+  "loneliness_isolation": "孤独感・社会的孤立",
+  "social_capital_support": "ソーシャルキャピタル・社会的支援・人への信頼",
+  "ace_violence": "逆境的小児期体験・暴力・虐待・いじめ",
+  "covid19_infection": "COVID-19の感染・罹患・死亡・罹患後症状・感染対策行動、およびパンデミックが受診や死亡に与えた影響",
+  "vaccination": "ワクチン接種・接種意向・ためらい",
+  "healthcare_access": "受診行動・受診控え・医療アクセス・医療費負担",
+  "cancer_screening_checkup": "がん検診・健康診断の受診",
+  "work_employment": "就労・失業・働き方・ワークエンゲージメント・テレワーク",
+  "income_poverty": "所得・貧困・経済困窮・食料不安",
+  "sleep": "睡眠",
+  "diet_nutrition_obesity": "食生活・栄養・体重・肥満",
+  "physical_activity": "身体活動・運動・座位行動",
+  "oral_health": "口腔の健康・歯科",
+  "maternal_child": "妊娠・出産・育児・母子の健康",
+  "caregiving": "家族介護・ケア役割",
+  "sexual_reproductive": "性の健康・性的マイノリティ・不妊",
+  "disaster_preparedness": "災害への備え・災害の影響",
+  "medication_adherence_chronic": "服薬・慢性疾患の管理",
+  "health_literacy_information": "健康情報の入手・ヘルスリテラシー・誤情報",
+  "qol_wellbeing": "生活の質・主観的健康感・ウェルビーイング",
+  "methodology_weighting": "調査手法・重み付け（IPW）・尺度の検証そのものが研究対象（IPWを解析手段として使っただけでは該当しない）",
+  "physical_disease_symptoms": "身体疾患・身体症状のうち、下のがん・循環器代謝・感染症・認知症神経・外傷の各領域に当たらないもの（呼吸器、消化器、筋骨格、疼痛・頭痛、感覚機能の障害、皮膚、泌尿器など）。検診の受診行動やQOL尺度とは区別する",
+  "neurodevelopmental": "神経発達特性（ADHD特性、ASD特性など。尺度で測った特性であり、診断された精神疾患やK6等の心理的苦痛とは区別する）",
+  "medication_misuse": "医薬品の非医療的使用・乱用（市販薬のオーバードーズ、処方薬の目的外使用。服薬アドヒアランスとは区別する）",
+  "housing_environment": "居住・都市環境（住環境、緑地、地域の物理的環境、近隣の資源）",
+  "political_attitudes": "政治・制度への態度（政党支持、政府への信頼、政策への賛否。対人的な信頼やソーシャルキャピタルとは区別する）",
+  "demographics_family": "人口学的属性・家族構成（性別、年齢、婚姻、ひとり親、世帯構成そのものを主たる関心とする場合）",
+  "eating_disorder": "摂食障害（神経性やせ症、過食など）。心理的苦痛や体重・肥満とは区別する",
+  "psychotic_experiences": "精神病様体験・幻覚妄想様症状。K6等の心理的苦痛とは区別する",
+  "policy_campaign": "政策・キャンペーンの利用や参加（Go Toトラベル、給付金、補助制度の利用など）",
+  "cosmetic_medical": "美容医療・美容整形の利用",
+  "food_environment": "食環境・食料へのアクセス（こども食堂、コンビニ利用、食料品店へのアクセス）。食生活の内容そのものとは区別する",
+  "mobility_outing": "外出・移動行動（外出頻度、交通手段の利用）。身体活動の量とは区別する",
+  "education": "学歴・教育歴。所得や就労とは別の社会経済指標として扱う",
+  "beliefs_attitudes": "健康や心理に関する信念・態度（健康無関心、変わりうるという信念など）。ヘルスリテラシーや情報入手とは区別する",
+  "personality_traits": "性格・心理特性（ビッグファイブ／TIPI、楽観性、感謝、感情調節、先延ばし、反すう・対処スタイルなど、比較的安定した個人の心理的特性。心理的苦痛や信念・態度とは区別する）",
+  "family_relationship": "家族・パートナー関係の質（夫婦・パートナー関係、親子関係、同居家族との関係や会話、愛着スタイル。家族構成そのものは人口学的属性・家族、介護は介護として区別する）",
+  "health_campaign_media": "健康啓発キャンペーンやメディアへの接触（禁煙・健康ポスター、テレビCM、リーフレット、書籍、健康づくり運動の認知）。健康情報の探索・リテラシーや、たばこ会社の広告は区別する",
+  "mortality_cause_of_death": "死亡・死因・死亡率・平均寿命・健康寿命（特定の疾患による死亡は、その疾患の領域にも該当する）",
+  "cancer": "がんの罹患・有病・死亡・治療（がん検診の受診行動は cancer_screening_checkup）",
+  "cardiometabolic": "循環器疾患・脳卒中・糖尿病・高血圧・脂質異常症・慢性腎臓病の罹患・有病・治療",
+  "infectious_disease": "COVID-19以外の感染症（インフルエンザ、結核、性感染症、肝炎など）の罹患・治療・抗菌薬の使用",
+  "dementia_neurological": "認知症・パーキンソン病・てんかんなどの神経疾患",
+  "prescribing_drug_use": "処方・医薬品の使用実態・処方量・後発医薬品（服薬アドヒアランスや乱用とは区別する）",
+  "surgery_procedures": "手術・処置・検査・リハビリテーションなど診療行為の実施件数や実施の地域差",
+  "healthcare_workforce_facilities": "医師・歯科医師・薬剤師・看護師などの医療従事者、医療機関・病床・医療設備の数や分布",
+  "healthcare_cost_insurance": "医療費・介護費・薬剤費・保険制度・診療報酬改定の影響",
+  "fertility_births_population": "出生・出生率・低出生体重・人口構造・人口移動・世帯数などの人口動態",
+  "long_term_care_services": "介護保険サービスの利用・要介護認定・介護施設（家族による介護は caregiving）",
+  "injury_accident": "外傷・事故・熱中症・溺水・交通事故・中毒",
+  "child_growth_development": "子どもの身長・体重・発育・体力・学校健診の結果"
+ },
+ "domain_labels": {
+  "tobacco": "たばこ",
+  "alcohol": "飲酒",
+  "gambling_gaming": "ギャンブル・ゲーム",
+  "internet_sns": "ネット・SNS",
+  "generative_ai": "生成AI",
+  "mental_distress": "心理的苦痛",
+  "suicide_selfharm": "自殺・自傷",
+  "loneliness_isolation": "孤独・社会的孤立",
+  "social_capital_support": "ソーシャルキャピタル・支援",
+  "ace_violence": "逆境的小児期体験・暴力",
+  "covid19_infection": "COVID-19感染",
+  "vaccination": "ワクチン",
+  "healthcare_access": "医療アクセス",
+  "cancer_screening_checkup": "がん検診・健診",
+  "work_employment": "就労・働き方",
+  "income_poverty": "所得・貧困",
+  "sleep": "睡眠",
+  "diet_nutrition_obesity": "食生活・栄養・肥満",
+  "physical_activity": "身体活動",
+  "oral_health": "口腔",
+  "maternal_child": "母子",
+  "caregiving": "介護",
+  "sexual_reproductive": "性・生殖",
+  "disaster_preparedness": "災害",
+  "medication_adherence_chronic": "服薬・慢性疾患管理",
+  "health_literacy_information": "健康情報・リテラシー",
+  "qol_wellbeing": "QOL・ウェルビーイング",
+  "methodology_weighting": "方法・重み付け",
+  "physical_disease_symptoms": "身体疾患・身体症状",
+  "neurodevelopmental": "神経発達特性",
+  "medication_misuse": "医薬品の乱用",
+  "housing_environment": "居住・都市環境",
+  "political_attitudes": "政治・制度への態度",
+  "demographics_family": "人口学的属性・家族",
+  "eating_disorder": "摂食障害",
+  "psychotic_experiences": "精神病様体験",
+  "policy_campaign": "政策・キャンペーン",
+  "cosmetic_medical": "美容医療",
+  "food_environment": "食環境・食料アクセス",
+  "mobility_outing": "外出・移動",
+  "education": "学歴・教育",
+  "beliefs_attitudes": "信念・態度",
+  "personality_traits": "性格・心理特性",
+  "family_relationship": "家族・パートナー関係の質",
+  "health_campaign_media": "健康啓発・メディア接触",
+  "mortality_cause_of_death": "死亡・死因",
+  "cancer": "がん",
+  "cardiometabolic": "循環器・代謝疾患",
+  "infectious_disease": "感染症（COVID-19以外）",
+  "dementia_neurological": "認知症・神経疾患",
+  "prescribing_drug_use": "処方・医薬品使用",
+  "surgery_procedures": "手術・処置・検査",
+  "healthcare_workforce_facilities": "医療従事者・医療施設",
+  "healthcare_cost_insurance": "医療費・保険制度",
+  "fertility_births_population": "出生・人口",
+  "long_term_care_services": "介護保険サービス",
+  "injury_accident": "外傷・事故",
+  "child_growth_development": "子どもの発育"
+ },
+ "display_groups": {
+  "dependence_preference": {
+   "label": "依存・嗜好",
+   "domains": [
+    "tobacco",
+    "alcohol",
+    "gambling_gaming"
+   ]
+  },
+  "digital_information": {
+   "label": "デジタル・情報",
+   "domains": [
+    "internet_sns",
+    "generative_ai",
+    "health_literacy_information",
+    "beliefs_attitudes",
+    "health_campaign_media"
+   ]
+  },
+  "mental_psychological": {
+   "label": "精神・心理",
+   "domains": [
+    "mental_distress",
+    "suicide_selfharm",
+    "neurodevelopmental",
+    "eating_disorder",
+    "psychotic_experiences",
+    "personality_traits"
+   ]
+  },
+  "relations_social": {
+   "label": "人間関係・社会的経験",
+   "domains": [
+    "loneliness_isolation",
+    "social_capital_support",
+    "ace_violence",
+    "family_relationship"
+   ]
+  },
+  "infection_prevention": {
+   "label": "感染症・予防",
+   "domains": [
+    "covid19_infection",
+    "vaccination"
+   ]
+  },
+  "healthcare_use": {
+   "label": "医療利用・疾病管理",
+   "domains": [
+    "healthcare_access",
+    "cancer_screening_checkup",
+    "medication_adherence_chronic",
+    "medication_misuse",
+    "cosmetic_medical"
+   ]
+  },
+  "lifestyle_physical": {
+   "label": "生活習慣・身体健康",
+   "domains": [
+    "sleep",
+    "diet_nutrition_obesity",
+    "physical_activity",
+    "oral_health",
+    "qol_wellbeing",
+    "physical_disease_symptoms",
+    "food_environment",
+    "mobility_outing"
+   ]
+  },
+  "family_sex": {
+   "label": "妊娠・家族・性",
+   "domains": [
+    "maternal_child",
+    "caregiving",
+    "sexual_reproductive",
+    "demographics_family"
+   ]
+  },
+  "work_socioeconomic": {
+   "label": "就労・社会経済・地域",
+   "domains": [
+    "work_employment",
+    "income_poverty",
+    "disaster_preparedness",
+    "housing_environment",
+    "political_attitudes",
+    "education",
+    "policy_campaign"
+   ]
+  },
+  "disease_burden": {
+   "label": "疾病・死亡",
+   "domains": [
+    "mortality_cause_of_death",
+    "cancer",
+    "cardiometabolic",
+    "infectious_disease",
+    "dementia_neurological",
+    "injury_accident"
+   ]
+  },
+  "healthcare_provision": {
+   "label": "医療提供・医療資源",
+   "domains": [
+    "prescribing_drug_use",
+    "surgery_procedures",
+    "healthcare_workforce_facilities",
+    "healthcare_cost_insurance",
+    "long_term_care_services"
+   ]
+  },
+  "population_dynamics": {
+   "label": "人口・発育",
+   "domains": [
+    "fertility_births_population",
+    "child_growth_development"
+   ]
+  }
+ },
+ "role_unresolved": {
+  "role_absent": "その問いに、その役割（曝露またはアウトカム）自体が存在しない。記述統計のみの研究、有病割合や経年変化の報告、尺度検証、調査方法の論文、コメンタリー、データ資源紹介、補足資料など。",
+  "concept_unmapped": "曝露またはアウトカムが何かは本文から分かるが、上の領域一覧に当てはまるものが無い。",
+  "not_determined": "与えられた本文の範囲では、その役割が何かを確定できない。"
+ },
+ "question_type": {
+  "association": "1つ（または少数）の曝露とアウトカムの関連を検討する",
+  "multi_factor_exploratory": "多数の要因とアウトカムの関連を網羅的に探索する（『〜に関連する要因』型）。主曝露を1つに絞らない",
+  "descriptive_prevalence": "有病割合・実態の記述が主目的",
+  "trend": "経年変化・推移の記述が主目的",
+  "scale_validation": "尺度の妥当性・信頼性・カットオフの検証",
+  "methodological": "調査手法・重み付け・代表性の検討",
+  "other": "上記のいずれでもない（コメンタリー、データ資源紹介など）",
+  "geographic_variation": "都道府県・市区町村・二次医療圏などの地域差の記述や、地域単位の要因との関連が主目的",
+  "policy_evaluation": "制度改定・政策・災害・パンデミックなどの前後比較や影響評価が主目的"
+ },
+ "designs": {
+  "cross_sectional": "単一時点の個票を用いた横断研究",
+  "repeated_cross_sectional": "複数年の個票を並べて傾向を見る反復横断（同一個人の追跡ではない）",
+  "longitudinal": "同一個人を複数時点で追跡した縦断研究・パネル解析",
+  "ecological": "都道府県・市区町村・二次医療圏などの集計単位を観察単位とする生態学的研究（単一時点または少数時点）",
+  "time_series": "全国・地域の集計値の時系列解析（中断時系列、年齢・時代・コホート分析、傾向の記述を含む）",
+  "scale_validation": "尺度の妥当性・信頼性の検証",
+  "methodological": "データ資源・推計方法・代表性・データの質そのものの検討",
+  "other": "上記のいずれでもない（コメンタリー、レター、総説など）"
+ },
+ "populations": {
+  "general_population": "国民全体・全年齢（全死亡、全処方、全人口の集計など、特定の属性に絞っていない）",
+  "general_adult": "成人全体（年齢範囲の制限だけで特定の属性に絞っていない）",
+  "older_adult": "高齢者に限定",
+  "child_adolescent": "子ども・青少年に限定",
+  "infant_birth": "新生児・乳児・出生に限定",
+  "woman": "女性に限定（妊娠中・産後は pregnant_postpartum）",
+  "pregnant_postpartum": "妊娠中・産後の人に限定",
+  "worker": "就労者に限定",
+  "patient_clinical": "特定の疾患・症状・治療を受けた人に限定",
+  "health_professional_facility": "医療従事者・医療機関が観察対象",
+  "household": "世帯が観察単位",
+  "other": "上記のいずれでもない特定の集団に限定"
+ },
+ "units": {
+  "individual": "個人",
+  "household": "世帯",
+  "prefecture": "都道府県",
+  "municipal": "市区町村・二次医療圏",
+  "national": "全国集計（年齢・性別などの層を含む）",
+  "facility": "医療機関",
+  "other": "その他・不明"
+ }
+}
