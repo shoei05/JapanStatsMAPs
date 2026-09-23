@@ -84,6 +84,18 @@ SOURCE_EN = {
     "中高年者縦断調査": "Longitudinal Survey of Middle-aged and Elderly Persons",
     "歯科疾患実態調査": "Survey of Dental Diseases",
     "乳幼児身体発育調査・学校保健統計": "National Growth Survey on Preschool Children or School Health Statistics",
+    "警察庁自殺統計・地域における自殺の基礎資料": "Japan's suicide statistics by the National Police Agency, or the Basic Data on Suicide in the Region published by the Ministry of Health, Labour and Welfare",
+    "感染症発生動向調査": "Japan's National Epidemiological Surveillance of Infectious Diseases (NESID)",
+    "国民医療費": "Japan's Estimates of National Medical Care Expenditure",
+    "介護保険事業状況報告・介護給付費等実態統計": "Status Report on the Long-Term Care Insurance or Survey of Long-term Care Benefit Expenditures",
+    "消防庁（救急・火災）": "data from Japan's Fire and Disaster Management Agency (ambulance transport, fire, or disaster statistics)",
+    "衛生行政報告例": "Report on Public Health Administration and Services",
+    "地域保健・健康増進事業報告": "Report on Regional Public Health Services and Health Promotion Services",
+    "病院報告": "the Hospital Report of the Ministry of Health, Labour and Welfare",
+    "学校基本調査": "Japan's School Basic Survey",
+    "労働力調査": "Japan's Labour Force Survey",
+    "賃金構造基本統計調査": "Basic Survey on Wage Structure",
+    "住民基本台帳": "population data based on the Basic Resident Register",
 }
 
 

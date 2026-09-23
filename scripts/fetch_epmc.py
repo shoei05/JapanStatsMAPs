@@ -29,6 +29,18 @@ SOURCES = {
     "中高年者縦断調査": '"Longitudinal Survey of Middle-aged and Elderly Persons" OR "Longitudinal Survey of Middle-aged and Older Persons"',
     "歯科疾患実態調査": '"Survey of Dental Diseases"',
     "乳幼児身体発育調査・学校保健統計": '"School Health Statistics" OR "National Growth Survey"',
+    "警察庁自殺統計・地域における自殺の基礎資料": '("National Police Agency" AND (suicide OR suicides)) OR "suicide statistics" OR "Basic Data on Suicide"',
+    "感染症発生動向調査": '"National Epidemiological Surveillance of Infectious Diseases" OR "NESID"',
+    "国民医療費": '"National Medical Care Expenditure" OR "Estimates of National Medical Care Expenditure"',
+    "介護保険事業状況報告・介護給付費等実態統計": '"Status Report on the Long-Term Care Insurance" OR "Survey of Long-term Care Benefit Expenditures" OR "Long-term Care Benefit Expenditures"',
+    "消防庁（救急・火災）": '"Fire and Disaster Management Agency"',
+    "衛生行政報告例": '"Report on Public Health Administration and Services"',
+    "地域保健・健康増進事業報告": '"Report on Regional Public Health Services and Health Promotion Services"',
+    "病院報告": '"Hospital Report" AND "Ministry of Health, Labour and Welfare"',
+    "学校基本調査": '"School Basic Survey"',
+    "労働力調査": '"Labour Force Survey" OR "Labor Force Survey"',
+    "賃金構造基本統計調査": '"Basic Survey on Wage Structure"',
+    "住民基本台帳": '"Basic Resident Register"',
 }
 
 

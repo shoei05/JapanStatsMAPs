@@ -46,13 +46,31 @@ def year(v):
     return int(v) if str(v).isdigit() else None
 
 
+oa_authors_path = ROOT / "data/openalex_authors.json"
+oa_authors = json.loads(oa_authors_path.read_text(encoding="utf-8")) if oa_authors_path.exists() else {}
+
+
+def full_authors(e, doi):
+    """Europe PMC の著者に名が欠けていれば OpenAlex のフルネームを使う。イニシャル表記は別表記として残す。"""
+    ad = authors_of(e)
+    oa = oa_authors.get(doi or "", [])
+    initials_only = [a for a in ad if not a["given"] or len(a["given"].replace(".", "").strip()) <= 2]
+    aliases = [a["name"] for a in initials_only]
+    if oa and (not ad or initials_only):
+        ad = [{"given": " ".join(n.split()[:-1]), "family": n.split()[-1] if n.split() else "", "name": n} for n in oa]
+    return ad, aliases
+
+
+jc_path = ROOT / "data/japan_check.json"
+japan_check = json.loads(jc_path.read_text(encoding="utf-8")) if jc_path.exists() else {}
 papers = []
+n_non_japan = 0
 for s in structured:
     if s["data_class"] not in IN_SCOPE:
         continue
     r = recs[s["id"]]
     e = epmc.get(s["id"], {})
-    ad = authors_of(e)
+    ad, author_aliases = full_authors(e, (r.get("doi") or "").lower())
     ys, ye = year(s["year_start"]), year(s["year_end"])
     if ys and ye and ys > ye:
         ys, ye = ye, ys
@@ -61,6 +79,10 @@ for s in structured:
     if ye is None and ys is not None:
         ye = ys
     doi = (r.get("doi") or "").lower() or None
+    pid = f"doi:{doi}" if doi else f"pmid:{r['pmid']}" if r.get("pmid") else f"epmc:{r['id']}"
+    if japan_check.get(pid, 1.0) < 0.5:  # 主解析のデータが日本のものでない論文は外す（scripts/japan_check.py）
+        n_non_japan += 1
+        continue
     papers.append({
         "paper_id": f"doi:{doi}" if doi else f"pmid:{r['pmid']}" if r.get("pmid") else f"epmc:{r['id']}",
         "doc_kind": "paper", "title": r["title"].rstrip("."), "journal": r.get("journal"),
@@ -68,7 +90,7 @@ for s in structured:
         "year": r.get("year"), "doi": doi, "pmid": r.get("pmid"),
         "article_url": f"https://doi.org/{doi}" if doi else (f"https://pubmed.ncbi.nlm.nih.gov/{r['pmid']}/" if r.get("pmid") else ""),
         "first_author": ad[0]["family"] if ad else None, "first_author_full": ad[0]["name"] if ad else None,
-        "authors": [a["name"] for a in ad], "author_details": ad, "author_aliases": [], "search_aliases": [],
+        "authors": [a["name"] for a in ad], "author_details": ad, "author_aliases": author_aliases, "search_aliases": [],
         "data_class": s["data_class"],
         "sources": sorted((k for k, p in s["uses"].items() if p >= USE_THRESHOLD), key=list(SOURCES).index),
         "year_start": ys, "year_end": ye,
@@ -126,7 +148,7 @@ data = {
     "meta": {
         "n_papers": len(papers), "n_documents": len(papers), "n_collected": len(recs),
         "n_candidates": sum(1 for j in first if j["data_class"] in ("A", "B", "AB", "unclear")),
-        "n_by_class": dict(n_by_class), "n_pairs_dropped": n_pairs_dropped,
+        "n_by_class": dict(n_by_class), "n_pairs_dropped": n_pairs_dropped, "n_non_japan": n_non_japan,
         "acknowledgement": "本研究は JSPS 科研費 JP23K16359（若手研究「全自治体予測モデルによるCOVID-19流行下の自殺要因の分析」）の研究成果の一部です。",
         "empty_cell_label": "空欄は主分類の登録がないことを示す。副次解析まで確認した結果ではなく、その組合せの研究が存在しないという意味でもない。",
         "method_note": ("Europe PMC の本文を含む全文検索（データ源名 AND Japan）で集めた論文を、Jev（TypeSafe System One, jev-latest）で判定した。"

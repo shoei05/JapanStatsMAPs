@@ -3,6 +3,7 @@
 
 A. concept_unmapped の主曝露・主アウトカム: 63テーマ＋「該当なし」から最も近いものを選ばせる。
 B. Claude が抄録で割り当てた5本のテーマ: 各テーマが解析上扱われているかを noul で確かめる。
+判定済みの組合せは飛ばし、結果を data/jev_followup.json に足し込む（データ源の追加で判定し直した論文は前の結果を捨てる）。
 C. 線（主曝露→主アウトカム）: その組合せを
    analyzed / adjustment_only / background_only / unknown のどれで扱ったかを選ばせる。analyzed の線だけ残す。
 """
@@ -18,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from structure_v2 import make_state  # noqa: E402
 
-schema = json.loads((ROOT / "data/schema_od_v2.json").read_text(encoding="utf-8"))
+schema = json.loads((ROOT / "data/schema_od_v3.json").read_text(encoding="utf-8"))
 DOM, LAB = schema["domains"], schema["domain_labels"]
 recs = {json.loads(l)["id"]: json.loads(l) for l in (ROOT / "data/records.jsonl").open(encoding="utf-8")}
 data = json.loads((ROOT / "viewer/data.json").read_text(encoding="utf-8"))
@@ -62,23 +63,37 @@ def job(task):
     raise RuntimeError(f"{kind} {pid}: {err}")
 
 
+prev_path = ROOT / "data/jev_followup.json"
+prev = json.loads(prev_path.read_text(encoding="utf-8")) if prev_path.exists() else {"unmapped_slots": [], "review_checks": [], "pair_checks": []}
+redo_path = ROOT / "data/redo_v4_ids.json"
+if redo_path.exists():  # データ源の追加で判定し直した論文は、前の結果を捨てて判定し直す
+    redo_pids = set()
+    for rid in json.loads(redo_path.read_text()):
+        r = recs.get(rid)
+        if r:
+            doi = (r.get("doi") or "").lower()
+            redo_pids.add(f"doi:{doi}" if doi else f"pmid:{r['pmid']}" if r.get("pmid") else f"epmc:{rid}")
+    for k in ("unmapped_slots", "pair_checks"):
+        prev[k] = [x for x in prev[k] if x["paper_id"] not in redo_pids]
+done_A = {(x["paper_id"], x["role"]) for x in prev["unmapped_slots"]}
+done_C = {(x["paper_id"], x["exposure"], x["outcome"]) for x in prev["pair_checks"]}
 tasks = []
 for p in data["papers"]:
     for k in ("exposure_domain", "outcome_domain"):
-        if p[k] == "concept_unmapped":
+        if p[k] == "concept_unmapped" and (p["paper_id"], k) not in done_A:
             tasks.append(("A", p["paper_id"], k))
-for pid, rv in reviews.items():
-    tasks.append(("B", pid, tuple(rv["map_domains"])))
-for key, pids in data["pairs"].items():
-    e, o = key.split("|")
-    for pid in pids:
-        tasks.append(("C", pid, (e, o)))
+# 線の候補は、Jev 確認の反映前の組合せ（関連・制度評価の論文の主曝露→主アウトカム）から作る
+DOMS = set(schema["domains"])
+for p in data["papers"]:
+    if p["question_type"] in ("association", "policy_evaluation") and p["exposure_domain"] in DOMS and p["outcome_domain"] in DOMS:
+        if (p["paper_id"], p["exposure_domain"], p["outcome_domain"]) not in done_C:
+            tasks.append(("C", p["paper_id"], (p["exposure_domain"], p["outcome_domain"])))
 print("tasks", {k: sum(1 for t in tasks if t[0] == k) for k in "ABC"}, flush=True)
 
 with ThreadPoolExecutor(12) as ex:
     res = list(ex.map(job, tasks))
 
-out = {"unmapped_slots": [], "review_checks": [], "pair_checks": []}
+out = prev
 for kind, pid, extra, mode, a in res:
     if kind == "A":
         out["unmapped_slots"].append({"paper_id": pid, "role": extra, "pick": a["pick"]["choice"],

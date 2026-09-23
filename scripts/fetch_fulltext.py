@@ -52,8 +52,8 @@ def fetch(rec):
                 raw = r.read()
             break
         except urllib.error.HTTPError as e:
-            if e.code == 404:
-                path.write_text(json.dumps({"status": "no_fulltext"}), encoding="utf-8")
+            if e.code in (404, 500):  # 500 は全文を配っていない論文で返る（2026-09 確認）
+                path.write_text(json.dumps({"status": "no_fulltext" if e.code == 404 else "server_error_500"}), encoding="utf-8")
                 return "no_fulltext"
             time.sleep(3 * (attempt + 1))
         except Exception:
@@ -76,7 +76,7 @@ def main():
         if j["data_class"] in ("A", "B", "AB", "unclear")]
     todo = [recs[i] for i in ids if recs[i].get("pmcid")]
     from collections import Counter
-    with ThreadPoolExecutor(4) as ex:
+    with ThreadPoolExecutor(8) as ex:
         c = Counter(ex.map(fetch, todo))
     print(len(ids), "targets;", len(todo), "with pmcid;", dict(c))
 

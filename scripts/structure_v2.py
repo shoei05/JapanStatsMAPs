@@ -2,7 +2,7 @@
 """題名・抄録・本文抜粋から、区分・データ源・解析データの年・問いの型・デザイン・対象・分析単位・主曝露・主アウトカム・テーマを Jev で判定する。
 
   - 解析データの年は最初の年・最後の年（choice）で聞く。公的統計は数十年分を使うことがあるため
-  - テーマは data/schema_od_v2.json（63テーマ）
+  - テーマは data/schema_od_v3.json（63テーマ）
 入力: オープンアクセス論文は Methods/Results、それ以外は題名・抄録。どちらを使ったかを input_mode に残す。
 
 使い方: zsh -lc 'python3 scripts/structure_v2.py [--limit N] [--ids file]'
@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path.home() / ".codex/skills/jev/scripts"))
 import jev  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-SCHEMA = json.loads((ROOT / "data/schema_od_v2.json").read_text(encoding="utf-8"))
+SCHEMA = json.loads((ROOT / "data/schema_od_v3.json").read_text(encoding="utf-8"))
 DOM = SCHEMA["domains"]
 DOM_CHOICE = {**DOM, **SCHEMA["role_unresolved"]}
 OUT = ROOT / "data/structured_v3.jsonl"
