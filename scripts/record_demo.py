@@ -23,12 +23,12 @@ OVERLAY = """
   const st = document.createElement('style');
   st.textContent = `
     #demo-cursor{position:fixed;z-index:99999;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;
-      background:rgba(253,100,103,.55);border:2px solid #5B1A18;pointer-events:none;transition:transform .12s}
+      background:rgba(221,141,41,.6);border:2px solid #4E2A1E;pointer-events:none;transition:transform .12s}
     #demo-cursor.down{transform:scale(.7)}
-    #demo-cap{position:fixed;z-index:99998;left:50%;bottom:34px;transform:translateX(-50%);width:max-content;max-width:1300px;
-      background:rgba(255,248,241,.96);color:#3B1A1D;border:1.5px solid #5B1A18;padding:12px 26px;
-      font:500 22px/1.5 "Zen Kaku Gothic New","Hiragino Sans",sans-serif;letter-spacing:.03em;text-align:center;
-      box-shadow:0 3px 0 #E6A0C4;opacity:0;transition:opacity .35s}
+    #demo-cap{position:fixed;z-index:99998;left:50%;bottom:40px;transform:translateX(-50%);width:max-content;max-width:1380px;
+      background:rgba(255,249,236,.97);color:#3A2215;border:2px solid #4E2A1E;padding:14px 32px;
+      font:600 30px/1.45 "Zen Kaku Gothic New","Hiragino Sans",sans-serif;letter-spacing:.03em;text-align:center;
+      box-shadow:0 4px 0 #DD8D29;opacity:0;transition:opacity .35s}
     #demo-cap.on{opacity:1}`;
   document.head.append(st);
   const c = document.createElement('div'); c.id = 'demo-cursor'; document.body.append(c);
@@ -50,6 +50,8 @@ def main():
                             record_video_size={"width": W, "height": H}, color_scheme="light")
         pg = ctx.new_page()
         pg.goto(URL, wait_until="networkidle")
+        pg.wait_for_function("typeof sim !== 'undefined' && sim.running === 0", timeout=60000)
+        pg.evaluate("fit()")
         pg.evaluate(OVERLAY)
         cap = lambda t: pg.evaluate("t => window.__cap(t)", t)  # noqa: E731
         m = pg.mouse
@@ -67,8 +69,8 @@ def main():
             m.down(); m.up()
 
         # 1. 全体
-        time.sleep(3.5)
-        cap("日本の公的統計を使った研究 1,091本を、63のテーマで地図にしました")
+        time.sleep(2)
+        cap("日本の公的統計を使った研究 1,091本を、65のテーマで地図にしました")
         time.sleep(4.5)
         cap("円はテーマ、線は論文で確認した「曝露 → アウトカム」の組合せです")
         time.sleep(4)
