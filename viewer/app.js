@@ -653,8 +653,14 @@ const linkPapers = D.papers.filter(p => p.doc_kind === "paper");
 const PAPER_YEARS = linkPapers.map(p => p.year).filter(Boolean);
 const Y_MIN = Math.min(...PAPER_YEARS), Y_MAX = Math.max(...PAPER_YEARS);
 const YEAR_RAMP = ["#3A9AB2","#6FB2C1","#91BAB6","#A5C2A3","#BDC881","#DCCB4E","#E3B710","#E79805","#EC7A05","#EF5703","#F11B00"];  // wesanderson Zissou1Continuous
-function yearColor(y) {  // Zissou1Continuous。古い論文ほど青、新しい論文ほど赤
-  const t = y ? (y - Y_MIN) / Math.max(1, Y_MAX - Y_MIN) : 0, f = t * (YEAR_RAMP.length - 1), i = Math.min(YEAR_RAMP.length - 2, Math.floor(f)), u = f - i;
+/* 色の目盛りは、つながりの図に表示中の論文の年の範囲で決める（全体の範囲だと新しい論文ばかりが赤に寄るため） */
+function linkYearRange() {
+  const ys = lsim.nodes.map(n => n.p.year).filter(Boolean);
+  return ys.length ? [Math.min(...ys), Math.max(...ys)] : [Y_MIN, Y_MAX];
+}
+function yearColor(y) {  // Zissou1Continuous。表示中で最も古い論文が青、最も新しい論文が赤
+  const [y0, y1] = linkYearRange();
+  const t = y ? Math.max(0, Math.min(1, (y - y0) / Math.max(1, y1 - y0))) : 0, f = t * (YEAR_RAMP.length - 1), i = Math.min(YEAR_RAMP.length - 2, Math.floor(f)), u = f - i;
   const hx = h => [1, 3, 5].map(k => parseInt(h.slice(k, k + 2), 16)), a = hx(YEAR_RAMP[i]), b = hx(YEAR_RAMP[i + 1]);
   return `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * u)).join(",")})`;
 }
@@ -762,8 +768,8 @@ function renderLinks() {
   const meta = D.paper_links_meta || {};
   legend.replaceChildren();
   const yl = el("div", "legend-years");
-  yl.append(el("span", null, `${Y_MIN}`), Object.assign(el("span", "legend-ramp"), { style: `background:linear-gradient(90deg,${YEAR_RAMP.join(",")})` }), el("span", null, `${Y_MAX}年`));
-  legend.append(yl, el("p", null, "円の色は出版年、大きさは被引用数（OpenAlex）。線が太く近いほど、参考文献やテーマの重なりが大きい論文です。影響関係や因果は示しません。"));
+  yl.append(el("span", null, `${linkYearRange()[0]}`), Object.assign(el("span", "legend-ramp"), { style: `background:linear-gradient(90deg,${YEAR_RAMP.join(",")})` }), el("span", null, `${linkYearRange()[1]}年`));
+  legend.append(yl, el("p", null, "円の色は出版年（表示中の論文で最も古い年が青、最も新しい年が赤）、大きさは被引用数（OpenAlex）。線が太く近いほど、参考文献やテーマの重なりが大きい論文です。影響関係や因果は示しません。"));
   list.replaceChildren();
   if (!seed) {
     list.append(el("p", "muted", "起点にする論文を上の欄で探すか、論文一覧の「つながりを見る」から開いてください。"));
