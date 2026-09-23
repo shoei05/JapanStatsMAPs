@@ -1017,158 +1017,158 @@ button.link-row { cursor: pointer; display: flex; flex-direction: column; }
 :root[data-theme="dark"] .chip.on { background: var(--c); color: #1a1f23; }
 :root[data-theme="dark"] .stat { background: var(--surface-alt); }
 
-/* ---------- Fantastic Mr. Fox の配色と構図（wesanderson FantasticFox1 ほか） ----------
+/* ---------- The Life Aquatic（Zissou1）を基調にした配色と構図（wesanderson Zissou1 ほか） ----------
    基本の style.css の上に重ねる。縞・バッジなどの飾りは置かず、
-   色（狐の毛のオレンジ、からし色、麦わらの紙面、赤、空の青、こげ茶）、中央揃えの見出し、Futura 系の書体で雰囲気を出す。
-   既定は明るい画面。暗い画面は切替ボタンでのみ選ぶ（巣穴のこげ茶で、黒にはしない）。 */
+   色（チーム・ズィスーの青、赤い帽子の赤、黄、淡い水色）、中央揃えの見出し、Futura 系の書体で雰囲気を出す。
+   既定は明るい画面。暗い画面は切替ボタンでのみ選ぶ（深いスレートで、黒にはしない。文字は淡色で明暗差を確保）。 */
 :root {
-  --fx-orange: #DD8D29;    /* FantasticFox1 */
-  --fx-yellow: #E2D200;    /* FantasticFox1 */
-  --fx-blue: #46ACC8;      /* FantasticFox1 */
-  --fx-amber: #E58601;     /* FantasticFox1 */
-  --fx-red: #B40F20;       /* FantasticFox1 */
-  --fx-brown: #4E2A1E;     /* BottleRocket1（こげ茶） */
-  --fx-mustard-tint: #F1E6A0;
+  --zs-blue: #3B9AB2;      /* Zissou1 */
+  --zs-lightblue: #78B7C5; /* Zissou1 */
+  --zs-yellow: #EBCC2A;    /* Zissou1 */
+  --zs-gold: #E1AF00;      /* Zissou1 */
+  --zs-red: #F21A00;       /* Zissou1 */
+  --zs-navy: #1D4E5C;      /* Zissou1 青の暗色（文字用） */
 
-  --bg-app: #F4E6CC;
-  --surface: #FFF9EC;
-  --surface-alt: #F9EFD9;
-  --text-main: #3A2215;
-  --text-muted: #7A5C45;
-  --border-main: #D9B98A;
-  --border-light: #ECDCBC;
-  --accent-main: #B40F20;
-  --accent-deep: #8A0C18;
-  --accent-tint: #FBE3C6;
-  --accent-hl: #B40F20;
-  --accent-hl-tint: #F8D9D2;
-  --accent-navy: #4E2A1E;
-  --accent-blue: #46ACC8;
-  --notice-bg: #FBEBC8;
-  --notice-border: #E3C27A;
-  --notice-text: #6B3E0F;
-  --canvas-ink: #3A2215;
-  --canvas-edge: #C9A987;
-  --canvas-node-edge: #FFF9EC;
-  --canvas-label-bg: rgba(255,249,236,.9);
+  --bg-app: #F3F6F5;
+  --surface: #FFFFFF;
+  --surface-alt: #F8FAF9;
+  --text-main: #1F3036;
+  --text-muted: #56676D;
+  --border-main: #C9D9DC;
+  --border-light: #E2ECEE;
+  --accent-main: #3B9AB2;
+  --accent-deep: #1D4E5C;
+  --accent-tint: #E3F1F5;
+  --accent-hl: #F21A00;
+  --accent-hl-tint: #FDE6E2;
+  --accent-navy: #1D4E5C;
+  --accent-blue: #3B9AB2;
+  --notice-bg: #FDF7DC;
+  --notice-border: #EBCC2A;
+  --notice-text: #6B5300;
+  --canvas-ink: #1F3036;
+  --canvas-edge: #9DB4BA;
+  --canvas-node-edge: #FFFFFF;
+  --canvas-label-bg: rgba(255,255,255,.9);
   --font-base: "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", sans-serif;
   --font-display: "Jost", "Futura", "Century Gothic", "Zen Kaku Gothic New", sans-serif;
 }
 body { background: var(--bg-app); color: var(--text-main); font-family: var(--font-base); }
 
-/* 見出し: 狐の毛のオレンジに、こげ茶の文字。中央揃え */
-.top-nav { position: relative; background: var(--fx-orange); color: var(--fx-brown); border-bottom: 2px solid var(--fx-brown); box-shadow: 0 3px 0 var(--bg-app), 0 5px 0 var(--fx-brown); padding: 18px 24px 14px; display: grid; grid-template-columns: 1fr; justify-items: center; gap: 10px; }
+/* 見出し: チーム・ズィスーの青に白い文字。中央揃え */
+.top-nav { position: relative; background: var(--zs-blue); color: #FFFFFF; border-bottom: 3px solid var(--zs-red); box-shadow: none; padding: 18px 24px 14px; display: grid; grid-template-columns: 1fr; justify-items: center; gap: 10px; }
 .top-nav::before { display: none; }
 .brand-badge { display: none; }
 .brand-block { justify-content: center; text-align: center; }
 .brand-titles { align-items: center; }
-.brand-main { font-family: var(--font-display); font-weight: 600; font-size: 24px; letter-spacing: .14em; color: var(--fx-brown); }
-.brand-sub { color: #5A3316; letter-spacing: .04em; font-size: 12px; }
+.brand-main { font-family: var(--font-display); font-weight: 600; font-size: 24px; letter-spacing: .14em; color: #FFFFFF; }
+.brand-sub { color: #EAF6F9; letter-spacing: .04em; font-size: 12px; }
 .stats-ribbon { margin: 0; justify-content: center; }
-.stat { background: var(--surface); border: 1px solid var(--fx-brown); border-radius: 0; }
-.stat b { color: var(--fx-red); font-family: var(--font-display); font-weight: 600; }
+.stat { background: #FFFFFF; border: 1px solid var(--zs-navy); border-radius: 0; }
+.stat b { color: var(--zs-red); font-family: var(--font-display); font-weight: 600; }
 .stat span { color: var(--text-main); }
 .stat small { color: var(--text-muted); }
 .nav-switcher { background: transparent; border: 0; justify-content: center; }
-#tabs button { color: #4A2812; font-weight: 600; letter-spacing: .06em; border-radius: 0; }
-#tabs button:hover { color: var(--fx-red); }
-#tabs button.on { background: var(--fx-brown); color: #FBE3C6; box-shadow: none; }
-.theme-toggle { position: absolute; right: 20px; top: 18px; background: var(--surface); color: var(--fx-brown); border-color: var(--fx-brown); border-radius: 0; }
+#tabs button { color: #FFFFFF; font-weight: 600; letter-spacing: .06em; border-radius: 0; }
+#tabs button:hover { color: var(--zs-yellow); }
+#tabs button.on { background: var(--zs-red); color: #FFFFFF; box-shadow: none; }
+.theme-toggle { position: absolute; right: 20px; top: 18px; background: #FFFFFF; color: var(--zs-navy); border-color: #FFFFFF; border-radius: 0; }
 
-/* 操作帯: からし色 */
-.control-console { background: var(--fx-mustard-tint); border-bottom: 1px solid #D3C35A; }
-.ctrl-label { color: #5A4A08; letter-spacing: .08em; }
-#q, .control-console select { background: var(--surface); border: 1px solid #B9A945; border-radius: 0; color: var(--text-main); }
-.btn-reset, #reset { background: var(--surface); border: 1px solid var(--fx-brown); color: var(--fx-brown); border-radius: 0; }
-.btn-reset:hover, #reset:hover { background: var(--fx-red); border-color: var(--fx-red); color: var(--surface); }
-.slider, input[type="checkbox"] { accent-color: var(--fx-red); }
+/* 操作帯: 淡い水色 */
+.control-console { background: #DCEEF2; border-bottom: 1px solid #B5D6DE; }
+.ctrl-label { color: var(--zs-navy); letter-spacing: .08em; }
+#q, .control-console select { background: #FFFFFF; border: 1px solid #9CC4CE; border-radius: 0; color: var(--text-main); }
+.btn-reset, #reset { background: #FFFFFF; border: 1px solid var(--zs-navy); color: var(--zs-navy); border-radius: 0; }
+.btn-reset:hover, #reset:hover { background: var(--zs-navy); color: #FFFFFF; }
+.slider, input[type="checkbox"] { accent-color: var(--zs-red); }
 .academic-notice-banner { background: var(--notice-bg); border-bottom: 1px solid var(--notice-border); }
-.notice-title { color: var(--fx-red); letter-spacing: .08em; }
-.guide-rules { background: var(--surface); border: 1px solid var(--notice-border); border-radius: 0; }
-.guide-tag { background: var(--fx-blue); color: #FFF9EC; border-radius: 0; }
+.notice-title { color: var(--zs-navy); letter-spacing: .08em; }
+.guide-rules { background: #FFFFFF; border: 1px solid var(--notice-border); border-radius: 0; }
+.guide-tag { background: var(--zs-yellow); color: var(--zs-navy); border-radius: 0; }
 
 /* 図と面 */
-.cv-stage-wrap, #cvwrap { background: var(--surface); }
-.content-stage { background: var(--surface); }
+.cv-stage-wrap, #cvwrap, .content-stage { background: var(--surface); }
 .right-inspector { background: var(--surface-alt); border-left: 1px solid var(--border-main); }
-.section-header h4 { font-family: var(--font-display); letter-spacing: .12em; color: var(--fx-brown); }
-.chip { background: var(--surface); border-radius: 0; color: color-mix(in srgb, var(--c) 45%, #3A2215); }
-.chip.on { background: color-mix(in srgb, var(--c) 35%, #FFF9EC); color: #3A2215; }
-.map-ctrl-floating button { background: var(--surface); color: var(--fx-brown); border-color: var(--border-main); border-radius: 0; }
-.map-ctrl-floating button:hover { background: var(--fx-brown); color: var(--surface); }
+.section-header h4 { font-family: var(--font-display); letter-spacing: .12em; color: var(--zs-navy); }
+.chip { background: var(--surface); border-radius: 0; color: color-mix(in srgb, var(--c) 45%, #1F3036); }
+.chip.on { background: color-mix(in srgb, var(--c) 30%, #FFFFFF); color: #1F3036; }
+.map-ctrl-floating button { background: var(--surface); color: var(--zs-navy); border-color: var(--border-main); border-radius: 0; }
+.map-ctrl-floating button:hover { background: var(--zs-navy); color: #FFFFFF; }
 
 /* 一覧・詳細 */
-.card { background: var(--surface); border: 1px solid var(--border-light); border-left: 4px solid var(--fx-orange); border-radius: 0; }
-.card:hover { border-left-color: var(--fx-red); }
+.card { background: var(--surface); border: 1px solid var(--border-light); border-left: 4px solid var(--zs-blue); border-radius: 0; }
+.card:hover { border-left-color: var(--zs-red); }
 #pane-list .card.on { background: var(--accent-tint); }
-.mini a.t, .card a.t, a.paper-title { color: #7A2410; }
-.paper-details { background: var(--surface-alt); border: 1px solid var(--border-main); color: var(--fx-brown); border-radius: 0; }
-.survey-jump { background: var(--accent-tint); border: 1px solid var(--fx-orange); color: var(--fx-brown); border-radius: 0; }
-.tag { background: #F5E8CE; border-color: var(--border-light); color: #5A3A26; border-radius: 0; }
-.badge.ok { background: #DDF0F5; color: #1F5B6B; border-color: #A9D6E3; border-radius: 0; }
-.badge.machine { background: #FBEBC8; color: #6B3E0F; border-color: #E3C27A; border-radius: 0; }
-.counter-badge { background: var(--fx-brown); color: var(--surface); border-radius: 0; padding: 4px 10px; font-family: var(--font-display); letter-spacing: .04em; }
-#pane-data h3, #matrixpane h2, #survey-root h2 { font-family: var(--font-display); letter-spacing: .1em; color: var(--fx-brown); }
+.mini a.t, .card a.t, a.paper-title { color: #1F6475; }
+.paper-details { background: var(--surface-alt); border: 1px solid var(--border-main); color: var(--zs-navy); border-radius: 0; }
+.survey-jump { background: var(--accent-tint); border: 1px solid var(--zs-lightblue); color: var(--zs-navy); border-radius: 0; }
+.tag { background: #EEF4F5; border-color: var(--border-light); color: #3C5359; border-radius: 0; }
+.badge.ok { background: #E3F1F5; color: #1F5F6E; border-color: #B4D6E0; border-radius: 0; }
+.badge.machine { background: #FDF7DC; color: #6B5300; border-color: #EBCC2A; border-radius: 0; }
+.counter-badge { background: var(--zs-navy); color: #FFFFFF; border-radius: 0; padding: 4px 10px; font-family: var(--font-display); letter-spacing: .04em; }
+#pane-data h3, #matrixpane h2, #survey-root h2 { font-family: var(--font-display); letter-spacing: .1em; color: var(--zs-navy); }
 .kv .k { color: var(--text-muted); }
 
 /* 行列・データ源と年 */
 #pane-matrix { background: var(--surface-alt); }
 .relation-matrix { background: var(--surface); }
-.relation-matrix thead th, .relation-matrix th:first-child { background: #F5E8CE; border-top-color: var(--fx-orange); }
+.relation-matrix thead th, .relation-matrix th:first-child { background: #EEF4F5; border-top-color: var(--zs-blue); }
 .relation-matrix th, .relation-matrix td { border-color: var(--border-light); }
-.relation-matrix td { color: #DCC7A5; }
-.relation-matrix td button:hover { outline-color: var(--fx-blue); }
-.relation-matrix .matrix-domain:hover { color: var(--fx-red); }
+.relation-matrix td { color: #C3D2D5; }
+.relation-matrix td button:hover { outline-color: var(--zs-red); }
+.relation-matrix .matrix-domain:hover { color: var(--zs-red); }
 
-.app-footer, #foot { background: var(--fx-brown); color: #F4DDBB; border-top: 0; letter-spacing: .04em; text-align: center; }
+.app-footer, #foot { background: var(--zs-navy); color: #DCEEF2; border-top: 0; letter-spacing: .04em; text-align: center; }
 .unmapped-papers { background: var(--surface-alt); }
-button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible, [role="button"]:focus-visible { outline-color: var(--fx-blue); }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible, [role="button"]:focus-visible { outline-color: var(--zs-gold); }
 
-/* ---------- 巣穴（切替ボタンで選んだときだけ。黒ではなく深いこげ茶） ---------- */
+/* ---------- 暗い画面（切替ボタンで選んだときだけ。深いスレート、淡い文字） ---------- */
 :root[data-theme="dark"] {
-  --bg-app: #2B1A10;
-  --surface: #362216;
-  --surface-alt: #301E13;
-  --text-main: #F6E7CF;
-  --text-muted: #D0B393;
-  --border-main: #5E4029;
-  --border-light: #4A3120;
-  --accent-tint: #4A2E18;
-  --notice-bg: #3A2716;
-  --notice-border: #6E4A22;
-  --notice-text: #F1C27A;
-  --canvas-ink: #F6E7CF;
-  --canvas-edge: #8E6F52;
-  --canvas-node-edge: #362216;
-  --canvas-label-bg: rgba(54,34,22,.9);
-  --accent-main: #DD8D29;
-  --accent-deep: #F0B060;
-  --accent-hl: #E0453A;
-  --accent-hl-tint: #4A2018;
-  --accent-navy: #F0B060;
-  --accent-blue: #46ACC8;
+  --bg-app: #182227;
+  --surface: #1F2B31;
+  --surface-alt: #1B262B;
+  --text-main: #EEF3F4;
+  --text-muted: #B5C4C8;
+  --border-main: #3A4D55;
+  --border-light: #2E3F46;
+  --accent-main: #78B7C5;
+  --accent-deep: #A8D8E3;
+  --accent-tint: #23414A;
+  --accent-hl: #FF5A3D;
+  --accent-hl-tint: #45251F;
+  --accent-navy: #A8D8E3;
+  --accent-blue: #78B7C5;
+  --notice-bg: #2C2A18;
+  --notice-border: #6B5E22;
+  --notice-text: #F2DC73;
+  --canvas-ink: #EEF3F4;
+  --canvas-edge: #6F8990;
+  --canvas-node-edge: #1F2B31;
+  --canvas-label-bg: rgba(31,43,49,.92);
 }
-:root[data-theme="dark"] .top-nav { background: #5A3316; color: var(--fx-orange); border-bottom-color: var(--fx-orange); box-shadow: 0 3px 0 var(--bg-app), 0 5px 0 var(--fx-orange); }
-:root[data-theme="dark"] .brand-main { color: var(--fx-orange); }
-:root[data-theme="dark"] .brand-sub, :root[data-theme="dark"] #tabs button { color: #F1D2A8; }
-:root[data-theme="dark"] #tabs button.on { background: var(--fx-orange); color: #2B1A10; }
-:root[data-theme="dark"] .stat { background: var(--surface); border-color: var(--fx-orange); }
-:root[data-theme="dark"] .stat b { color: var(--fx-orange); }
-:root[data-theme="dark"] .theme-toggle { background: var(--surface); color: var(--fx-orange); border-color: var(--fx-orange); }
-:root[data-theme="dark"] .control-console { background: #3F3510; border-bottom-color: #6B5A18; }
-:root[data-theme="dark"] .ctrl-label { color: #F0E27A; }
-:root[data-theme="dark"] #q, :root[data-theme="dark"] .control-console select { background: var(--surface); border-color: #7A6A22; color: var(--text-main); }
-:root[data-theme="dark"] .btn-reset, :root[data-theme="dark"] #reset, :root[data-theme="dark"] .paper-details, :root[data-theme="dark"] .survey-jump, :root[data-theme="dark"] .map-ctrl-floating button { background: var(--surface); color: var(--fx-orange); border-color: #7A5230; }
-:root[data-theme="dark"] .section-header h4, :root[data-theme="dark"] .notice-title, :root[data-theme="dark"] #pane-data h3, :root[data-theme="dark"] #matrixpane h2, :root[data-theme="dark"] #survey-root h2 { color: var(--fx-orange); }
-:root[data-theme="dark"] .mini a.t, :root[data-theme="dark"] .card a.t, :root[data-theme="dark"] a.paper-title { color: #F4C98E; }
-:root[data-theme="dark"] .tag, :root[data-theme="dark"] .badge.machine { background: #43291A; color: var(--text-muted); border-color: var(--border-main); }
-:root[data-theme="dark"] .badge.ok { background: #1E3A42; color: #9FD6E4; border-color: #2F5560; }
-:root[data-theme="dark"] .chip { background: var(--surface); color: color-mix(in srgb, var(--c) 70%, #ffffff); }
-:root[data-theme="dark"] .chip.on { background: var(--c); color: #2B1A10; }
-:root[data-theme="dark"] .relation-matrix thead th, :root[data-theme="dark"] .relation-matrix th:first-child { background: #43291A; }
-:root[data-theme="dark"] .relation-matrix td { color: #5E4029; }
-:root[data-theme="dark"] .app-footer, :root[data-theme="dark"] #foot { background: #1F120B; color: var(--text-muted); }
+:root[data-theme="dark"] .top-nav { background: #1D4E5C; border-bottom-color: #FF5A3D; }
+:root[data-theme="dark"] .brand-sub, :root[data-theme="dark"] #tabs button { color: #DCEEF2; }
+:root[data-theme="dark"] #tabs button:hover { color: var(--zs-yellow); }
+:root[data-theme="dark"] #tabs button.on { background: #FF5A3D; color: #FFFFFF; }
+:root[data-theme="dark"] .stat { background: var(--surface); border-color: #78B7C5; }
+:root[data-theme="dark"] .stat b { color: #FFB199; }
+:root[data-theme="dark"] .stat span { color: var(--text-main); }
+:root[data-theme="dark"] .theme-toggle { background: var(--surface); color: #DCEEF2; border-color: #78B7C5; }
+:root[data-theme="dark"] .control-console { background: #22353C; border-bottom-color: #3A4D55; }
+:root[data-theme="dark"] .ctrl-label { color: #A8D8E3; }
+:root[data-theme="dark"] #q, :root[data-theme="dark"] .control-console select { background: var(--surface); border-color: #4E6870; color: var(--text-main); }
+:root[data-theme="dark"] .btn-reset, :root[data-theme="dark"] #reset, :root[data-theme="dark"] .paper-details, :root[data-theme="dark"] .survey-jump, :root[data-theme="dark"] .map-ctrl-floating button { background: var(--surface); color: #A8D8E3; border-color: #4E6870; }
+:root[data-theme="dark"] .section-header h4, :root[data-theme="dark"] .notice-title, :root[data-theme="dark"] #pane-data h3, :root[data-theme="dark"] #matrixpane h2, :root[data-theme="dark"] #survey-root h2 { color: #A8D8E3; }
+:root[data-theme="dark"] .mini a.t, :root[data-theme="dark"] .card a.t, :root[data-theme="dark"] a.paper-title { color: #A8D8E3; }
+:root[data-theme="dark"] .tag, :root[data-theme="dark"] .badge.machine { background: #2A3940; color: var(--text-muted); border-color: var(--border-main); }
+:root[data-theme="dark"] .badge.ok { background: #23414A; color: #A8D8E3; border-color: #3A5A63; }
+:root[data-theme="dark"] .chip { background: var(--surface); color: color-mix(in srgb, var(--c) 40%, #ffffff); }
+:root[data-theme="dark"] .chip.on { background: var(--c); color: #11191C; }
+:root[data-theme="dark"] .relation-matrix thead th, :root[data-theme="dark"] .relation-matrix th:first-child { background: #2A3940; }
+:root[data-theme="dark"] .relation-matrix td { color: #3E535A; }
 :root[data-theme="dark"] .guide-rules { background: var(--surface); }
+:root[data-theme="dark"] .guide-tag { background: #6B5E22; color: #F2DC73; }
+:root[data-theme="dark"] .app-footer, :root[data-theme="dark"] #foot { background: #11191C; color: var(--text-muted); }
 @media (max-width: 760px) { .theme-toggle { position: static; } .brand-main { font-size: 18px; letter-spacing: .08em; } }
 
 #survey-root{padding:18px 22px}
@@ -1177,7 +1177,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .sy-matrix th.sy-y{font-weight:400;font-size:10px;min-width:9px;padding:2px 0;writing-mode:vertical-rl}
 .sy-matrix td.sy-c{min-width:9px;height:22px;padding:0;cursor:pointer}
 .sy-matrix td.sy-n{white-space:nowrap;font-size:12px;padding:0 8px}
-.tag.cls-A{box-shadow:inset 3px 0 0 #46ACC8}.tag.cls-B{box-shadow:inset 3px 0 0 #DD8D29}.tag.cls-AB{box-shadow:inset 3px 0 0 #B40F20}</style></head>
+.tag.cls-A{box-shadow:inset 3px 0 0 #3B9AB2}.tag.cls-B{box-shadow:inset 3px 0 0 #E1AF00}.tag.cls-AB{box-shadow:inset 3px 0 0 #F21A00}</style></head>
 <body>
 
 <header class="top-nav">
@@ -1339,21 +1339,17 @@ function paperTitle(p,className="t") {
 
 /* 生成りの紙面で沈まないよう、彩度を落として明度差をつけたテーマ色。 */
 const GROUP_COLOR = {
-  dependence_preference: "#B40F20",   // FantasticFox1 red
-  digital_information: "#46ACC8",     // FantasticFox1 blue
-  mental_psychological: "#3F5151",    // BottleRocket1 slate
-  relations_social: "#F8AFA8",        // Royal2 pink
-  infection_prevention: "#046C9A",    // Darjeeling2 blue
-  healthcare_use: "#0B775E",          // Rushmore1 green
-  lifestyle_physical: "#74A089",      // Royal2 sage
-  family_sex: "#E2D200",              // FantasticFox1 yellow
-  work_socioeconomic: "#4E2A1E",      // BottleRocket1 brown
-  research_methods: "#D8A499",        // GrandBudapest2 tan
-  disease_burden: "#9986A5",          // IsleofDogs1 lavender grey
-  healthcare_provision: "#E58601",    // FantasticFox1 amber
-  population_dynamics: "#CCBA72",     // IsleofDogs1 khaki
-  environment_economy: "#9C964A",     // Moonrise3 olive
-  data_methods: "#899DA4"             // Royal1 slate blue
+  dependence_preference: "#F21A00", digital_information: "#78B7C5", mental_psychological: "#3B9AB2",  // Zissou1
+  relations_social: "#E6A0C4", healthcare_use: "#7294D4",   // GrandBudapest2
+  infection_prevention: "#046C9A",                          // Darjeeling2
+  lifestyle_physical: "#81A88D", work_socioeconomic: "#972D15",  // Cavalcanti1
+  family_sex: "#E1AF00",                                    // Zissou1
+  research_methods: "#CDC08C",                              // Moonrise3
+  disease_burden: "#9986A5",                                // IsleofDogs1
+  healthcare_provision: "#00A08A",                          // Darjeeling1
+  population_dynamics: "#DD8D29",                           // FantasticFox1
+  environment_economy: "#9C964A",                           // Moonrise3
+  data_methods: "#899DA4"                                   // Royal1
 };
 const groupOf = {};
 Object.entries(D.display_groups).forEach(([g, v]) => v.domains.forEach(d => (groupOf[d] = g)));
@@ -1811,7 +1807,7 @@ function renderSourceYears() {
     const tr = el("tr"); const th = el("th", null, r.src); th.scope = "row"; tr.append(th);
     for (let y = y0; y <= y1; y++) {
       const v = r.cnt[y] || 0, td = el("td", "sy-c");
-      if (v) { td.style.background = `rgba(221,141,41,${(0.12 + 0.85 * Math.sqrt(v / max)).toFixed(3)})`; td.title = `${r.src} ${y}年: ${v} 論文`;
+      if (v) { td.style.background = `rgba(59,154,178,${(0.12 + 0.85 * Math.sqrt(v / max)).toFixed(3)})`; td.title = `${r.src} ${y}年: ${v} 論文`;
         td.onclick = () => { state.study = r.src === "特定不能" ? "" : r.src; state.wave = String(y); $("#paper-study").value = state.study; ensureYearOption(y); $("#paper-wave").value = state.wave; openPaperList(); }; }
       tr.append(td);
     }
@@ -1924,7 +1920,7 @@ function renderMatrix() {
   const scroll=el("div","matrix-scroll");const table=el("table","relation-matrix");table.setAttribute("aria-label","登録された曝露とアウトカム別の論文数");
   const thead=el("thead");const hr=el("tr");const corner=el("th",null,"曝露 ↓ / アウトカム →");hr.append(corner);
   domains.forEach(d=>{const th=el("th");const btn=el("button","matrix-domain",`${label(d)}（${g.nodes.find(n=>n.id===d).n}論文）`);btn.onclick=()=>openDomain(d,true);th.append(btn);th.scope="col";th.style.borderTopColor=colorOf(d);hr.append(th);});thead.append(hr);table.append(thead);
-  const tbody=el("tbody");domains.forEach(a=>{const tr=el("tr");const th=el("th",null,label(a));th.scope="row";tr.append(th);domains.forEach(b=>{const td=el("td");const e=edges[a+"|"+b];if(e){const btn=el("button",null,String(e.n));btn.style.background=`rgba(180,15,32,${Math.min(.85,.12+Math.log2(e.n+1)*.13)})`;btn.style.color=e.n>3?"#FFF9EC":"#7A0A15";btn.setAttribute("aria-label",`${label(a)}から${label(b)}、${e.n}論文`);btn.onclick=()=>{state.sel=null;state.selEdge=e;renderDetail();};td.append(btn);}else{td.textContent="·";td.title="解析の組合せが未確認、または線の最小論文数未満";}tr.append(td);});tbody.append(tr);});table.append(tbody);scroll.append(table);box.append(scroll);
+  const tbody=el("tbody");domains.forEach(a=>{const tr=el("tr");const th=el("th",null,label(a));th.scope="row";tr.append(th);domains.forEach(b=>{const td=el("td");const e=edges[a+"|"+b];if(e){const btn=el("button",null,String(e.n));btn.style.background=`rgba(59,154,178,${Math.min(.85,.16+Math.log2(e.n+1)*.13)})`;btn.style.color=e.n>3?"white":"#1f5f6e";btn.setAttribute("aria-label",`${label(a)}から${label(b)}、${e.n}論文`);btn.onclick=()=>{state.sel=null;state.selEdge=e;renderDetail();};td.append(btn);}else{td.textContent="·";td.title="解析の組合せが未確認、または線の最小論文数未満";}tr.append(td);});tbody.append(tr);});table.append(tbody);scroll.append(table);box.append(scroll);
 }
 function exportMapSVG() {
   const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&apos;"}[c]));
@@ -1953,8 +1949,8 @@ let lcv, lctx;
 const linkPapers = D.papers.filter(p => p.doc_kind === "paper");
 const PAPER_YEARS = linkPapers.map(p => p.year).filter(Boolean);
 const Y_MIN = Math.min(...PAPER_YEARS), Y_MAX = Math.max(...PAPER_YEARS);
-const YEAR_RAMP = ["#4E2A1E","#6E2A18","#8E1F1A","#B40F20","#C4401D","#D46A23","#DD8D29","#E5A93A"];  // こげ茶 → 狐の赤 → 狐の毛のオレンジ（BottleRocket1・FantasticFox1）
-function yearColor(y) {  // 古い論文ほどこげ茶、新しい論文ほど明るいオレンジ
+const YEAR_RAMP = ["#3A9AB2","#6FB2C1","#91BAB6","#A5C2A3","#BDC881","#DCCB4E","#E3B710","#E79805","#EC7A05","#EF5703","#F11B00"];  // wesanderson Zissou1Continuous
+function yearColor(y) {  // Zissou1Continuous。古い論文ほど青、新しい論文ほど赤
   const t = y ? (y - Y_MIN) / Math.max(1, Y_MAX - Y_MIN) : 0, f = t * (YEAR_RAMP.length - 1), i = Math.min(YEAR_RAMP.length - 2, Math.floor(f)), u = f - i;
   const hx = h => [1, 3, 5].map(k => parseInt(h.slice(k, k + 2), 16)), a = hx(YEAR_RAMP[i]), b = hx(YEAR_RAMP[i + 1]);
   return `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * u)).join(",")})`;
@@ -2023,7 +2019,7 @@ function ldraw() {
   if (lcv.width !== Math.round(w * dpr) || lcv.height !== Math.round(h * dpr)) { lcv.width = Math.round(w * dpr); lcv.height = Math.round(h * dpr); }
   lctx.setTransform(dpr, 0, 0, dpr, 0, 0); lctx.clearRect(0, 0, w, h);
   lctx.save(); lctx.translate(lsim.tx, lsim.ty); lctx.scale(lsim.k, lsim.k);
-  const sel = state.listSel, ink = cssVar("--canvas-ink", "#2f3437"), rose = cssVar("--accent-hl", "#B40F20");
+  const sel = state.listSel, ink = cssVar("--canvas-ink", "#2f3437"), rose = cssVar("--accent-hl", "#F21A00");
   lsim.edges.forEach(e => {
     const on = sel && sel !== lsim.seed && (e.a.id === sel || e.b.id === sel);
     lctx.beginPath(); lctx.moveTo(e.a.x, e.a.y); lctx.lineTo(e.b.x, e.b.y);

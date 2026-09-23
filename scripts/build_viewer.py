@@ -146,7 +146,7 @@ tpl = (ROOT / "scripts/viewer_template.html").read_text(encoding="utf-8")
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 html = (tpl.replace("{{DATA}}", blob)
         .replace("{{STYLE}}", (ROOT / "viewer/style.css").read_text(encoding="utf-8"))
-        .replace("{{WES}}", (ROOT / "viewer/wes_fox.css").read_text(encoding="utf-8"))
+        .replace("{{WES}}", (ROOT / "viewer/wes_zissou.css").read_text(encoding="utf-8"))
         .replace("{{APP}}", (ROOT / "viewer/app.js").read_text(encoding="utf-8")))
 (ROOT / "viewer/index.html").write_text(html, encoding="utf-8")
 # Artifact 用: 公開時に doctype/head/body の骨組みが付くので、自前の骨組みを外した版を書く

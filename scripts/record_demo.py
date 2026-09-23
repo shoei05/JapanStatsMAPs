@@ -23,12 +23,12 @@ OVERLAY = """
   const st = document.createElement('style');
   st.textContent = `
     #demo-cursor{position:fixed;z-index:99999;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;
-      background:rgba(221,141,41,.6);border:2px solid #4E2A1E;pointer-events:none;transition:transform .12s}
+      background:rgba(242,26,0,.45);border:2px solid #1D4E5C;pointer-events:none;transition:transform .12s}
     #demo-cursor.down{transform:scale(.7)}
     #demo-cap{position:fixed;z-index:99998;left:50%;bottom:40px;transform:translateX(-50%);width:max-content;max-width:1380px;
-      background:rgba(255,249,236,.97);color:#3A2215;border:2px solid #4E2A1E;padding:14px 32px;
+      background:rgba(255,255,255,.97);color:#1F3036;border:2px solid #1D4E5C;padding:14px 32px;
       font:600 30px/1.45 "Zen Kaku Gothic New","Hiragino Sans",sans-serif;letter-spacing:.03em;text-align:center;
-      box-shadow:0 4px 0 #DD8D29;opacity:0;transition:opacity .35s}
+      box-shadow:0 4px 0 #EBCC2A;opacity:0;transition:opacity .35s}
     #demo-cap.on{opacity:1}`;
   document.head.append(st);
   const c = document.createElement('div'); c.id = 'demo-cursor'; document.body.append(c);
@@ -50,7 +50,7 @@ def main():
                             record_video_size={"width": W, "height": H}, color_scheme="light")
         pg = ctx.new_page()
         pg.goto(URL, wait_until="networkidle")
-        pg.wait_for_function("typeof sim !== 'undefined' && sim.running === 0", timeout=60000)
+        pg.wait_for_timeout(1500)  # 配置は表示前に計算しきる作りなので、読み込み後に少し待てば足りる
         pg.evaluate("fit()")
         pg.evaluate(OVERLAY)
         cap = lambda t: pg.evaluate("t => window.__cap(t)", t)  # noqa: E731
