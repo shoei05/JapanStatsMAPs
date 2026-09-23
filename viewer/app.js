@@ -27,20 +27,21 @@ function paperTitle(p,className="t") {
 
 /* 生成りの紙面で沈まないよう、彩度を落として明度差をつけたテーマ色。 */
 const GROUP_COLOR = {
-  dependence_preference: "#FD6467",   // GrandBudapest1 coral
-  digital_information: "#C6CDF7",     // GrandBudapest2 lavender
-  mental_psychological: "#7294D4",    // GrandBudapest2 blue
-  relations_social: "#E6A0C4",        // GrandBudapest2 pink
-  infection_prevention: "#46ACC8",    // FantasticFox1 blue
+  dependence_preference: "#B40F20",   // FantasticFox1 red
+  digital_information: "#46ACC8",     // FantasticFox1 blue
+  mental_psychological: "#3F5151",    // BottleRocket1 slate
+  relations_social: "#F8AFA8",        // Royal2 pink
+  infection_prevention: "#046C9A",    // Darjeeling2 blue
   healthcare_use: "#0B775E",          // Rushmore1 green
   lifestyle_physical: "#74A089",      // Royal2 sage
-  family_sex: "#F1BB7B",              // GrandBudapest1 peach
-  work_socioeconomic: "#5B1A18",      // GrandBudapest1 maroon
+  family_sex: "#E2D200",              // FantasticFox1 yellow
+  work_socioeconomic: "#4E2A1E",      // BottleRocket1 brown
   research_methods: "#D8A499",        // GrandBudapest2 tan
   disease_burden: "#9986A5",          // IsleofDogs1 lavender grey
-  healthcare_provision: "#D67236",    // GrandBudapest1 orange
-  population_dynamics: "#E2D200",     // FantasticFox1 yellow
-  environment_economy: "#9C964A"      // Moonrise3 olive
+  healthcare_provision: "#E58601",    // FantasticFox1 amber
+  population_dynamics: "#CCBA72",     // IsleofDogs1 khaki
+  environment_economy: "#9C964A",     // Moonrise3 olive
+  data_methods: "#899DA4"             // Royal1 slate blue
 };
 const groupOf = {};
 Object.entries(D.display_groups).forEach(([g, v]) => v.domains.forEach(d => (groupOf[d] = g)));
@@ -485,7 +486,7 @@ function renderSourceYears() {
     const tr = el("tr"); const th = el("th", null, r.src); th.scope = "row"; tr.append(th);
     for (let y = y0; y <= y1; y++) {
       const v = r.cnt[y] || 0, td = el("td", "sy-c");
-      if (v) { td.style.background = `rgba(114,148,212,${(0.12 + 0.85 * Math.sqrt(v / max)).toFixed(3)})`; td.title = `${r.src} ${y}年: ${v} 論文`;
+      if (v) { td.style.background = `rgba(221,141,41,${(0.12 + 0.85 * Math.sqrt(v / max)).toFixed(3)})`; td.title = `${r.src} ${y}年: ${v} 論文`;
         td.onclick = () => { state.study = r.src === "特定不能" ? "" : r.src; state.wave = String(y); $("#paper-study").value = state.study; ensureYearOption(y); $("#paper-wave").value = state.wave; openPaperList(); }; }
       tr.append(td);
     }
@@ -598,7 +599,7 @@ function renderMatrix() {
   const scroll=el("div","matrix-scroll");const table=el("table","relation-matrix");table.setAttribute("aria-label","登録された曝露とアウトカム別の論文数");
   const thead=el("thead");const hr=el("tr");const corner=el("th",null,"曝露 ↓ / アウトカム →");hr.append(corner);
   domains.forEach(d=>{const th=el("th");const btn=el("button","matrix-domain",`${label(d)}（${g.nodes.find(n=>n.id===d).n}論文）`);btn.onclick=()=>openDomain(d,true);th.append(btn);th.scope="col";th.style.borderTopColor=colorOf(d);hr.append(th);});thead.append(hr);table.append(thead);
-  const tbody=el("tbody");domains.forEach(a=>{const tr=el("tr");const th=el("th",null,label(a));th.scope="row";tr.append(th);domains.forEach(b=>{const td=el("td");const e=edges[a+"|"+b];if(e){const btn=el("button",null,String(e.n));btn.style.background=`rgba(91,26,24,${Math.min(.85,.12+Math.log2(e.n+1)*.13)})`;btn.style.color=e.n>3?"#FFF8F1":"#5B1A18";btn.setAttribute("aria-label",`${label(a)}から${label(b)}、${e.n}論文`);btn.onclick=()=>{state.sel=null;state.selEdge=e;renderDetail();};td.append(btn);}else{td.textContent="·";td.title="解析の組合せが未確認、または線の最小論文数未満";}tr.append(td);});tbody.append(tr);});table.append(tbody);scroll.append(table);box.append(scroll);
+  const tbody=el("tbody");domains.forEach(a=>{const tr=el("tr");const th=el("th",null,label(a));th.scope="row";tr.append(th);domains.forEach(b=>{const td=el("td");const e=edges[a+"|"+b];if(e){const btn=el("button",null,String(e.n));btn.style.background=`rgba(180,15,32,${Math.min(.85,.12+Math.log2(e.n+1)*.13)})`;btn.style.color=e.n>3?"#FFF9EC":"#7A0A15";btn.setAttribute("aria-label",`${label(a)}から${label(b)}、${e.n}論文`);btn.onclick=()=>{state.sel=null;state.selEdge=e;renderDetail();};td.append(btn);}else{td.textContent="·";td.title="解析の組合せが未確認、または線の最小論文数未満";}tr.append(td);});tbody.append(tr);});table.append(tbody);scroll.append(table);box.append(scroll);
 }
 function exportMapSVG() {
   const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&apos;"}[c]));
@@ -627,8 +628,8 @@ let lcv, lctx;
 const linkPapers = D.papers.filter(p => p.doc_kind === "paper");
 const PAPER_YEARS = linkPapers.map(p => p.year).filter(Boolean);
 const Y_MIN = Math.min(...PAPER_YEARS), Y_MAX = Math.max(...PAPER_YEARS);
-const ZISSOU1_CONT = ["#7294D4","#9AAEE5","#C6CDF7","#D9B6DE","#E6A0C4","#F1BB7B","#F08A6E","#FD6467","#B83A36","#5B1A18"];  // GrandBudapest1/2 をつないだ連続色
-function yearColor(y) {  // GrandBudapest の連続色。古い論文ほど青、新しい論文ほど臙脂
+const ZISSOU1_CONT = ["#46ACC8","#7DBFB0","#B4C97A","#E2D200","#E4B418","#DD8D29","#E58601","#CB5A1A","#B40F20"];  // FantasticFox1 をつないだ連続色
+function yearColor(y) {  // FantasticFox1 の連続色。古い論文ほど青、新しい論文ほど赤
   const t = y ? (y - Y_MIN) / Math.max(1, Y_MAX - Y_MIN) : 0, f = t * (ZISSOU1_CONT.length - 1), i = Math.min(ZISSOU1_CONT.length - 2, Math.floor(f)), u = f - i;
   const hx = h => [1, 3, 5].map(k => parseInt(h.slice(k, k + 2), 16)), a = hx(ZISSOU1_CONT[i]), b = hx(ZISSOU1_CONT[i + 1]);
   return `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * u)).join(",")})`;

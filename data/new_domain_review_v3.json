@@ -1,0 +1,4478 @@
+{
+ "candidates": {
+  "official_statistics_infrastructure": [
+   "統計調査・データ基盤",
+   "政府統計調査やデータ資源そのものの方法と整備。調査の参加割合・非参加者の把握、レコードリンケージ、統計表・データベース・換算係数の構築、推計方法など。重み付け（IPW）や尺度の検証とは区別する"
+  ],
+  "natural_phenomena": [
+   "自然現象・地球科学",
+   "地震・火山・気象などの自然現象そのものの観測・解析。健康や社会への影響を扱う研究（災害の影響、気象・環境曝露）とは区別する"
+  ]
+ },
+ "targets": [
+  "doi:10.1103/physreve.86.046107",
+  "doi:10.11236/jph.66.4_210",
+  "doi:10.1371/journal.pone.0286169",
+  "doi:10.3390/foods13070988"
+ ],
+ "summary": {
+  "official_statistics_infrastructure": {
+   "label": "統計調査・データ基盤",
+   "roles": {
+    "absent": 1,
+    "main": 3
+   },
+   "fit": {
+    "new_domain": 3
+   }
+  },
+  "natural_phenomena": {
+   "label": "自然現象・地球科学",
+   "roles": {
+    "main": 1,
+    "absent": 3
+   },
+   "fit": {
+    "new_domain": 1
+   }
+  }
+ },
+ "adopted": [
+  "official_statistics_infrastructure",
+  "natural_phenomena"
+ ],
+ "stage1": {
+  "doi:10.1103/physreve.86.046107": {
+   "official_statistics_infrastructure": {
+    "role": "absent",
+    "confidence": 0.41
+   },
+   "natural_phenomena": {
+    "role": "main",
+    "confidence": 1.0
+   }
+  },
+  "doi:10.11236/jph.66.4_210": {
+   "official_statistics_infrastructure": {
+    "role": "main",
+    "confidence": 1.0
+   },
+   "natural_phenomena": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "doi:10.1371/journal.pone.0286169": {
+   "official_statistics_infrastructure": {
+    "role": "main",
+    "confidence": 0.99
+   },
+   "natural_phenomena": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  },
+  "doi:10.3390/foods13070988": {
+   "official_statistics_infrastructure": {
+    "role": "main",
+    "confidence": 0.66
+   },
+   "natural_phenomena": {
+    "role": "absent",
+    "confidence": 1.0
+   }
+  }
+ },
+ "stage2": [
+  {
+   "paper_id": "doi:10.1103/physreve.86.046107",
+   "candidate": "natural_phenomena",
+   "fit": "new_domain",
+   "confidence": 0.85
+  },
+  {
+   "paper_id": "doi:10.11236/jph.66.4_210",
+   "candidate": "official_statistics_infrastructure",
+   "fit": "new_domain",
+   "confidence": 0.46
+  },
+  {
+   "paper_id": "doi:10.1371/journal.pone.0286169",
+   "candidate": "official_statistics_infrastructure",
+   "fit": "new_domain",
+   "confidence": 0.71
+  },
+  {
+   "paper_id": "doi:10.3390/foods13070988",
+   "candidate": "official_statistics_infrastructure",
+   "fit": "new_domain",
+   "confidence": 0.49
+  }
+ ],
+ "tags": {
+  "doi:10.1002/ags3.70282": {
+   "official_statistics_infrastructure": 0.39,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/luts.70092": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.35772/ghm.2026.01027": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/lio2.70489": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/jvh.70206": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s13340-026-00899-1": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.113681": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s11701-026-03817-4": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/cnr2.70688": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.copsyc.2026.102349": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/jjco/hyag105": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s00484-026-03320-3": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1038/s41598-026-61094-5": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/pcn5.70392": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s40780-026-00552-8": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jpainsymman.2026.07.015": {
+   "official_statistics_infrastructure": 0.63,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.1111/ggi.70808": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2026-0005": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2025-115722": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ags3.70220": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0348087": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/bco2.70270": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1177/22799036261471211": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-026-27682-w": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0347587": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/jca.70112": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1265/ehpm.26-00125": {
+   "official_statistics_infrastructure": 0.32,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.70638": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/pharmacy14020051": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ags3.70242": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.17245/jdapm.2025.25.6.433": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2185/jrm.2025-066": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jos.2026.06.004": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s40780-025-00531-5": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.asmart.2025.12.002": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2025-0561": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.31662/jmaj.2025-0583": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ases.70343": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjophth-2025-002685": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12903-026-08914-2": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0350820": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.jcpo.2026.100796": {
+   "official_statistics_infrastructure": 0.32,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/iju.70527": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1080/13696998.2026.2651056": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s00540-026-03869-8": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/jjco/hyaf178": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.1002/pcn5.70224": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ags3.70217": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/jrr/rraf088": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-026-28241-z": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jseint.2025.101424": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.85808": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/dj14020102": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jseint.2025.05.005": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2169/internalmedicine.7255-26": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1002/pcn5.70131": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2169/internalmedicine.5200-24": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/pcn5.70308": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/jrr/rrae100": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1038/s41598-025-91034-8": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.resinv.2025.09.017": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2490/prm.20250024": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ags3.70178": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/jrr/rrae078": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jseint.2025.05.013": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.77105": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0327774": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC11814642": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1177/20595131251371009": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1002/joa3.70408": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC12720611": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1111/1346-8138.17393": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.35772/ghm.2025.01073": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/cam4.70226": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/hepr.70066": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41440-024-01706-7": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2169/internalmedicine.4820-24": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/jog.70133": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.73489": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjph-2025-002720": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.clineuro.2024.108547": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.resinv.2025.08.011": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/cdoe.13024": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.xops.2026.101067": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.1159/000545626": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s10120-024-01553-y": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/jrr/rraf024": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.91228": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/biomedicines12081870": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.7759/cureus.63166": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1371/journal.pone.0288854": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.72814": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.59096": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.ijporl.2025.112444": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1265/ehpm.24-00197": {
+   "official_statistics_infrastructure": 0.34,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s40780-023-00317-7": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/apa.17533": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s11606-024-09003-2": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1080/20523211.2023.2286350": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.48912": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2196/56091": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/cam4.71547": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.37737/ace.25002": {
+   "official_statistics_infrastructure": 0.35,
+   "natural_phenomena": 0.14
+  },
+  "doi:10.1038/s41598-024-65407-4": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/cam4.6661": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.7759/cureus.79854": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0291673": {
+   "official_statistics_infrastructure": 0.22,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jos.2024.06.008": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jctube.2024.100497": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s10157-023-02412-3": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/jpm13071047": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2022-0142": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/ggi.15011": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1248/bpb.b24-00584": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/jhps/hnad022": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.35772/ghm.2022.01065": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-024-18156-y": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ags3.12865": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-023-49705-x": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s40360-024-00777-z": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ags3.12813": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph191912130": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-026-57364-x": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.14
+  },
+  "doi:10.1038/s41598-023-31856-6": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ags3.70018": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC11815046": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s11604-023-01511-1": {
+   "official_statistics_infrastructure": 0.25,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2023-071670": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s11701-023-01562-6": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph192214684": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s10157-022-02284-z": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.92189": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "epmc:PMC10914303": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.prnil.2022.06.004": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.1002/jgf2.622": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.7759/cureus.83996": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.16
+  },
+  "doi:10.1007/s11701-021-01365-7": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/jog.15806": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2169/internalmedicine.4398-24": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.16
+  },
+  "doi:10.3390/jcm11174966": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/jpm12060956": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/epidemiologia7020034": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-024-82051-0": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.17
+  },
+  "doi:10.2185/jrm.2021-051": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/jcm14051518": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.7883/yoken.jjid.2021.450": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.ejogrb.2023.08.388": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2185/jrm.2021-054": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.78269": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12888-021-03657-6": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.7759/cureus.96960": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.13
+  },
+  "doi:10.2209/tdcpublication.2021-0019": {
+   "official_statistics_infrastructure": 0.41,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2185/jrm.2022-015": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jos.2020.07.022": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s43999-022-00018-y": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.lanwpc.2021.100170": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s13104-021-05787-2": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph182111329": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1248/bpb.b20-00157": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.11236/jph.67.8_501": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.14433": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph18020836": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3390/ijerph18179359": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s13561-019-0238-6": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0278517": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.7759/cureus.80100": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s40545-023-00532-5": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.34067/kid.0002262020": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.66.7_370": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1177/1010539520963643": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1080/14767058.2021.1873270": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.14
+  },
+  "doi:10.1186/s12891-023-06820-0": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1177/00469580231219094": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.18999/nagjms.88.1.59": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/hel.70162": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2025-0493": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12963-026-00479-0": {
+   "official_statistics_infrastructure": 0.91,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.jad.2025.120442": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.31662/jmaj.2025-0544": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1253/circrep.cr-25-0278": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/jjco/hyag029": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12939-024-02234-z": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12978-025-02246-0": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0342843": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20240447": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s40834-025-00357-4": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjph-2026-004913": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.3961/jpmph.24.355": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.lanwpc.2026.101894": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.18999/nagjms.87.1.133": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20240158": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/cas.70428": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0345579": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12889-024-18905-z": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1371/journal.pone.0354263": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.lanwpc.2025.101623": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjph-2025-002636": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.dialog.2026.100320": {
+   "official_statistics_infrastructure": 0.26,
+   "natural_phenomena": 0.18
+  },
+  "doi:10.2188/jea.je20250032": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.11
+  },
+  "doi:10.4178/epih.e2025049": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12877-025-05799-8": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1177/10105395251368415": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1038/s41598-026-57318-3": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.archger.2023.104993": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1136/bmjph-2024-002357": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1186/s40748-023-00149-1": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph22030322": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/phn.13451": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1186/s12884-024-06382-6": {
+   "official_statistics_infrastructure": 0.31,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/jgf2.724": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ags3.12835": {
+   "official_statistics_infrastructure": 0.47,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.envres.2026.125600": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.13
+  },
+  "doi:10.1136/bmjopen-2023-071785": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1371/journal.pone.0286530": {
+   "official_statistics_infrastructure": 0.29,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.lanwpc.2022.100637": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/pubmed/fdag029": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s13104-023-06539-0": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2023.101447": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s13340-025-00801-5": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7717/peerj.15784": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1111/cas.15926": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/jns.2025.10018": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1111/irv.70196": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1186/s12889-025-23199-w": {
+   "official_statistics_infrastructure": 0.26,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.2188/jea.je20240129": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s40621-021-00356-4": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.14
+  },
+  "doi:10.1093/ije/dyab216": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.11
+  },
+  "doi:10.2188/jea.je20230235": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12884-021-03819-0": {
+   "official_statistics_infrastructure": 0.28,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12913-023-09831-8": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s13223-025-00952-9": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.31557/apjcp.2022.23.1.3": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/mcn.13480": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.pmedr.2023.102348": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3961/jpmph.22.178": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jad.2022.05.014": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.107444": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.16
+  },
+  "doi:10.2188/jea.je20200057": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0299700": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu14183747": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1038/s41598-019-53203-4": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.pmedr.2024.102635": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.31557/apjcp.2022.23.2.475": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph191811328": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31557/apjcp.2020.21.11.3241": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-022-14304-4": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ajhb.23750": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1265/ehpm.25-00286": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.15
+  },
+  "doi:10.1016/j.ssmph.2022.101114": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1136/bmjgh-2021-007866": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.psychres.2021.114173": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.31557/apjcp.2021.22.2.499": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0211867": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-025-24276-w": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1186/s12877-022-03683-3": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.35772/ghmo.2021.01013": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3389/fnut.2023.1227303": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2022.101196": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.jiac.2021.06.021": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.35371/aoem.2024.36.e6": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1089/bfm.2024.0264": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2021-054716": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1186/s12905-022-01621-4": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0341340": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/children9030305": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2019-033462": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.injury.2023.111138": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1186/s41021-024-00315-7": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1093/jjco/hyab139": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31557/apjcp.2021.22.1.171": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0273817": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1265/ehpm.25-00116": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.18
+  },
+  "doi:10.1186/s12888-020-02927-z": {
+   "official_statistics_infrastructure": 0.25,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.57860": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1038/s41598-025-88513-3": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.31662/jmaj.2023-0058": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12913-023-09273-2": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.31662/jmaj.2023-0165": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1192/bjo.2023.616": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/hec.3986": {
+   "official_statistics_infrastructure": 0.25,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ped.14354": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/cas.15320": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-020-72519-0": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12884-021-04100-0": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.je20200492": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12199-020-00876-3": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12199-019-0838-0": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/cancers15153786": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.35772/ghmo.2021.01017": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.35772/ghmo.2021.01018": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjopen-2018-023435": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1002/1348-9585.12215": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-019-56388-w": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/archdischild-2017-312635": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s11150-022-09609-7": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.31557/apjcp.2020.21.6.1759": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/children10020342": {
+   "official_statistics_infrastructure": 0.33,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20160188": {
+   "official_statistics_infrastructure": 0.46,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1183/23120541.00217-2019": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/eurpub/ckz038": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s00127-020-01978-7": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3201/eid2703.203925": {
+   "official_statistics_infrastructure": 0.34,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/cas.14586": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.35772/ghmo.2021.01019": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20200025": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.14416": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12942-018-0133-0": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s00420-024-02063-1": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1186/s40621-020-00294-7": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.2486/indhealth.2020-0136": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2016.10.004": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0272285": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1111/jog.13460": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s2045796018000410": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1007/s10433-017-0433-4": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1297/cpe.2021-0041": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3961/jpmph.20.037": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12913-020-05635-2": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12940-020-00630-w": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1136/bmjopen-2018-023172": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/jog.13048": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1136/bmjopen-2016-015764": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20150055": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1371/journal.pone.0266835": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph191912351": {
+   "official_statistics_infrastructure": 0.46,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.3961/jpmph.21.215": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/jgh.15517": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph14010104": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph182413393": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.je20100149": {
+   "official_statistics_infrastructure": 0.43,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s00127-021-02188-5": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0166345": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-019-7443-4": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.1027/0227-5910/a000509": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.3934/publichealth.2020028": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1007/s40264-020-01037-9": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/jjco/hyx128": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph17176301": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.ijcard.2019.02.022": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.35772/ghm.2021.01037": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.11
+  },
+  "doi:10.2188/jea.je20100189": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/frph.2021.772575": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/srep43204": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/jog.15543": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1136/jech-2017-209266": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jinf.2020.08.013": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.31557/apjcp.2019.20.3.855": {
+   "official_statistics_infrastructure": 0.27,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20100022": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2017-018538": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "pmid:21735860": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.35772/ghmo.2021.01014": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ped.13304": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph18158040": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1038/srep46681": {
+   "official_statistics_infrastructure": 0.4,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ajmg.a.62526": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.02
+  },
+  "pmid:22834095": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3314/mmj.53.53": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s095026881800290x": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-021-86431-8": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1186/s12885-015-1472-x": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4178/epih/e2015038": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/srep22255": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.35772/ghmo.2021.01015": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1080/15563650.2022.2064868": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.7883/yoken.jjid.2019.005": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/thg.2020.8": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0131203": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/jgf2.140": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.je20110092": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.17.19": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0127358": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1161/jaha.119.016152": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1371/journal.pone.0139639": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s12199-014-0421-7": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1038/bcj.2013.57": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.5365/wpsar.2012.3.4.016": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1265/jjh.62.64": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.rssm.2018.12.001": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2015-009190": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1186/s12199-020-00922-0": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3400/avd.oa01011": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.lanwpc.2021.100204": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1183/23120541.00424-2022": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0209285": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-016-3020-2": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.5620/eaht.2020012": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1017/s2045796014000675": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.7759/cureus.44585": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12913-015-0776-5": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jhealeco.2017.09.004": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12913-017-2784-0": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7189/jogh.07.010501": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1093/eurpub/ckr172": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.3390/ijerph18094810": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20180140": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmj.e1191": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph17249213": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/sltb.12559": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s11524-013-9808-9": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0201649": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2486/indhealth.2013-0182": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.7727/wimj.2012.298": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3961/jpmph.20.159": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20190090": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2147/ndt.s41632": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/j.1365-2354.2005.00640.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/cas.12902": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0063443": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12963-017-0131-7": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0135349": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.4178/epih.e2020069": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20090037": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/jech-2016-207583": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/ijerph19095483": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12888-020-2479-7": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jash.2011.07.004": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1136/bmjopen-2014-006982": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12913-015-1103-x": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.15.20": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.16.57": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.ssmph.2020.100590": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.2188/jea.12.254": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.19
+  },
+  "doi:10.1136/jech.2007.070334": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/jech-2018-211715": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1192/bjp.bp.113.135392": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1017/thg.2012.156": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0074902": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1265/ehpm.10.9": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1513/annalsats.201303-067oc": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/1476-072x-6-34": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.18
+  },
+  "doi:10.1136/bmjopen-2011-000425": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2147/oaem.s61114": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1111/j.1741-3737.2008.00531.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1634/theoncologist.2012-0197": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pmed.1001160": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s12199-008-0036-y": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s00127-016-1172-0": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph10020528": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/j.1349-7006.2005.00104.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0039876": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s12199-016-0560-0": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1471-2458-5-53": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "pmid:17215198": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s0950268809002088": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1007/s10654-004-9557-x": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.13.246": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/jech.2003.018804": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.12.143": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1265/jjh.61.366": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jstrokecerebrovasdis.2006.11.006": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.13.274": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1155/2011/293926": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1375/136905203762687825": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.canep.2011.01.010": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/1471-2393-4-2": {
+   "official_statistics_infrastructure": 0.29,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1253/circj.66.1144": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s00384-003-0485-0": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1289/ehp.9540": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1046/j.1365-3016.2001.00378.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1046/j.1365-3016.2001.00361.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/ip.9.1.29": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ijc.23911": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.13.314": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.14
+  },
+  "pmid:11187811": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1111/j.1601-0825.1999.tb00056.x": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "pmid:9558654": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1265/jjh.50.652": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1471-2458-6-45": {
+   "official_statistics_infrastructure": 0.39,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.13.56": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/j.1346-8138.1995.tb03369.x": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ajmg.1320580215": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1111/j.1600-0404.1995.tb07013.x": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1111/j.1600-0404.1995.tb00428.x": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1159/000083511": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/(sici)1097-0215(1997)10+<2::aid-ijc2>3.0.co;2-c": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.12.217": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1159/000071787": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/j.1349-7006.1998.tb00471.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1016/s1344-6223(02)00007-x": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.13.169": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/bf01912485": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "pmid:12284112": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/ajmg.1320340422": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1265/jjh.47.981": {
+   "official_statistics_infrastructure": 0.57,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/bf02918292": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s004840050127": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.1093/oxfordjournals.jjco.a039393": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.12.439": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.12.450": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/bf02897958": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "pmid:3178242": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1620/tjem.171.221": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s0001566000002373": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1136/jech.37.1.43": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.06
+  },
+  "pmid:12287303": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1289/ehp.9087115": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/jech.30.3.175": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.19
+  },
+  "doi:10.1136/jech.2005.038315": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1289/ehp.94102s841": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1289/ehp.793211": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.7888/juoeh.5.373": {
+   "official_statistics_infrastructure": 0.39,
+   "natural_phenomena": 0.02
+  },
+  "pmid:13846396": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s44263-026-00314-6": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0334403": {
+   "official_statistics_infrastructure": 0.29,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1016/j.ijregi.2026.100919": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1371/journal.pone.0350130": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1089/tmr.2023.0054": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0356748": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph20054060": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2022-0131": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s43546-022-00311-5": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.lanwpc.2024.101069": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/cancers13194784": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/children10050822": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph18115670": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0285107": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3389/fpsyg.2020.01677": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0198317": {
+   "official_statistics_infrastructure": 0.32,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.21037/atm-20-423": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-022-05859-8": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1136/jech.55.4.263": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1136/jech.55.10.748": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2185/jrm.2026-006": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s40780-026-00602-1": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.1089/whr.2023.0126": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12913-024-11446-6": {
+   "official_statistics_infrastructure": 0.32,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12913-023-10085-7": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4178/epih.e2022059": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12913-023-10258-4": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1093/jrr/rrae014": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s40748-022-00143-z": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1265/ehpm.22-00145": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1265/ehpm.22-00169": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2196/76782": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1089/whr.2021.0038": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31557/apjcp.2021.22.6.1695": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0328435": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.31662/jmaj.2023-0052": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2021.100839": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12942-025-00417-7": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.7759/cureus.21321": {
+   "official_statistics_infrastructure": 0.27,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0245385": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s40545-022-00499-9": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-022-13089-w": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1186/s12913-019-4470-x": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1922/cdh_4521okawa04": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12909-017-0919-y": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12913-018-3441-y": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2020-0125": {
+   "official_statistics_infrastructure": 0.27,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0250589": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12942-022-00316-1": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.7759/cureus.15711": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12909-019-1840-3": {
+   "official_statistics_infrastructure": 0.28,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0139723": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1111/idj.12446": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12960-018-0289-5": {
+   "official_statistics_infrastructure": 0.29,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2490/prm.20200012": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph18052335": {
+   "official_statistics_infrastructure": 0.29,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0178020": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.31662/jmaj.2019-0033": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/jphd.12143": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12960-021-00594-z": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3389/fpubh.2022.913875": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.3389/fpubh.2018.00380": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/j.1442-200x.2008.02694.x": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1097/md.0000000000010878": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/cas.13100": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/fpubh.2019.00265": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.2196/14026": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1515/med-2018-0058": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1111/j.1365-2923.2009.03582.x": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/1472-6963-9-180": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2016-011165": {
+   "official_statistics_infrastructure": 0.31,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20170051": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1016/j.healthpol.2021.04.013": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1186/1472-6963-10-101": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.62.10_587": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "pmid:15058102": {
+   "official_statistics_infrastructure": 0.78,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0180819": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.11236/jph.62.12_719": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1478-4491-7-73": {
+   "official_statistics_infrastructure": 0.22,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/j.1442-200x.2009.02839.x": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0050410": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0126036": {
+   "official_statistics_infrastructure": 0.26,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12942-016-0035-y": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.2147/rmhp.s93285": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1371/journal.pone.0169220": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1111/jog.12663": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "pmid:24741897": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s12199-007-0021-x": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s12199-012-0321-7": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1472-684x-5-2": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "pmid:19902610": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.11236/jph.25-114": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12883-026-04755-2": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12963-026-00488-z": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjopen-2025-103227": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.7759/cureus.108053": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1002/pcn5.70100": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0345197": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1038/s41597-025-06394-7": {
+   "official_statistics_infrastructure": 0.55,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.3390/microorganisms14081837": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.15
+  },
+  "doi:10.1016/j.pmedr.2025.103134": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1177/11786329251362381": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-026-38632-2": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2196/88696": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/ped.70213": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.3390/cancers18101498": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1177/25424823251410102": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jtocrr.2025.100893": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s40780-026-00595-x": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.23-086": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph22091315": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1038/s41598-025-88515-1": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph21101366": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2147/iprp.s479164": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0325286": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.13
+  },
+  "doi:10.1371/journal.pone.0300846": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1186/s40249-025-01380-y": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1016/j.dib.2024.110103": {
+   "official_statistics_infrastructure": 0.35,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1038/s41598-025-11522-9": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ejihpe14040071": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1371/journal.pone.0317180": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.22
+  },
+  "doi:10.11236/jph.23-064": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0286169": {
+   "official_statistics_infrastructure": 0.8,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph20021299": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1029/2024gh001257": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.1016/j.ssmph.2025.101852": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0292547": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.14309/ctg.0000000000000530": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/psp.2634": {
+   "official_statistics_infrastructure": 0.27,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjopen-2024-087657": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1371/journal.pone.0275935": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.2
+  },
+  "doi:10.1016/j.identj.2022.11.002": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1371/journal.pone.0280311": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1002/jgf2.714": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0278941": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1007/s10661-023-11372-w": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.15
+  },
+  "doi:10.1186/s12889-023-17418-5": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.3390/ijerph191811477": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2023.101356": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/healthcare11202806": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3389/fneur.2023.1209446": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.31662/jmaj.2025-0216": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu14142884": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1186/s13104-020-05213-z": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3389/fpubh.2024.1306013": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3390/nu13114072": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.5365/wpsar.2026.17.1.1277": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.4269/ajtmh.19-0969": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0199188": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20200113": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph182312818": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1136/bmjopen-2018-022737": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1371/journal.pone.0148288": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1589/jpts.31.122": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s00180-023-01331-x": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1103/physreve.83.066110": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1103/physreve.91.042815": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1103/physreve.83.016103": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1103/physreve.86.046107": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.94
+  },
+  "doi:10.1103/physreve.77.026112": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1103/physreve.85.056121": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1161/strokeaha.111.625871": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjdrc-2026-006042": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/pcn5.70268": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.11236/jph.25-003": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s10147-026-03150-8": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-026-28449-z": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jad.2025.120398": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s40795-026-01322-3": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.24-088": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/clinpract15120226": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12939-025-02729-3": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph22040484": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.4103/jfmpc.jfmpc_399_25": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-026-26817-3": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/clinpract14060176": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20250021": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1177/20552076261436862": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2024-0234": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/joccuh/uiag003": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-025-20710-6": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12963-025-00443-4": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu16101473": {
+   "official_statistics_infrastructure": 0.26,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1265/ehpm.25-00161": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12884-025-08509-9": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph21020219": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3390/ijerph21070842": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.31662/jmaj.2025-0122": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph21121643": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/medicines10110060": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3389/fpubh.2024.1292371": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu16132102": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/fpubh.2024.1382354": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjhci-2024-101051": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jad.2022.11.056": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s12282-023-01486-x": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.pmedr.2024.102701": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2196/46634": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2021.100951": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1177/14034948221092285": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/healthcare10112298": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/tc-2023-058526": {
+   "official_statistics_infrastructure": 0.4,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jad.2021.02.065": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.14438": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph192416820": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.14789/jmj.jmj20-oa18": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12903-022-02311-1": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.20407/fmj.2021-025": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/cdoe.12926": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.20-118": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-021-12368-2": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/pediatric13040072": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12891-021-04539-4": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/medicines9070040": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjopen-2022-063729": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/jgf2.683": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12962-023-00448-6": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.archger.2021.104426": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s10147-019-01594-9": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12888-021-03198-y": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.anl.2021.03.026": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "epmc:PMC6845296": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/healthcare8030274": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjopen-2019-036281": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.canep.2020.101798": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1089/jicm.2022.0631": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0232787": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jad.2020.10.037": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jstrokecerebrovasdis.2022.106899": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph181910479": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20220225": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu14194078": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20200320": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4178/epih.e2020072": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20210273": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.20-055": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/clockssleep4040046": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-021-11708-6": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.11236/jph.66.4_210": {
+   "official_statistics_infrastructure": 0.93,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.psychres.2020.113225": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20220220": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jjcc.2022.03.002": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-020-70727-2": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1080/14397595.2019.1682776": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ped.15132": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7717/peerj.14904": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/eurpub/cky263": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3233/jad-210680": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/eurpub/ckz119": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12877-020-01588-7": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20180176": {
+   "official_statistics_infrastructure": 0.79,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12199-021-01031-2": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0235749": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.13808": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12966-022-01332-x": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.03
+  },
+  "pmid:32458813": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2486/indhealth.2018-0031": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-021-10382-y": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu13082591": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12954-021-00469-5": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC6241545": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.11236/jph.65.2_89": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/ggi.14250": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.67.4_261": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph16152804": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3390/ijerph182010760": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/ggi.13708": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1539/joh.2017-0295-oa": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s10147-018-1350-z": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC6239612": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12963-016-0095-z": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20190042": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-019-7570-y": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jad.2018.07.008": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0219149": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2021.100970": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.je.2016.09.007": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s13561-017-0151-9": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2486/indhealth.2018-0112": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980019004828": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.socscimed.2020.112945": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s0007114522001416": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s12939-019-1118-8": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20190121": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12937-021-00693-6": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph16204016": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.06
+  },
+  "pmid:25098646": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC6245322": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20210030": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0224821": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1017/s1368980021000963": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/ggi.12533": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0145200": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/jdi.12820": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2486/indhealth.2017-0079": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2020.100565": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.jad.2018.07.016": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1539/joh.13-0279-oa": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.15036/arerugi.67.767": {
+   "official_statistics_infrastructure": 0.25,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980019002088": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980016001695": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0254779": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-015-1676-7": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20140108": {
+   "official_statistics_infrastructure": 0.33,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980020000415": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/jre.12375": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.archger.2017.11.001": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2471/blt.11.095380": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/cncr.31086": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.13131": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.socscimed.2013.03.021": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12877-021-02308-5": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-019-7182-6": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.5582/bst.2012.v6.4.176": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.ssmph.2016.08.001": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12955-018-0890-2": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.socscimed.2013.12.028": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20180195": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12955-016-0521-8": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "pmid:25297977": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2486/indhealth.ms1260": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s12199-011-0240-z": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-018-5970-z": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.socscimed.2011.11.039": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0155151": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.je.2016.05.007": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.socscimed.2015.12.038": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0227792": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0148297": {
+   "official_statistics_infrastructure": 0.31,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0189112": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20120021": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0165106": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1136/bmjopen-2015-008178": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s12199-011-0254-6": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12937-019-0480-0": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/sf/sou077": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0139777": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20110116": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.je20110112": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0116648": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20140183": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20090190": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.genm.2009.04.001": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-018-5181-7": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s12199-011-0212-3": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20200032": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1016/j.puhe.2006.06.006": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1155/2014/303917": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.genhosppsych.2012.12.013": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12939-014-0128-9": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0040664": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "pmid:12402469": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.socscimed.2003.10.003": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1080/01494929.2015.1076554": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.socscimed.2008.06.002": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.socscimed.2004.01.025": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je2007381": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "pmid:24963363": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1111/jomf.12126": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.15.219": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.2188/jea.17.93": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/bf02898155": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.17.125": {
+   "official_statistics_infrastructure": 0.29,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmj.324.7328.16": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1177/02601060261485358": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2486/indhealth.2026-0057": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12937-026-01326-6": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/jns.2025.10069": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s41043-026-01264-3": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1249/mss.0000000000003693": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/jns.2025.10066": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu17233749": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.tjnut.2026.101537": {
+   "official_statistics_infrastructure": 0.21,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu17142278": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu18060933": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1123/jpah.2024-0702": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/foods14081392": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/nu17050895": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.lanwpc.2025.101792": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.13
+  },
+  "doi:10.1177/13872877251319535": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC11693229": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1017/s1368980024002027": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.14875": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jnha.2024.100351": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu17101614": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12937-023-00896-z": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.1017/jns.2024.5": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1177/03795721231216230": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.3390/nu16111764": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/fnut.2023.1116105": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/fnut.2025.1611286": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu16081221": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3177/jnsv.69.197": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20240085": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/foods13070988": {
+   "official_statistics_infrastructure": 0.61,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/hec.4959": {
+   "official_statistics_infrastructure": 0.22,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s0007114522001970": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.36469/001c.123991": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC8181502": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-023-15322-6": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu16173026": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu14173606": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu16162700": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu14173659": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/jcm11092350": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/nu14061219": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/foods12061305": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.3390/nu14030633": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.18332/tid/143177": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.07
+  },
+  "doi:10.3390/nu15153297": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0300580": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1017/s0007114520003657": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s000711452000269x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph17218159": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/foods12081674": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1038/s41430-020-00794-1": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s00394-020-02213-4": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu12123624": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1371/journal.pone.0320914": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.11236/jph.20-085": {
+   "official_statistics_infrastructure": 0.56,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0228318": {
+   "official_statistics_infrastructure": 0.36,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1080/03014460.2019.1662943": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.14252/foodsafetyfscj.d-20-00018": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.je20190330": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980020004541": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.je20200120": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/fpubh.2022.830578": {
+   "official_statistics_infrastructure": 0.25,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu14122517": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu15010225": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu10080994": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980019000120": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.nut.2018.07.110": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s00394-018-1762-6": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.6133/apjcn.202007_29(2).0021": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-021-10772-2": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1017/s0007114518001162": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3177/jnsv.68.s107": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.13239": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.6133/apjcn.072018.04": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.6133/apjcn.042018.06": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu11102361": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.6133/apjcn.042017.11": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1017/s1368980020001202": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.5551/jat.43646": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41440-017-0007-z": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.nut.2017.08.012": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.nutres.2017.10.015": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0224042": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/nu10121865": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.nutres.2017.06.005": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-020-09596-3": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/ggi.12956": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1080/19440049.2018.1484179": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1017/s0007114516004451": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1155/2021/6675418": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s10266-018-0386-x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.nutres.2016.09.003": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-019-7047-z": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/nu10101551": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.6133/apjcn.102015.15": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/foods11081151": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.09
+  },
+  "doi:10.1002/jgf2.164": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3945/jn.117.254896": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.3390/ijerph15081645": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.6133/apjcn.2016.25.2.20": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s12603-016-0770-6": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph18189877": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12937-017-0284-z": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.2188/jea.je20180156": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/foods10040691": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.1
+  },
+  "doi:10.1016/j.jtemb.2020.126597": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1177/2380084416667931": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0118749": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.11236/jph.63.9_549": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1097/hjh.0000000000001169": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1265/jjh.72.1": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31662/jmaj.2021-0038": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1080/00016489.2017.1297898": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1471-2458-14-328": {
+   "official_statistics_infrastructure": 0.25,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.jesf.2018.10.001": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "pmid:25501587": {
+   "official_statistics_infrastructure": 0.34,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3177/jnsv.59.576": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3344/kjp.2020.33.4.352": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4103/apjon.apjon-2116": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1123/jpah.9.8.1117": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4162/nrp.2023.17.3.451": {
+   "official_statistics_infrastructure": 0.35,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4162/nrp.2022.16.2.233": {
+   "official_statistics_infrastructure": 0.18,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1093/ije/dyv143": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3177/jnsv.59.584": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-020-57503-y": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/jcm8030326": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3177/jnsv.54.384": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "pmid:20387542": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/ejcn.2009.88": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3177/jnsv.56.449": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/bs13040315": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20150048": {
+   "official_statistics_infrastructure": 0.69,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.3390/ijerph18179144": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "pmid:19891363": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1371/journal.pone.0165313": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.06
+  },
+  "doi:10.1017/s1368980007000274": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.diabres.2007.02.015": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.31557/apjcp.2019.20.3.971": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1093/sleep/31.5.645": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3177/jnsv.56.279": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/healthcare9111525": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph19116646": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/ijerph19084692": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3345/kjp.2018.06604": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1093/ije/dyn182": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.4162/nrp.2016.10.5.530": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s10198-013-0518-8": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/s2542-5196(18)30170-0": {
+   "official_statistics_infrastructure": 0.47,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC8753483": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/jgf2.710": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.ijid.2021.05.071": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1038/s41598-020-77468-2": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/s12889-020-09397-8": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1136/bmjopen-2016-013922": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2486/indhealth.2013-0042": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2147/ndt.s138033": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1471-244x-13-338": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1186/1472-6963-11-260": {
+   "official_statistics_infrastructure": 0.2,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.2188/jea.14.100": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "pmid:17137193": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s12062-021-09346-2": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s12529-019-09807-1": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3390/ijerph20146337": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.4054/demres.2021.44.9": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1007/s11356-022-23387-w": {
+   "official_statistics_infrastructure": 0.23,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s42973-021-00091-x": {
+   "official_statistics_infrastructure": 0.04,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1007/s12199-009-0122-9": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1111/j.1467-9787.1981.tb00721.x": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41467-024-51553-w": {
+   "official_statistics_infrastructure": 0.28,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1093/pnasnexus/pgad209": {
+   "official_statistics_infrastructure": 0.14,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1002/jgf2.707": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.08
+  },
+  "epmc:PMC8530012": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.1021/acs.est.4c08719": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1038/s41597-021-01086-4": {
+   "official_statistics_infrastructure": 0.48,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1073/pnas.2306771121": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1038/s41597-023-02329-2": {
+   "official_statistics_infrastructure": 0.59,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1186/s40008-022-00276-6": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.11
+  },
+  "doi:10.1371/journal.pone.0266963": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.12
+  },
+  "doi:10.1016/j.oneear.2021.03.003": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.05
+  },
+  "doi:10.1021/acs.est.9b02603": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s12199-015-0478-y": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1016/j.heliyon.2021.e08441": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/2191-1991-2-10": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.healthpol.2010.07.005": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1007/s12199-013-0354-6": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.13
+  },
+  "doi:10.1007/bf02932255": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20130051": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.2
+  },
+  "doi:10.1289/ehp2546": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.16
+  },
+  "doi:10.4082/kjfm.2012.33.4.197": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "pmid:6535436": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1111/iju.70288": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.18926/amo/65970": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20200266": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1215/00703370-12178737": {
+   "official_statistics_infrastructure": 0.07,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.ypmed.2022.107293": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.2188/jea.je20240197": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1177/0164027520941198": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC6185083": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.02
+  },
+  "epmc:PMC6229008": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ggi.13061": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.socscimed.2016.12.043": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/s12889-026-27836-w": {
+   "official_statistics_infrastructure": 0.19,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.3390/ijerph20075243": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1016/j.identj.2021.02.005": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/j.1741-2358.2007.00166.x": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/j.1600-0765.2006.00915.x": {
+   "official_statistics_infrastructure": 0.16,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1186/1471-2458-7-313": {
+   "official_statistics_infrastructure": 0.24,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.4082/kjfm.2016.37.2.117": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ajhb.70306": {
+   "official_statistics_infrastructure": 0.06,
+   "natural_phenomena": 0.08
+  },
+  "doi:10.3390/nu17223566": {
+   "official_statistics_infrastructure": 0.13,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.7759/cureus.97098": {
+   "official_statistics_infrastructure": 0.27,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/ped.70374": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.3389/fpubh.2024.1379897": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1111/cob.12636": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1038/s41598-024-69199-5": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1371/journal.pone.0307238": {
+   "official_statistics_infrastructure": 0.12,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.5620/eaht.2021027": {
+   "official_statistics_infrastructure": 0.1,
+   "natural_phenomena": 0.11
+  },
+  "doi:10.1093/pubmed/fdy095": {
+   "official_statistics_infrastructure": 0.17,
+   "natural_phenomena": 0.04
+  },
+  "doi:10.1297/cpe.25.77": {
+   "official_statistics_infrastructure": 0.33,
+   "natural_phenomena": 0.01
+  },
+  "doi:10.1371/journal.pone.0210265": {
+   "official_statistics_infrastructure": 0.11,
+   "natural_phenomena": 0.16
+  },
+  "pmid:21669586": {
+   "official_statistics_infrastructure": 0.09,
+   "natural_phenomena": 0.03
+  },
+  "doi:10.1111/j.1442-200x.2010.03312.x": {
+   "official_statistics_infrastructure": 0.08,
+   "natural_phenomena": 0.02
+  },
+  "doi:10.1002/ajpa.1330910305": {
+   "official_statistics_infrastructure": 0.05,
+   "natural_phenomena": 0.14
+  },
+  "doi:10.2188/jea.je20140270": {
+   "official_statistics_infrastructure": 0.15,
+   "natural_phenomena": 0.01
+  }
+ }
+}

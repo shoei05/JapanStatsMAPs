@@ -18,7 +18,7 @@ from fetch_epmc import SOURCES  # noqa: E402
 
 IN_SCOPE = {"A", "B", "AB"}
 USE_THRESHOLD = 0.5
-schema = json.loads((ROOT / "data/schema_od_v2.json").read_text(encoding="utf-8"))
+schema = json.loads((ROOT / "data/schema_od_v3.json").read_text(encoding="utf-8"))
 recs = {json.loads(l)["id"]: json.loads(l) for l in (ROOT / "data/records.jsonl").open(encoding="utf-8")}
 first = [json.loads(l) for l in (ROOT / "data/jev_judgments.jsonl").open(encoding="utf-8")]
 structured = [json.loads(l) for l in (ROOT / "data/structured_v3.jsonl").open(encoding="utf-8")]
@@ -85,6 +85,12 @@ for p in papers:
     if p["question_type"] == "policy_evaluation":
         p["question_type"] = "association"
 reviews = json.loads((ROOT / "data/paper_reviews.json").read_text(encoding="utf-8"))
+# Claude が提案し直し Jev が支持した新カテゴリ（統計調査・データ基盤、自然現象・地球科学）のタグ
+nd3 = json.loads((ROOT / "data/new_domain_review_v3.json").read_text(encoding="utf-8"))
+for p in papers:
+    for k, prob in nd3["tags"].get(p["paper_id"], {}).items():
+        if k in nd3["adopted"] and prob >= 0.5:
+            p["tags"] = sorted(set(p["tags"]) | {k})
 # concept_unmapped の解消（Jev の選択を Claude が題名・抄録と照合して採用したものだけ）
 for x in json.loads((ROOT / "data/unmapped_resolution.json").read_text(encoding="utf-8")):
     if x["adopted"]:
@@ -105,7 +111,7 @@ n_pairs_dropped = sum(1 for c in followup["pair_checks"] if c["role"] != "analyz
 for p in papers:
     if "evidence" in reviews.get(p["paper_id"], {}):
         p["review"] = {k: reviews[p["paper_id"]][k] for k in ("evidence", "reviewer")}
-pm = build_paper_map(papers, schema["domains"], reviews=reviews, separate_domains=["methodology_weighting"])
+pm = build_paper_map(papers, schema["domains"], reviews=reviews, separate_domains=["methodology_weighting", "official_statistics_infrastructure"])
 for p in papers:
     p["question_type"] = p.pop("_qt")
 
@@ -126,7 +132,7 @@ data = {
         "method_note": ("Europe PMC の本文を含む全文検索（データ源名 AND Japan）で集めた論文を、Jev（TypeSafe System One, jev-latest）で判定した。"
                         "1回目は題名・抄録で A/B 区分を判定し、候補について2回目にオープンアクセス論文は方法・結果の本文、それ以外は題名・抄録を渡して、"
                         "区分・データ源・データの年・問いの型・デザイン・対象・分析単位・主曝露・主アウトカム・領域タグを判定した。"
-                        "テーマは63領域。線は、問いの型が関連の検討または制度・出来事の評価の論文について、主曝露→主アウトカムの組合せを実際に解析したと Jev が判定したものだけを残した。人手の確認前。"),
+                        "テーマは65領域。線は、問いの型が関連の検討または制度・出来事の評価の論文について、主曝露→主アウトカムの組合せを実際に解析したと Jev が判定したものだけを残した。人手の確認前。"),
     },
     "domains": schema["domains"], "domain_labels": schema["domain_labels"], "display_groups": schema["display_groups"],
     "populations": schema["populations"], "designs": schema["designs"], "question_types": schema["question_type"],
@@ -140,7 +146,7 @@ tpl = (ROOT / "scripts/viewer_template.html").read_text(encoding="utf-8")
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 html = (tpl.replace("{{DATA}}", blob)
         .replace("{{STYLE}}", (ROOT / "viewer/style.css").read_text(encoding="utf-8"))
-        .replace("{{WES}}", (ROOT / "viewer/wes_gbh.css").read_text(encoding="utf-8"))
+        .replace("{{WES}}", (ROOT / "viewer/wes_fox.css").read_text(encoding="utf-8"))
         .replace("{{APP}}", (ROOT / "viewer/app.js").read_text(encoding="utf-8")))
 (ROOT / "viewer/index.html").write_text(html, encoding="utf-8")
 # Artifact 用: 公開時に doctype/head/body の骨組みが付くので、自前の骨組みを外した版を書く
