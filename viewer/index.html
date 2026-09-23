@@ -1141,6 +1141,12 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   --canvas-edge: #8E6F52;
   --canvas-node-edge: #362216;
   --canvas-label-bg: rgba(54,34,22,.9);
+  --accent-main: #DD8D29;
+  --accent-deep: #F0B060;
+  --accent-hl: #E0453A;
+  --accent-hl-tint: #4A2018;
+  --accent-navy: #F0B060;
+  --accent-blue: #46ACC8;
 }
 :root[data-theme="dark"] .top-nav { background: #5A3316; color: var(--fx-orange); border-bottom-color: var(--fx-orange); box-shadow: 0 3px 0 var(--bg-app), 0 5px 0 var(--fx-orange); }
 :root[data-theme="dark"] .brand-main { color: var(--fx-orange); }
@@ -1476,39 +1482,52 @@ function buildGraph() {
 /* ---------- 力学配置（自前） ---------- */
 const sim = { nodes: [], edges: [], byId: {}, tx: 0, ty: 0, k: 1, running: 0 };
 function layout(g, keepPos) {
+  // 初期位置はテーマのグループごとの扇形に置き、表示前に冷却しながら配置を計算しきる（開いた直後に揺れない）
   const prev = keepPos ? Object.fromEntries(sim.nodes.map(n => [n.id, n])) : {};
-  sim.nodes = g.nodes.map((n, i) => {
+  const groups = Object.keys(D.display_groups);
+  const seed = s => { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return (h % 1000) / 1000; };
+  sim.nodes = g.nodes.map(n => {
     const o = prev[n.id];
-    const a = (i / g.nodes.length) * Math.PI * 2;
-    return { ...n, x: o ? o.x : Math.cos(a) * 180, y: o ? o.y : Math.sin(a) * 180, vx: 0, vy: 0, fixed: false };
+    const gi = Math.max(0, groups.indexOf(groupOf[n.id]));
+    const a = ((gi + 0.15 + 0.7 * seed(n.id)) / Math.max(1, groups.length)) * Math.PI * 2;
+    const r = 140 + 90 * seed(n.id + "r");
+    return { ...n, x: o ? o.x : Math.cos(a) * r, y: o ? o.y : Math.sin(a) * r, vx: 0, vy: 0, fixed: false };
   });
   sim.byId = Object.fromEntries(sim.nodes.map(n => [n.id, n]));
   sim.edges = g.edges.map(e => ({ ...e, a: sim.byId[e.s], b: sim.byId[e.t] }));
-  sim.running = 220;
+  const iters = Object.keys(prev).length ? 250 : 500;
+  for (let i = 0; i < iters; i++) step(Math.max(0.02, 1 - i / iters));
+  sim.running = 0;
+  if (cv) fit();
 }
-function step() {
-  const N = sim.nodes;
+function step(alpha = 0.3) {
+  const N = sim.nodes, maxV = 18 * alpha + 1;
   for (let i = 0; i < N.length; i++) {
     const a = N[i];
     for (let j = i + 1; j < N.length; j++) {
       const b = N[j];
       let dx = b.x - a.x, dy = b.y - a.y, d2 = dx * dx + dy * dy || 0.01;
-      const f = 9000 / d2, d = Math.sqrt(d2);
+      const f = alpha * 9000 / Math.max(d2, 400), d = Math.sqrt(d2);
       const fx = (dx / d) * f, fy = (dy / d) * f;
       a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
     }
-    a.vx -= a.x * 0.006; a.vy -= a.y * 0.006;   // 中心へ引き戻す
+    a.vx -= a.x * 0.012 * alpha; a.vy -= a.y * 0.012 * alpha;   // 中心へ引き戻す
   }
   sim.edges.forEach(e => {
     if (e.a === e.b) return;                      // 自己ループは力を出さない
     const dx = e.b.x - e.a.x, dy = e.b.y - e.a.y;
     const d = Math.hypot(dx, dy) || 0.01;
     const target = 165 + 70 / Math.sqrt(e.n);
-    const f = (d - target) * 0.012 * Math.min(3, Math.log2(e.n + 1) + 1);
+    const f = alpha * (d - target) * 0.006 * Math.min(2, Math.log2(e.n + 1) * 0.5 + 0.5);
     const fx = (dx / d) * f, fy = (dy / d) * f;
     e.a.vx += fx; e.a.vy += fy; e.b.vx -= fx; e.b.vy -= fy;
   });
-  N.forEach(n => { if (n.fixed) { n.vx = n.vy = 0; return; } n.vx *= 0.82; n.vy *= 0.82; n.x += n.vx; n.y += n.vy; });
+  N.forEach(n => {
+    if (n.fixed) { n.vx = n.vy = 0; return; }
+    n.vx *= 0.6; n.vy *= 0.6;
+    const v = Math.hypot(n.vx, n.vy); if (v > maxV) { n.vx *= maxV / v; n.vy *= maxV / v; }
+    n.x += n.vx; n.y += n.vy;
+  });
 }
 
 /* ---------- 描画 ---------- */
@@ -1583,7 +1602,7 @@ function draw() {
   ctx.restore();
 }
 function tick() {
-  if (state.tab === "map" && sim.running > 0) { step(); sim.running--; if (sim.running % 12 === 0) fit(); }
+  if (state.tab === "map" && sim.running > 0) { step(0.15); sim.running--; }
   if (state.tab === "map") draw(); requestAnimationFrame(tick);
 }
 const toWorld = (mx, my) => ({ x: (mx - sim.tx) / sim.k, y: (my - sim.ty) / sim.k });
@@ -1934,10 +1953,10 @@ let lcv, lctx;
 const linkPapers = D.papers.filter(p => p.doc_kind === "paper");
 const PAPER_YEARS = linkPapers.map(p => p.year).filter(Boolean);
 const Y_MIN = Math.min(...PAPER_YEARS), Y_MAX = Math.max(...PAPER_YEARS);
-const ZISSOU1_CONT = ["#46ACC8","#7DBFB0","#B4C97A","#E2D200","#E4B418","#DD8D29","#E58601","#CB5A1A","#B40F20"];  // FantasticFox1 をつないだ連続色
-function yearColor(y) {  // FantasticFox1 の連続色。古い論文ほど青、新しい論文ほど赤
-  const t = y ? (y - Y_MIN) / Math.max(1, Y_MAX - Y_MIN) : 0, f = t * (ZISSOU1_CONT.length - 1), i = Math.min(ZISSOU1_CONT.length - 2, Math.floor(f)), u = f - i;
-  const hx = h => [1, 3, 5].map(k => parseInt(h.slice(k, k + 2), 16)), a = hx(ZISSOU1_CONT[i]), b = hx(ZISSOU1_CONT[i + 1]);
+const YEAR_RAMP = ["#4E2A1E","#6E2A18","#8E1F1A","#B40F20","#C4401D","#D46A23","#DD8D29","#E5A93A"];  // こげ茶 → 狐の赤 → 狐の毛のオレンジ（BottleRocket1・FantasticFox1）
+function yearColor(y) {  // 古い論文ほどこげ茶、新しい論文ほど明るいオレンジ
+  const t = y ? (y - Y_MIN) / Math.max(1, Y_MAX - Y_MIN) : 0, f = t * (YEAR_RAMP.length - 1), i = Math.min(YEAR_RAMP.length - 2, Math.floor(f)), u = f - i;
+  const hx = h => [1, 3, 5].map(k => parseInt(h.slice(k, k + 2), 16)), a = hx(YEAR_RAMP[i]), b = hx(YEAR_RAMP[i + 1]);
   return `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * u)).join(",")})`;
 }
 const shortRef = p => `${p.first_author || (p.first_author_full || "").split(" ").pop() || "?"} ${p.year || ""}`.trim();
@@ -2004,7 +2023,7 @@ function ldraw() {
   if (lcv.width !== Math.round(w * dpr) || lcv.height !== Math.round(h * dpr)) { lcv.width = Math.round(w * dpr); lcv.height = Math.round(h * dpr); }
   lctx.setTransform(dpr, 0, 0, dpr, 0, 0); lctx.clearRect(0, 0, w, h);
   lctx.save(); lctx.translate(lsim.tx, lsim.ty); lctx.scale(lsim.k, lsim.k);
-  const sel = state.listSel, ink = cssVar("--canvas-ink", "#2f3437"), rose = cssVar("--accent-hl", "#f21a00");
+  const sel = state.listSel, ink = cssVar("--canvas-ink", "#2f3437"), rose = cssVar("--accent-hl", "#B40F20");
   lsim.edges.forEach(e => {
     const on = sel && sel !== lsim.seed && (e.a.id === sel || e.b.id === sel);
     lctx.beginPath(); lctx.moveTo(e.a.x, e.a.y); lctx.lineTo(e.b.x, e.b.y);
@@ -2044,7 +2063,7 @@ function renderLinks() {
   const meta = D.paper_links_meta || {};
   legend.replaceChildren();
   const yl = el("div", "legend-years");
-  yl.append(el("span", null, `${Y_MIN}`), Object.assign(el("span", "legend-ramp"), { style: `background:linear-gradient(90deg,${ZISSOU1_CONT.join(",")})` }), el("span", null, `${Y_MAX}年`));
+  yl.append(el("span", null, `${Y_MIN}`), Object.assign(el("span", "legend-ramp"), { style: `background:linear-gradient(90deg,${YEAR_RAMP.join(",")})` }), el("span", null, `${Y_MAX}年`));
   legend.append(yl, el("p", null, "円の色は出版年、大きさは被引用数（OpenAlex）。線が太く近いほど、参考文献やテーマの重なりが大きい論文です。影響関係や因果は示しません。"));
   list.replaceChildren();
   if (!seed) {

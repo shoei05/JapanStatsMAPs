@@ -122,6 +122,12 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   --canvas-edge: #8E6F52;
   --canvas-node-edge: #362216;
   --canvas-label-bg: rgba(54,34,22,.9);
+  --accent-main: #DD8D29;
+  --accent-deep: #F0B060;
+  --accent-hl: #E0453A;
+  --accent-hl-tint: #4A2018;
+  --accent-navy: #F0B060;
+  --accent-blue: #46ACC8;
 }
 :root[data-theme="dark"] .top-nav { background: #5A3316; color: var(--fx-orange); border-bottom-color: var(--fx-orange); box-shadow: 0 3px 0 var(--bg-app), 0 5px 0 var(--fx-orange); }
 :root[data-theme="dark"] .brand-main { color: var(--fx-orange); }
