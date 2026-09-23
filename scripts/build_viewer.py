@@ -127,12 +127,12 @@ data = {
         "n_papers": len(papers), "n_documents": len(papers), "n_collected": len(recs),
         "n_candidates": sum(1 for j in first if j["data_class"] in ("A", "B", "AB", "unclear")),
         "n_by_class": dict(n_by_class), "n_pairs_dropped": n_pairs_dropped,
-        "acknowledgement": "本研究は JSPS 科研費 JP23K16359（若手研究「全自治体予測モデルによるCOVID-19流行下の自殺要因の分析」）の助成を受けたものです。",
+        "acknowledgement": "本研究は JSPS 科研費 JP23K16359（若手研究「全自治体予測モデルによるCOVID-19流行下の自殺要因の分析」）の研究成果の一部です。",
         "empty_cell_label": "空欄は主分類の登録がないことを示す。副次解析まで確認した結果ではなく、その組合せの研究が存在しないという意味でもない。",
         "method_note": ("Europe PMC の本文を含む全文検索（データ源名 AND Japan）で集めた論文を、Jev（TypeSafe System One, jev-latest）で判定した。"
                         "1回目は題名・抄録で A/B 区分を判定し、候補について2回目にオープンアクセス論文は方法・結果の本文、それ以外は題名・抄録を渡して、"
                         "区分・データ源・データの年・問いの型・デザイン・対象・分析単位・主曝露・主アウトカム・領域タグを判定した。"
-                        "テーマは65領域。線は、問いの型が関連の検討または制度・出来事の評価の論文について、主曝露→主アウトカムの組合せを実際に解析したと Jev が判定したものだけを残した。人手の確認前。"),
+                        "テーマは65領域。線は、問いの型が関連の検討または制度・出来事の評価の論文について、主曝露→主アウトカムの組合せを実際に解析したと Jev が判定したものだけを残した。"),
     },
     "domains": schema["domains"], "domain_labels": schema["domain_labels"], "display_groups": schema["display_groups"],
     "populations": schema["populations"], "designs": schema["designs"], "question_types": schema["question_type"],
