@@ -1173,6 +1173,12 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 :root[data-theme="dark"] .app-footer, :root[data-theme="dark"] #foot { background: #11191C; color: var(--text-muted); }
 @media (max-width: 760px) { .theme-toggle { position: static; } .brand-main { font-size: 18px; letter-spacing: .08em; } }
 
+/* 論文のつながりの図とその起点の表示は Zissou1 の赤 */
+.link-seed-card { border-left-color: #F21A00; }
+.lr-k { color: #F21A00; }
+:root[data-theme="dark"] .link-seed-card { border-left-color: #FF5A3D; }
+:root[data-theme="dark"] .lr-k { color: #FF5A3D; }
+
 #survey-root{padding:18px 22px}
 .relation-matrix.sy-matrix{border-collapse:separate;border-spacing:1px}
 .sy-matrix th,.sy-matrix td{border:0!important;background:transparent}
@@ -1234,8 +1240,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
           <strong class="notice-title">この図の読み方</strong>
           <ul class="rule-list">
             <li><strong>円は、そのテーマを扱うすべての論文</strong>です。円を選ぶと、線のない論文も閲覧できます。</li>
-            <li><strong>線は、論文から登録した解析の組合せ</strong>です。曝露とアウトカムの役割を示し、因果関係を意味しません。</li>
-            <li>円の大きさと線の太さは論文数です。線の最小論文数を変えても、テーマの円は残ります。</li>
+            <li><strong>矢印は、論文で確認した解析の組合せ</strong>です。曝露からアウトカムへの向きを示し、因果関係を意味しません。</li>
+            <li>円の大きさと矢印の太さは論文数です。線の最小論文数を変えても、テーマの円は残ります。</li>
           </ul>
         </div>
         <div class="notice-col guide-rules">
@@ -1540,6 +1546,17 @@ function fit() {
   sim.ty = h / 2 - ((Math.max(...ys) + Math.min(...ys)) / 2) * sim.k;
 }
 const rad = n => 5 + Math.sqrt(n.n) * 2.6;
+/* 線は曝露 → アウトカムの向きの矢印にする */
+const edgeWidth = e => Math.min(7, 0.7 + Math.log2(e.n + 1) * 1.5);
+function edgeGeom(e, lw) {
+  const dx = e.b.x - e.a.x, dy = e.b.y - e.a.y, d = Math.hypot(dx, dy) || 1, ux = dx / d, uy = dy / d;
+  const px = 0, py = 0;
+  const head = 6 + lw * 1.6, hw = 3 + lw * 0.9;
+  const x1 = e.a.x + ux * rad(e.a) + px, y1 = e.a.y + uy * rad(e.a) + py;
+  const x2 = e.b.x - ux * (rad(e.b) + 2) + px, y2 = e.b.y - uy * (rad(e.b) + 2) + py;
+  const bx = x2 - ux * head, by = y2 - uy * head;
+  return {x1, y1, x2, y2, bx, by, lx: bx - uy * hw, ly: by + ux * hw, rx: bx + uy * hw, ry: by - ux * hw};
+}
 function draw() {
   const w = cv.clientWidth, h = cv.clientHeight;
   if (cv.width !== Math.round(w * dpr) || cv.height !== Math.round(h * dpr)) { cv.width = w * dpr; cv.height = h * dpr; }
@@ -1549,13 +1566,17 @@ function draw() {
   sim.edges.forEach(e => {
     const on = state.sel && (e.s === state.sel || e.t === state.sel);
     const dim = state.sel && !on;
-    ctx.globalAlpha = dim ? 0.07 : 0.45;
-    ctx.strokeStyle = colorOf(e.s);
-    ctx.lineWidth = Math.min(7, 0.7 + Math.log2(e.n + 1) * 1.5);
-    ctx.beginPath();
-    if (e.a === e.b) { ctx.arc(e.a.x + 14, e.a.y - 14, 13, 0, Math.PI * 2); }
-    else { ctx.moveTo(e.a.x, e.a.y); ctx.lineTo(e.b.x, e.b.y); }
-    ctx.stroke();
+    ctx.globalAlpha = dim ? 0.07 : 0.5;
+    ctx.strokeStyle = ctx.fillStyle = colorOf(e.s);
+    const lw = edgeWidth(e);
+    ctx.lineWidth = lw;
+    if (e.a === e.b) {
+      ctx.beginPath(); ctx.arc(e.a.x + 14, e.a.y - 14, 13, 0, Math.PI * 2); ctx.stroke();
+      return;
+    }
+    const g = edgeGeom(e, lw);
+    ctx.beginPath(); ctx.moveTo(g.x1, g.y1); ctx.lineTo(g.bx, g.by); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(g.x2, g.y2); ctx.lineTo(g.lx, g.ly); ctx.lineTo(g.rx, g.ry); ctx.closePath(); ctx.fill();
   });
   ctx.globalAlpha = 1;
   const sorted = [...sim.nodes].sort((a, b) => a.n - b.n);
@@ -1931,9 +1952,9 @@ function exportMapSVG() {
   const minY=Math.min(...sim.nodes.map(n=>n.y))-100,maxY=Math.max(...sim.nodes.map(n=>n.y))+100;
   let svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${minX} ${minY-60} ${maxX-minX} ${maxY-minY+100}" width="1800" role="img"><title>日本の公開データ研究マップ 概念マップ</title><rect x="${minX}" y="${minY-60}" width="${maxX-minX}" height="${maxY-minY+100}" fill="#ffffff"/><g font-family="sans-serif">`;
   svg+=`<text x="${minX+20}" y="${minY-25}" font-size="22" font-weight="700">日本の公開データ研究マップ</text>`;
-  sim.edges.forEach(e=>{const attr=`fill="none" stroke="${colorOf(e.s)}" stroke-opacity=".35" stroke-width="${Math.min(7,.7+Math.log2(e.n+1)*1.5)}"`;svg+=e.s===e.t?`<circle cx="${e.a.x+14}" cy="${e.a.y-14}" r="13" ${attr}/>`:`<line x1="${e.a.x}" y1="${e.a.y}" x2="${e.b.x}" y2="${e.b.y}" ${attr}/>`;});
+  sim.edges.forEach(e=>{const lw=edgeWidth(e),c=colorOf(e.s);if(e.s===e.t){svg+=`<circle cx="${e.a.x+14}" cy="${e.a.y-14}" r="13" fill="none" stroke="${c}" stroke-opacity=".45" stroke-width="${lw}"/>`;return;}const g=edgeGeom(e,lw);svg+=`<line x1="${g.x1}" y1="${g.y1}" x2="${g.bx}" y2="${g.by}" stroke="${c}" stroke-opacity=".45" stroke-width="${lw}"/><polygon points="${g.x2},${g.y2} ${g.lx},${g.ly} ${g.rx},${g.ry}" fill="${c}" fill-opacity=".6"/>`;});
   sim.nodes.forEach(n=>{svg+=`<circle cx="${n.x}" cy="${n.y}" r="${rad(n)}" fill="${colorOf(n.id)}"/><text x="${n.x}" y="${n.y-rad(n)-9}" text-anchor="middle" font-size="13" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" fill="#2f3437">${esc(label(n.id))} (${n.n})</text>`;});
-  svg+=`<text x="${minX+20}" y="${maxY+10}" font-size="11">円はテーマの全論文、線は登録された解析の論文数。因果を意味しません。データ源 ${esc(state.study||"すべて")} / データの年 ${esc(state.wave||"すべて")}</text></g></svg>`;
+  svg+=`<text x="${minX+20}" y="${maxY+10}" font-size="11">円はテーマの全論文、矢印は曝露→アウトカムとして解析した論文数。因果を意味しません。データ源 ${esc(state.study||"すべて")} / データの年 ${esc(state.wave||"すべて")}</text></g></svg>`;
   downloadFile("opendata-map.svg",svg,"image/svg+xml;charset=utf-8");
 }
 
@@ -2021,7 +2042,7 @@ function ldraw() {
   if (lcv.width !== Math.round(w * dpr) || lcv.height !== Math.round(h * dpr)) { lcv.width = Math.round(w * dpr); lcv.height = Math.round(h * dpr); }
   lctx.setTransform(dpr, 0, 0, dpr, 0, 0); lctx.clearRect(0, 0, w, h);
   lctx.save(); lctx.translate(lsim.tx, lsim.ty); lctx.scale(lsim.k, lsim.k);
-  const sel = state.listSel, ink = cssVar("--canvas-ink", "#2f3437"), rose = cssVar("--accent-hl", "#C5487B");
+  const sel = state.listSel, ink = cssVar("--canvas-ink", "#2f3437"), rose = document.documentElement.dataset.theme === "dark" ? "#FF5A3D" : "#F21A00"  /* つながりの図は Zissou1 の赤 */;
   lsim.edges.forEach(e => {
     const on = sel && sel !== lsim.seed && (e.a.id === sel || e.b.id === sel);
     lctx.beginPath(); lctx.moveTo(e.a.x, e.a.y); lctx.lineTo(e.b.x, e.b.y);

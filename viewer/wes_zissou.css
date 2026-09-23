@@ -153,3 +153,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 :root[data-theme="dark"] .guide-tag { background: #6B5E22; color: #F2DC73; }
 :root[data-theme="dark"] .app-footer, :root[data-theme="dark"] #foot { background: #11191C; color: var(--text-muted); }
 @media (max-width: 760px) { .theme-toggle { position: static; } .brand-main { font-size: 18px; letter-spacing: .08em; } }
+
+/* 論文のつながりの図とその起点の表示は Zissou1 の赤 */
+.link-seed-card { border-left-color: #F21A00; }
+.lr-k { color: #F21A00; }
+:root[data-theme="dark"] .link-seed-card { border-left-color: #FF5A3D; }
+:root[data-theme="dark"] .lr-k { color: #FF5A3D; }
