@@ -23,7 +23,7 @@ OVERLAY = """
   const st = document.createElement('style');
   st.textContent = `
     #demo-cursor{position:fixed;z-index:99999;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;
-      background:rgba(242,26,0,.45);border:2px solid #1D4E5C;pointer-events:none;transition:transform .12s}
+      background:rgba(197,72,123,.5);border:2px solid #1D4E5C;pointer-events:none;transition:transform .12s}
     #demo-cursor.down{transform:scale(.7)}
     #demo-cap{position:fixed;z-index:99998;left:50%;bottom:40px;transform:translateX(-50%);width:max-content;max-width:1380px;
       background:rgba(255,255,255,.97);color:#1F3036;border:2px solid #1D4E5C;padding:14px 32px;
