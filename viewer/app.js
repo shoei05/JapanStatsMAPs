@@ -404,7 +404,7 @@ function renderDetail() {
   if (p.cited_by_count != null) kv("被引用数（OpenAlex）", p.cited_by_count);
   d.append(box);
   if (p.links?.length && !(state.tab === "links" && lsim.seed === p.paper_id)) { const lb = el("button", "survey-jump", "この論文を起点につながりを見る →"); lb.onclick = () => openLinks(p.paper_id); d.append(lb); }
-  d.append(el("p", "muted small", "分類は Jev（TypeSafe System One）による機械判定で、人手の確認前です。結果の数値は収載していません。原著で確認してください。"));
+  d.append(el("p", "muted small", "分類は Jev（TypeSafe System One）による機械判定です。結果の数値は収載していません。原著で確認してください。"));
 }
 function renderList() {
   const box = $("#listpane"); box.innerHTML = "";
@@ -502,7 +502,7 @@ function renderSourceYears() {
     tr.append(el("td", "sy-n", `${r.n}${r.noYear ? `（年不明 ${r.noYear}）` : ""}`)); tb.append(tr);
   });
   table.append(tb); scroll.append(table); box.append(scroll);
-  box.append(el("p", "muted small", "年はJevが本文から判定した「解析に用いたデータの最初の年と最後の年」で、途中の年はすべて使ったものとして塗っています。人手の確認前です。"));
+  box.append(el("p", "muted small", "年はJevが本文から判定した「解析に用いたデータの最初の年と最後の年」で、途中の年はすべて使ったものとして塗っています。"));
 }
 function ensureYearOption(y) { if (![...$("#paper-wave").options].some(o => o.value === String(y))) { const o = el("option", null, String(y)); o.value = String(y); $("#paper-wave").append(o); } }
 function syncSelection(g) {
@@ -585,7 +585,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const after = toWorld(mx, my);
     sim.tx += (after.x - before.x) * sim.k; sim.ty += (after.y - before.y) * sim.k;
   }, { passive: false });
-  $("#foot").textContent = `日本の公開データ研究マップ ｜ ${D.meta.n_papers}論文 ｜ 分類は機械判定（人手確認前） ｜ 関連の線は因果関係を示しません。 ｜ ${D.meta.acknowledgement}`;
+  $("#foot").textContent = `日本の公開データ研究マップ ｜ ${D.meta.n_papers}論文 ｜ 分類は機械判定 ｜ 関連の線は因果関係を示しません。 ｜ ${D.meta.acknowledgement}`;
   const g = renderStats(); layout(g, false); refresh(false); tick();
 });
 
