@@ -1183,6 +1183,21 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 #foot a.foot-updates { color: inherit; opacity: .75; text-decoration: underline; text-underline-offset: 2px; }
 #foot a.foot-updates:hover { opacity: 1; }
 
+/* 使い方タブ */
+.guide-mode .workspace-grid { display: block; }
+.guide-mode .right-inspector { display: none; }
+#pane-guide { overflow: auto; }
+.guide { max-width: 860px; margin: 0 auto; padding: 24px 20px 48px; line-height: 1.8; }
+.guide h3 { font-family: var(--font-display); letter-spacing: .08em; color: var(--zs-navy); font-size: 16px; margin: 28px 0 8px; border-bottom: 1px solid var(--border-main); padding-bottom: 4px; }
+.guide h3:first-child { margin-top: 0; }
+.guide dl { margin: 0; }
+.guide dt { font-weight: 700; color: var(--zs-navy); margin-top: 10px; }
+.guide dd { margin: 2px 0 0 1em; }
+.guide ol, .guide ul { padding-left: 1.4em; }
+.guide li { margin: 4px 0; }
+.guide .guide-foot { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
+:root[data-theme="dark"] .guide h3, :root[data-theme="dark"] .guide dt { color: #A8D8E3; }
+
 #survey-root{padding:18px 22px}
 .relation-matrix.sy-matrix{border-collapse:separate;border-spacing:1px}
 .sy-matrix th,.sy-matrix td{border:0!important;background:transparent}
@@ -1208,6 +1223,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     <button data-tab="list">論文一覧</button>
     <button data-tab="links">論文のつながり</button>
     <button data-tab="data">統計・データ</button>
+    <button data-tab="guide">使い方</button>
   </nav>
   <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" title="表示の明るさを切り替え">ダークモード</button>
 </header>
@@ -1300,6 +1316,40 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
       </div>
     </div>
 
+    <div id="pane-guide" class="pane-view" style="display:none">
+      <div id="guidepane" class="data-container guide">
+        <h3>このサイトでできること</h3>
+        <p>公開集計データ（NDBオープンデータ、人口動態統計、警察庁の自殺統計など）と、政府統計の個票（国民生活基礎調査、国民健康・栄養調査など）を使った日本の研究を、テーマ・データ源・解析データの年から探せます。論文は Europe PMC から集め、判定モデル Jev で分類しています。新しい論文は毎日追加されます。</p>
+
+        <h3>タブの見方</h3>
+        <dl>
+          <dt>概念マップ</dt><dd>円はテーマで、大きいほど論文が多いテーマです。矢印は、論文で解析された「曝露 → アウトカム」の組合せで、太いほど論文が多い組合せです。円や矢印を押すと、右側に内訳と論文の一覧が出ます。円はドラッグで動かせ、背景のドラッグとホイールで移動・拡大できます。</dd>
+          <dt>関連の行列</dt><dd>行が曝露、列がアウトカムのテーマで、数字はその組合せを解析した論文数です。数字を押すと論文が出ます。空欄の多いところは、研究の少ない組合せの候補です。</dd>
+          <dt>データ源と年</dt><dd>統計ごとに、どの年のデータが研究に使われてきたかを濃淡で示します。セルを押すと、そのデータ源と年で論文一覧を絞り込みます。</dd>
+          <dt>論文一覧</dt><dd>条件に合う論文を新しい順に並べます。題名から原著のページを開けます。「一覧をCSV保存」で表計算ソフトに取り込めます。</dd>
+          <dt>論文のつながり</dt><dd>起点の論文と、参考文献やテーマが近い論文を並べます。円の色は出版年、大きさは被引用数です。</dd>
+          <dt>統計・データ</dt><dd>収集と判定の件数、区分・データ源・研究デザインなどの内訳、方法、謝辞を載せています。</dd>
+        </dl>
+
+        <h3>絞り込み</h3>
+        <p>上の帯で、キーワード（題名・著者名・誌名・DOI・テーマ）、区分（A 公開集計・B 個票）、データ源、データの年を組み合わせて絞り込めます。右側の「テーマのグループ」を押すと、そのグループのテーマだけを表示します。「条件をすべて解除」で最初の状態に戻ります。</p>
+
+        <h3>使い方の例</h3>
+        <ol>
+          <li><strong>テーマから先行研究を探す：</strong>概念マップで「自殺・自傷」の円を押し、右側で使われたデータ源と論文を確かめる。</li>
+          <li><strong>使いたい統計の先行研究を探す：</strong>データ源で「国民生活基礎調査」を選び、論文一覧を開く。データの年も選ぶと、同じ年次のデータを使った研究に絞れる。</li>
+          <li><strong>研究の少ない組合せを探す：</strong>関連の行列で、関心のある曝露の行を見て、論文数の少ないアウトカムを探す。</li>
+        </ol>
+
+        <h3>注意</h3>
+        <ul>
+          <li>分類は機械判定です。誤りを含むことがあるので、引用や判断の前に原著で確かめてください。</li>
+          <li>矢印は解析の組合せを示すもので、因果関係を示しません。空欄は、その組合せの研究がないことを意味しません。</li>
+          <li>収集は英語の文献データベースによるため、和文誌の論文は一部しか含まれていません。</li>
+        </ul>
+        <p class="guide-foot">更新の記録は、画面下端の「更新履歴」から見られます。</p>
+      </div>
+    </div>
     <div id="pane-data" class="pane-view" style="display:none">
       <div id="datapane" class="data-container"></div>
     </div>
@@ -1853,8 +1903,9 @@ function refresh(relayout) {
   const g = renderStats(); syncSelection(g); renderGroups(); renderSearchSummary(g);
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === state.tab));
   document.body.classList.toggle("survey-mode",state.tab==="survey");
-  document.querySelector(".control-console").hidden=state.tab==="links";
-  ["map", "matrix", "survey", "list", "links", "data"].forEach(t => $("#pane-" + t).style.display = state.tab === t ? "" : "none");
+  document.querySelector(".control-console").hidden=state.tab==="links"||state.tab==="guide";
+  document.body.classList.toggle("guide-mode",state.tab==="guide");
+  ["map", "matrix", "survey", "list", "links", "data", "guide"].forEach(t => $("#pane-" + t).style.display = state.tab === t ? "" : "none");
   if (state.tab === "map") { if (relayout !== false) layout(g, true); renderUnmappedPapers(g); }
   if (state.tab === "list") renderList();
   if (state.tab === "data") renderData();
@@ -1874,7 +1925,7 @@ window.addEventListener("DOMContentLoaded", () => {
   $("#paper-wave").onchange=e=>{state.wave=e.target.value;refresh(true);};
   $("#export-svg").onclick=exportMapSVG;
   $("#export-papers").onclick=exportPapers;
-  const readViewHash=()=>{const [t,params=""]=location.hash.slice(1).split("?");if(["map","matrix","survey","list","links","data"].includes(t)){state.tab=t;const pid=new URLSearchParams(params).get("paper");if(t==="links"&&pid&&paperById[pid]){lsim.seed=pid;state.listSel=pid;lsim.nodes=[];}const id=new URLSearchParams(params).get("domain");if(t==="map"&&id&&Object.hasOwn(D.domains,id)){state.sel=id;state.selEdge=null;}}};
+  const readViewHash=()=>{const [t,params=""]=location.hash.slice(1).split("?");if(["map","matrix","survey","list","links","data","guide"].includes(t)){state.tab=t;const pid=new URLSearchParams(params).get("paper");if(t==="links"&&pid&&paperById[pid]){lsim.seed=pid;state.listSel=pid;lsim.nodes=[];}const id=new URLSearchParams(params).get("domain");if(t==="map"&&id&&Object.hasOwn(D.domains,id)){state.sel=id;state.selEdge=null;}}};
   window.addEventListener("hashchange",()=>{readViewHash();refresh(state.tab==="map");});
   readViewHash();
   $("#q").placeholder = "タイトル・著者名・誌名／略称・DOI・領域";
