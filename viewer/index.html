@@ -1198,6 +1198,14 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .guide .guide-foot { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
 :root[data-theme="dark"] .guide h3, :root[data-theme="dark"] .guide dt { color: #A8D8E3; }
 
+.guide table.howto { border-collapse: collapse; width: 100%; font-size: 13.5px; margin: 8px 0 4px; }
+.guide table.howto th, .guide table.howto td { border: 1px solid var(--border-main); padding: 8px 10px; vertical-align: top; text-align: left; }
+.guide table.howto th { background: var(--surface-alt); color: var(--zs-navy); font-weight: 700; white-space: nowrap; }
+.guide table.howto td:nth-child(2) { white-space: nowrap; }
+.guide table.howto a.tab-jump { font-weight: 700; color: var(--zs-navy); }
+.guide ol.steps li { margin: 8px 0; }
+@media (max-width: 760px) { .guide table.howto td:nth-child(2) { white-space: normal; } }
+
 #survey-root{padding:18px 22px}
 .relation-matrix.sy-matrix{border-collapse:separate;border-spacing:1px}
 .sy-matrix th,.sy-matrix td{border:0!important;background:transparent}
@@ -1318,36 +1326,18 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 
     <div id="pane-guide" class="pane-view" style="display:none">
       <div id="guidepane" class="data-container guide">
-        <h3>このサイトでできること</h3>
-        <p>公開集計データ（NDBオープンデータ、人口動態統計、警察庁の自殺統計など）と、政府統計の個票（国民生活基礎調査、国民健康・栄養調査など）を使った日本の研究を、テーマ・データ源・解析データの年から探せます。論文は Europe PMC から集め、判定モデル Jev で分類しています。新しい論文は毎日追加されます。</p>
-
-        <h3>タブの見方</h3>
-        <dl>
-          <dt>概念マップ</dt><dd>円はテーマで、大きいほど論文が多いテーマです。矢印は、論文で解析された「曝露 → アウトカム」の組合せで、太いほど論文が多い組合せです。円や矢印を押すと、右側に内訳と論文の一覧が出ます。円はドラッグで動かせ、背景のドラッグとホイールで移動・拡大できます。</dd>
-          <dt>関連の行列</dt><dd>行が曝露、列がアウトカムのテーマで、数字はその組合せを解析した論文数です。数字を押すと論文が出ます。空欄の多いところは、研究の少ない組合せの候補です。</dd>
-          <dt>データ源と年</dt><dd>統計ごとに、どの年のデータが研究に使われてきたかを濃淡で示します。セルを押すと、そのデータ源と年で論文一覧を絞り込みます。</dd>
-          <dt>論文一覧</dt><dd>条件に合う論文を新しい順に並べます。題名から原著のページを開けます。「一覧をCSV保存」で表計算ソフトに取り込めます。</dd>
-          <dt>論文のつながり</dt><dd>起点の論文と、参考文献やテーマが近い論文を並べます。円の色は出版年、大きさは被引用数です。</dd>
-          <dt>統計・データ</dt><dd>収集と判定の件数、区分・データ源・研究デザインなどの内訳、方法、謝辞を載せています。</dd>
-        </dl>
-
-        <h3>絞り込み</h3>
-        <p>上の帯で、キーワード（題名・著者名・誌名・DOI・テーマ）、区分（A 公開集計・B 個票）、データ源、データの年を組み合わせて絞り込めます。右側の「テーマのグループ」を押すと、そのグループのテーマだけを表示します。「条件をすべて解除」で最初の状態に戻ります。</p>
-
-        <h3>使い方の例</h3>
-        <ol>
-          <li><strong>テーマから先行研究を探す：</strong>概念マップで「自殺・自傷」の円を押し、右側で使われたデータ源と論文を確かめる。</li>
-          <li><strong>使いたい統計の先行研究を探す：</strong>データ源で「国民生活基礎調査」を選び、論文一覧を開く。データの年も選ぶと、同じ年次のデータを使った研究に絞れる。</li>
-          <li><strong>研究の少ない組合せを探す：</strong>関連の行列で、関心のある曝露の行を見て、論文数の少ないアウトカムを探す。</li>
-        </ol>
-
-        <h3>注意</h3>
-        <ul>
-          <li>分類は機械判定です。誤りを含むことがあるので、引用や判断の前に原著で確かめてください。</li>
-          <li>矢印は解析の組合せを示すもので、因果関係を示しません。空欄は、その組合せの研究がないことを意味しません。</li>
-          <li>収集は英語の文献データベースによるため、和文誌の論文は一部しか含まれていません。</li>
-        </ul>
-        <p class="guide-foot">更新の記録は、画面下端の「更新履歴」から見られます。</p>
+<h3>このサイトでできること</h3><p>日本の公的統計を使った研究を探すためのサイトです。公開集計データ（NDBオープンデータ、人口動態統計、警察庁の自殺統計など）と、政府統計の個票（国民生活基礎調査、国民健康・栄養調査など）を使った論文を集め、テーマ・データ源・データの年で整理しています。論文は Europe PMC から集め、判定モデル Jev で分類し、毎日新しい論文を足しています。</p>
+<h3>やりたいことから探す</h3><table class="howto"><thead><tr><th>やりたいこと</th><th>開くタブ</th><th>操作</th></tr></thead><tbody>
+<tr><td>どんなテーマの研究があるか、全体を眺めたい</td><td><a href="#map" class="tab-jump" data-tab="map">概念マップ</a></td><td>円がテーマ、円の大きさが論文の多さです。矢印は「曝露 → アウトカム」として解析された組合せで、太いほど論文が多い組合せです。円を押すと、そのテーマの論文と、使われたデータ源が右に出ます。</td></tr>
+<tr><td>どの組合せの研究が多く、どこがまだ調べられていないかを知りたい</td><td><a href="#matrix" class="tab-jump" data-tab="matrix">関連の行列</a></td><td>行が曝露、列がアウトカムのテーマです。数字はその組合せを解析した論文数で、押すと論文が出ます。空欄の多い行や列は、まだ研究の少ない組合せの候補です。</td></tr>
+<tr><td>使いたい統計が、どの年のデータで研究されてきたかを知りたい</td><td><a href="#survey" class="tab-jump" data-tab="survey">データ源と年</a></td><td>統計ごとに、解析に使われた年を濃淡で示します。セルを押すと、その統計とその年で論文一覧に絞り込めます。</td></tr>
+<tr><td>著者名や誌名から、実際の論文を探したい</td><td><a href="#list" class="tab-jump" data-tab="list">論文一覧</a></td><td>上の検索欄に著者名・題名・誌名・DOI を入れると絞り込めます。区分（A 公開集計・B 個票）、データ源、データの年も組み合わせられます。題名を押すと原著のページが開き、「一覧をCSV保存」で表計算ソフトに取り込めます。</td></tr>
+<tr><td>ある論文と関連の深い論文を見つけたい</td><td><a href="#links" class="tab-jump" data-tab="links">論文のつながり</a></td><td>論文一覧の「つながりを見る」を押すか、起点の論文を検索します。参考文献やテーマが重なる論文が近くに並びます。円の色は出版年、大きさは被引用数です。</td></tr>
+<tr><td>収載の件数や判定の方法を確かめたい</td><td><a href="#data" class="tab-jump" data-tab="data">統計・データ</a></td><td>収集と判定の件数、区分・データ源・研究デザインの内訳、方法、謝辞を載せています。更新の記録は画面下端の「更新履歴」から見られます。</td></tr>
+</tbody></table>
+<h3>例：自殺の地域差の研究を始めるとき</h3><ol><li>概念マップで「自殺・自傷」の円を押し、どのデータ源（警察庁の自殺統計、人口動態統計など）が使われてきたかを見る。</li><li>関連の行列で「自殺・自傷」の列を見て、曝露として研究の少ないテーマ（例：気象・環境曝露、経済・産業）を探す。</li><li>論文一覧で「suicide」と入れ、データ源を「人口動態統計」に絞って原著を読む。</li><li>参考になった論文の「つながりを見る」で、関連する論文をたどる。</li></ol>
+<h3>絞り込みの共通の使い方</h3><p>上の帯の検索欄と選択肢はどのタブでも共通で、組み合わせて使えます。右側の「テーマのグループ」を押すと、そのグループのテーマだけを表示します。「条件をすべて解除」で最初の状態に戻ります。</p>
+<h3>注意</h3><ul><li>分類は機械判定です。誤りを含むことがあるので、引用や判断の前に原著で確かめてください。</li><li>矢印は解析の組合せを示すもので、因果関係を示しません。空欄は、その組合せの研究がないことを意味しません。</li><li>収集は英語の文献データベースによるため、和文誌の論文は一部しか含まれていません。</li></ul>
       </div>
     </div>
     <div id="pane-data" class="pane-view" style="display:none">
@@ -1933,6 +1923,7 @@ window.addEventListener("DOMContentLoaded", () => {
   $("#minp").oninput = e => { state.minPapers = +e.target.value; $("#minplabel").textContent = e.target.value; refresh(true); };
   $("#verified").onchange = e => { state.verified = e.target.checked; refresh(true); };
   $("#reset").onclick = () => { state.q = ""; $("#q").value = ""; state.groups.clear(); state.minPapers = 1; $("#minp").value = 1; $("#minplabel").textContent = "1"; state.verified = false; $("#verified").checked = false; state.study=state.wave=state.cls="";$("#paper-study").value=$("#paper-wave").value=$("#paper-class").value="";state.listSel=null;state.sel = state.selEdge = null; refresh(true); };
+  document.querySelectorAll("#guidepane a.tab-jump").forEach(a => a.onclick = ev => { ev.preventDefault(); state.tab = a.dataset.tab; history.replaceState(null, "", "#" + state.tab); refresh(state.tab === "map"); scrollTo(0, 0); });
   document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => { state.tab = b.dataset.tab; if(state.tab!=="survey")history.replaceState(null,"","#"+state.tab);refresh(state.tab === "map"); });
   $("#zin").onclick = () => { sim.k *= 1.25; };
   $("#zout").onclick = () => { sim.k /= 1.25; };
