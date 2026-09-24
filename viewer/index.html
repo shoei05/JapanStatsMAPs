@@ -1327,6 +1327,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     <div id="pane-guide" class="pane-view" style="display:none">
       <div id="guidepane" class="data-container guide">
 <h3>このサイトでできること</h3><p>日本の公的統計を用いた研究論文を探すサイトです。公開集計データ（NDBオープンデータ、人口動態統計、警察庁の自殺統計など）や政府統計の個票（国民生活基礎調査、国民健康・栄養調査など）を用いた論文を収集し、テーマ、データ源、データの対象年で整理しています。論文は Europe PMC から収集し、判定モデル Jev で分類して毎日追加しています。</p>
+<figure class="guide-video" style="margin:12px 0 4px"><video src="demo/JapanStatsMAPs_demo.mp4" controls muted playsinline preload="metadata" style="display:block;width:100%;max-width:860px;height:auto;border:1px solid rgba(0,0,0,.15);border-radius:4px"></video><figcaption style="font-size:12.5px;opacity:.75;margin-top:4px">操作の流れ（約1分、音声なし）</figcaption></figure>
 <h3>やりたいことから探す</h3><table class="howto"><thead><tr><th>やりたいこと</th><th>開くタブ</th><th>操作</th></tr></thead><tbody>
 <tr><td>どんなテーマの研究があるか、全体を眺めたい</td><td><a href="#map" class="tab-jump" data-tab="map">概念マップ</a></td><td>円はテーマ、円の大きさは論文数を表します。矢印は「曝露 → アウトカム」の解析の組合せで、線が太いほど論文数の多い組合せです。円を押すと、該当テーマの論文と使われたデータ源が右側に表示されます。</td></tr>
 <tr><td>どの組合せの研究が多く、どこがまだ調べられていないかを知りたい</td><td><a href="#matrix" class="tab-jump" data-tab="matrix">関連の行列</a></td><td>行が曝露、列がアウトカムのテーマです。数字はその組合せを解析した論文数で、押すと該当論文が表示されます。空欄の多い行や列は、研究の少ない組合せの候補です。</td></tr>
