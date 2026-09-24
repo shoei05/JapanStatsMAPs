@@ -1,1 +1,2 @@
 {"date": "2026-09-24", "since": "2026-09-17", "until": "2026-09-24", "found": 0, "added": [], "total": 1248, "status": "ok"}
+{"date": "2026-09-25", "since": "2026-09-21", "until": "2026-09-25", "found": 0, "added": [], "total": 1248, "status": "error", "error": "Europe PMC failed: (\"NDB Open Data\" OR \"NDB open data\") AND FIRST_IDATE:[2026-09-21 TO 2026-09-25]"}
