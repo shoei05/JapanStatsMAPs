@@ -1179,6 +1179,10 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 :root[data-theme="dark"] .link-seed-card { border-left-color: #FF5A3D; }
 :root[data-theme="dark"] .lr-k { color: #FF5A3D; }
 
+/* 画面下端の更新履歴リンク（目立たせない） */
+#foot a.foot-updates { color: inherit; opacity: .75; text-decoration: underline; text-underline-offset: 2px; }
+#foot a.foot-updates:hover { opacity: 1; }
+
 #survey-root{padding:18px 22px}
 .relation-matrix.sy-matrix{border-collapse:separate;border-spacing:1px}
 .sy-matrix th,.sy-matrix td{border:0!important;background:transparent}
@@ -1921,6 +1925,7 @@ window.addEventListener("DOMContentLoaded", () => {
     sim.tx += (after.x - before.x) * sim.k; sim.ty += (after.y - before.y) * sim.k;
   }, { passive: false });
   $("#foot").textContent = `日本の公開データ研究マップ ｜ ${D.meta.n_papers}論文 ｜ 分類は機械判定 ｜ 関連の線は因果関係を示しません。 ｜ ${D.meta.acknowledgement}`;
+  { const u = el("a", "foot-updates", "更新履歴"); u.href = "updates.html"; $("#foot").append(" ｜ ", u); }
   const g = renderStats(); layout(g, false); refresh(false); tick();
 });
 
