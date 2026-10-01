@@ -4555,6 +4555,14 @@
    "role": "analyzed",
    "confidence": 1.0,
    "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1539/eohp.2026-0023",
+   "exposure": "covid19_infection",
+   "outcome": "suicide_selfharm",
+   "role": "analyzed",
+   "confidence": 0.57,
+   "input_mode": "fulltext_methods"
   }
  ]
 }
