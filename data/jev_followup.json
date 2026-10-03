@@ -4563,6 +4563,14 @@
    "role": "analyzed",
    "confidence": 0.57,
    "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1016/j.jmii.2026.09.013",
+   "exposure": "covid19_infection",
+   "outcome": "infectious_disease",
+   "role": "analyzed",
+   "confidence": 0.48,
+   "input_mode": "abstract_only"
   }
  ]
 }
