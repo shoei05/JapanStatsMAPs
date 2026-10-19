@@ -4571,6 +4571,14 @@
    "role": "analyzed",
    "confidence": 0.48,
    "input_mode": "abstract_only"
+  },
+  {
+   "paper_id": "doi:10.1007/s11701-026-04049-2",
+   "exposure": "surgery_procedures",
+   "outcome": "surgery_procedures",
+   "role": "analyzed",
+   "confidence": 0.84,
+   "input_mode": "abstract_only"
   }
  ]
 }
