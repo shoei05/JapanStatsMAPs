@@ -63,6 +63,9 @@ def full_authors(e, doi):
 
 jc_path = ROOT / "data/japan_check.json"
 japan_check = json.loads(jc_path.read_text(encoding="utf-8")) if jc_path.exists() else {}
+# 判定では残ったが、本文を読んで収載の条件を満たさないと確かめた論文（{paper_id: 理由}）
+mx_path = ROOT / "data/manual_exclusions.json"
+manual_exclusions = json.loads(mx_path.read_text(encoding="utf-8")) if mx_path.exists() else {}
 papers = []
 n_non_japan = 0
 for s in structured:
@@ -82,6 +85,8 @@ for s in structured:
     pid = f"doi:{doi}" if doi else f"pmid:{r['pmid']}" if r.get("pmid") else f"epmc:{r['id']}"
     if japan_check.get(pid, 1.0) < 0.5:  # 主解析のデータが日本のものでない論文は外す（scripts/japan_check.py）
         n_non_japan += 1
+        continue
+    if pid in manual_exclusions:
         continue
     papers.append({
         "paper_id": f"doi:{doi}" if doi else f"pmid:{r['pmid']}" if r.get("pmid") else f"epmc:{r['id']}",
@@ -166,7 +171,8 @@ data = {
 
 tpl = (ROOT / "scripts/viewer_template.html").read_text(encoding="utf-8")
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-html = (tpl.replace("{{DATA}}", blob)
+from guide_content import build as build_guide  # noqa: E402
+html = (tpl.replace("{{GUIDE}}", build_guide("jsm")).replace("{{DATA}}", blob)
         .replace("{{STYLE}}", (ROOT / "viewer/style.css").read_text(encoding="utf-8"))
         .replace("{{WES}}", (ROOT / "viewer/wes_zissou.css").read_text(encoding="utf-8"))
         .replace("{{APP}}", (ROOT / "viewer/app.js").read_text(encoding="utf-8")))
