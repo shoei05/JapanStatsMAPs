@@ -5,9 +5,10 @@
 
 サイト: https://shoei05.github.io/JapanStatsMAPs/
 
-[![デモ動画（押すと mp4 を再生）](demo/demo.gif)](https://shoei05.github.io/JapanStatsMAPs/demo/JapanStatsMAPs_demo.mp4)
+[![紹介動画（押すと YouTube で再生）](https://img.youtube.com/vi/nXBFPjDw5U0/hqdefault.jpg)](https://www.youtube.com/watch?v=nXBFPjDw5U0)
 
-デモ動画（59秒、音声なし）: [mp4](https://shoei05.github.io/JapanStatsMAPs/demo/JapanStatsMAPs_demo.mp4)
+紹介動画（約50秒、ナレーション付き）: [YouTube](https://www.youtube.com/watch?v=nXBFPjDw5U0)  
+ナレーションは音声合成です。声: [「Ayaka」](https://elevenlabs.io/voices/dp4HJlekKt0HZFHL2jQg)（ElevenLabs ボイスライブラリ）、音声合成: ElevenLabs Eleven v4
 
 ## 収載範囲
 
