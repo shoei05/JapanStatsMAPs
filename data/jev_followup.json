@@ -4587,6 +4587,14 @@
    "role": "analyzed",
    "confidence": 0.44,
    "input_mode": "fulltext_methods"
+  },
+  {
+   "paper_id": "doi:10.1186/s12889-026-29177-0",
+   "exposure": "alcohol",
+   "outcome": "mental_distress",
+   "role": "analyzed",
+   "confidence": 0.99,
+   "input_mode": "abstract_only"
   }
  ]
 }
